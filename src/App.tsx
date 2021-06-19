@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import {Container, Row, Col} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/main.scss';
 
 const App = () => {
@@ -8,8 +8,9 @@ const App = () => {
     <Container fluid>
     <Row>
       <Col>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
+      <header>
+        ...
+        {/* <img src={logo} className='App-logo' alt='logo' /> */}
       </header>
       </Col>
     </Row>
