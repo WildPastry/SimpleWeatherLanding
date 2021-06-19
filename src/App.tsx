@@ -1,14 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import {Container, Row, Col} from 'react-bootstrap';
+import './scss/main.scss';
 
 const App = () => {
   return (
-    <div className='App'>
+    <Container fluid>
+    <Row>
+      <Col>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
       </header>
-    </div>
+      </Col>
+    </Row>
+    </Container>
   );
 };
 
