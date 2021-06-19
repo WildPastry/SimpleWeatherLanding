@@ -72,51 +72,41 @@ $body-bg: $simpleWeather;
 // MEDIA CONTROL
 
 // logo heights
-$logoHeights: (
-  'mobile': 150px,
-  'tablet': 250px,
-  'desktop': 350px
+$logoHeight: (
+  'xs': 150px,
+  'sm': 250px,
+  'md': 350px,
+  'lg': 450px,
+  'xl': 550px,
 );
 
-// breakpoints
-$breakpoints: (
-  mobile: 640px,
-  tablet: 768px,
-  desktop: 1024px
-) !default;
+@mixin bp($point) {
+  $bp-xs: 'screen and (max-width: 479px)';
+  $bp-sm: 'screen and (min-width: 480px) and (max-width: 575px)';
+  $bp-md: 'screen and (min-width: 576px) and (max-width: 767px)';
+  $bp-lg: 'screen and (min-width: 768px) and (max-width: 1023px)';
+  $bp-xl: 'screen and (min-width: 1024px)';
 
-// expressions
-$media-expressions: (
-  screen: 'screen',
-  handheld: 'handheld',
-  retina2x: (
-    '(-webkit-min-device-pixel-ratio: 2)',
-    '(min-resolution: 192dpi)'
-  )
-) !default;
-
-$size__site_content_width: 1024px;
-
-$media_queries : (
-    'mobile'    : "only screen and (max-width: 667px)",
-    'tablet'    : "only screen and (min-width: 668px) and (max-width: $size__site_content_width)",
-    'desktop'   : "only screen and (min-width: ($size__site_content_width + 1))",
-    'retina2'   : "only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)",
-    'retina3'   : "only screen and (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 288dpi)",
-    'landscape' : "screen and (orientation:landscape) ",    
-    'portrait'  : "screen and (orientation:portrait) "
-);
-
-@mixin for_breakpoint($breakpoints) {
-    $conditions : ();
-    @each $breakpoint in $breakpoints {
-        $conditions: append(
-            $conditions,
-            #{inspect(map-get($media_queries, $breakpoint))},
-            comma
-        );
+  @if $point == xs {
+    @media #{$bp-xs} {
+      @content;
     }
-    @media #{$conditions} {
-        @content;
+  } @else if $point == sm {
+    @media #{$bp-sm} {
+      @content;
     }
+  } @else if $point == md {
+    @media #{$bp-md} {
+      @content;
+    }
+  }
+  @if $point == lg {
+    @media #{$bp-lg} {
+      @content;
+    }
+  } @else if $point == xl {
+    @media #{$bp-xl} {
+      @content;
+    }
+  }
 }

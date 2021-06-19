@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @mixin reset($pad: null, $mar: null, $box: null, $deco: null, $listo: null) {
   padding: $pad;
   margin: $mar;
@@ -13,29 +15,14 @@
 }
 
 @mixin app-logo {
-//   @function color($logoHeight) {
-//   @return map-get($logoHeights, 'desktop');
-// }
-  @include for_breakpoint(mobile desktop) {
-    height: 500px
+  height: map-get($logoHeight, 'xs');
+  @include bp(md) {
+    height: map-get($logoHeight, 'md');
   }
-  // $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
-  // @include media('>=phone', '<tablet') {
-
-  // }
-  // @include media('>=tablet', '<=950px') {
-
-  // }
+  @include bp(lg) {
+    height: map-get($logoHeight, 'lg');
+  }
+  @include bp(xl) {
+    height: map-get($logoHeight, 'xl');
+  }
 }
-
-// $colors: ('primary': black, 'secondary': white);
-
-// // Doesn't work    
-// @function color($color) {
-//   @return map.get($colors, $color);
-// }
-
-// // Does work
-// @function color($color) {
-//   @return map-get($colors, $color);
-// }
