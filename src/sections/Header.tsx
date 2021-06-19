@@ -3,7 +3,7 @@ import {Col, Row} from 'react-bootstrap';
 const Header = () => {
   return (
     <Row>
-      <Col><p>HEADER</p></Col>
+      <Col xs={12}><p>HEADER</p></Col>
     </Row>
   );
 };

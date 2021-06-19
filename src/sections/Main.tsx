@@ -4,8 +4,8 @@ import {Col, Row} from 'react-bootstrap';
 const Main = () => {
   return (
     <Row>
-      <Col><p>MAIN</p></Col>
-      <Col><img src={logo} alt='SimpleWeather' /></Col>
+      <Col xs={12}><p>MAIN</p></Col>
+      <Col xs={12}><img src={logo} className='appLogo' alt='SimpleWeather' /></Col>
     </Row>
   );
 };

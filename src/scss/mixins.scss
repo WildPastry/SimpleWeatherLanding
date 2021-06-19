@@ -1,7 +1,41 @@
-@mixin reset ($pad: null, $mar: null, $box: null, $deco: null, $listo: null) {
+@mixin reset($pad: null, $mar: null, $box: null, $deco: null, $listo: null) {
   padding: $pad;
   margin: $mar;
   box-sizing: $box;
   text-decoration: $deco;
   list-style-type: $listo;
 }
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin app-logo {
+//   @function color($logoHeight) {
+//   @return map-get($logoHeights, 'desktop');
+// }
+  @include for_breakpoint(mobile desktop) {
+    height: 500px
+  }
+  // $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+  // @include media('>=phone', '<tablet') {
+
+  // }
+  // @include media('>=tablet', '<=950px') {
+
+  // }
+}
+
+// $colors: ('primary': black, 'secondary': white);
+
+// // Doesn't work    
+// @function color($color) {
+//   @return map.get($colors, $color);
+// }
+
+// // Does work
+// @function color($color) {
+//   @return map-get($colors, $color);
+// }
