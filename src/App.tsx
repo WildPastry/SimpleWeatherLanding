@@ -1,18 +1,16 @@
-// import logo from './logo.svg';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
+import Header from './sections/Header';
+import Main from './sections/Main';
+import Footer from './sections/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/main.scss';
 
 const App = () => {
   return (
-    <Container fluid>
-    <Row>
-      <Col>
-      <header>
-        {/* <img src={logo} className='App-logo' alt='logo' /> */}
-      </header>
-      </Col>
-    </Row>
+    <Container fluid className='my-3'>
+      <Header />
+      <Main />
+      <Footer />
     </Container>
   );
 };
