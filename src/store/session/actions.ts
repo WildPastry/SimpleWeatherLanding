@@ -12,12 +12,10 @@ export interface SetFetcing {
   isFetching: boolean;
 }
 
-// Union Action Types
-
+// union Action Types
 export type Action = SetAction | SetFetcing;
 
-// Action Creators
-
+// action Creators
 export const set = (accessToken: string): SetAction => {
   return {type: 'SET', accessToken};
 };

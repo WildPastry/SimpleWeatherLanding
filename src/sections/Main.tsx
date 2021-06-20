@@ -3,11 +3,11 @@ import {Col, Row} from 'react-bootstrap';
 
 const Main = () => {
   return (
-    <Row>
-      <Col xs={12}>
+    <Row className='my-3'>
+      <Col xs={6}>
         <p>MAIN</p>
       </Col>
-      <Col xs={12}>
+      <Col xs={6} className='text-center'>
         <img src={logo} className='appLogo' alt='SimpleWeather' />
       </Col>
     </Row>
