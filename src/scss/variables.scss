@@ -67,11 +67,12 @@ $theme-colors: (
   'simple-weather': $simpleWeather,
 );
 
+// apply bg to body
 $body-bg: $simpleWeather;
 
-// MEDIA CONTROL
+// LOGO
 
-// logo heights
+// app logo heights
 $logoHeight: (
   'xs': 150px,
   'sm': 250px,
@@ -79,34 +80,3 @@ $logoHeight: (
   'lg': 450px,
   'xl': 550px,
 );
-
-@mixin bp($point) {
-  $bp-xs: 'screen and (max-width: 479px)';
-  $bp-sm: 'screen and (min-width: 480px) and (max-width: 575px)';
-  $bp-md: 'screen and (min-width: 576px) and (max-width: 767px)';
-  $bp-lg: 'screen and (min-width: 768px) and (max-width: 1023px)';
-  $bp-xl: 'screen and (min-width: 1024px)';
-
-  @if $point == xs {
-    @media #{$bp-xs} {
-      @content;
-    }
-  } @else if $point == sm {
-    @media #{$bp-sm} {
-      @content;
-    }
-  } @else if $point == md {
-    @media #{$bp-md} {
-      @content;
-    }
-  }
-  @if $point == lg {
-    @media #{$bp-lg} {
-      @content;
-    }
-  } @else if $point == xl {
-    @media #{$bp-xl} {
-      @content;
-    }
-  }
-}
