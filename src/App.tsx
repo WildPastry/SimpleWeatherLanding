@@ -1,5 +1,5 @@
 import {Container} from 'react-bootstrap';
-import AppLoading from './sections/AppLoading';
+import AppLoading from './components/AppLoading';
 import Header from './sections/Header';
 import Main from './sections/Main';
 import Login from './sections/Login';

@@ -1,4 +1,4 @@
-import logo from '.././logo.svg';
+import logo from '../assets/logo.svg';
 import {Col, Row} from 'react-bootstrap';
 
 const Main = () => {

@@ -1,3 +1,96 @@
+// @font-face {
+//   font-family: 'Aller Display';
+//   src: url('../assets/fonts/AllerDisplay.ttf') format('truetype');
+// }
+
+// $font-path: 'styles/assets/fonts';
+// $font-name: 'custom-icons';
+
+// $fallback-src: url("#{$font-path}/#{$font-name}.eot");
+// $src:
+//   url("#{$font-path}/#{$font-name}.eot?#iefix") format('embedded-opentype'),
+//   url("#{$font-path}/#{$font-name}.woff") format('woff'),
+//   url("#{$font-path}/#{$font-name}.ttf") format('truetype'),
+//   url("#{$font-path}/#{$font-name}.svg?##{$font-name}") format('svg')
+// ;
+
+// @font-face {
+//   font-family: $font-name;
+//   src:  $fallback-src;
+//   src:  $src;
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file+'.ttf') format('truetype');
+  }
+  // @font-face {
+  //   font-family: $font-family;
+  //   src: url($font-file+'.eot');
+  //   src: url($font-file+'.eot?#iefix') format('embedded-opentype'),
+  //        url($font-file+'.woff') format('woff'),
+  //        url($font-file+'.ttf') format('truetype'),
+  //        url($font-file+'.svg#'+$font-family) format('svg');
+  //   font-weight: normal;
+  //   font-style: normal;
+  // }
+}
+
+@include font('Aller Light', '../assets/fonts/Aller_Lt');
+// @include font('Arvo-Bold', '/htdocs/lib/fonts/Arvo-Bold');
+// @include font('Arvo', '/htdocs/lib/fonts/Arvo');
+// @include font('Arvo-Bold', '/htdocs/lib/fonts/Arvo-Bold');
+
+h1 {
+  font-family: Aller Light;
+}
+
+// @include font-face(allerDisplay, fonts/allerDisplay);
+
+// @mixin font-face(
+//   $name,
+//   $path,
+//   $weight: null,
+//   $style: null,
+//   $exts: eot woff2 woff ttf svg
+// ) {
+//   $src: null;
+
+//   $extmods: (
+//     eot: '?',
+//     svg: '#' + str-replace($name, ' ', '_'),
+//   );
+
+//   $formats: (
+//     otf: 'opentype',
+//     ttf: 'truetype',
+//   );
+
+//   @each $ext in $exts {
+//     $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+//     $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+//     $src: append($src, url(quote($path + '.' + $extmod)) format(quote($format)), comma);
+//   }
+
+//   @font-face {
+//     font-family: quote($name);
+//     font-style: $style;
+//     font-weight: $weight;
+//     src: $src;
+//   }
+// }
+
+// cursor for text
 .cursorPointer {
   cursor: pointer;
+}
+
+// logo font
+.simpleWeather {
+  color: $light;
+  font-size: 20;
+  // font-family: 'allerDisplay';
 }
