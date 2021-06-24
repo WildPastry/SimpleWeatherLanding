@@ -1,3 +1,4 @@
+// import map
 @use "sass:map";
 
 // general reset
@@ -16,6 +17,13 @@
   list-style: none;
 }
 
+// font weights
+@mixin font-weight($weight) {
+  $lt: map-get($fontWeights, 'lt');
+  $rg: map-get($fontWeights, 'rg');
+  $bd: map-get($fontWeights, 'bd');
+}
+
 // app logo height
 @mixin app-logo {
   height: map-get($logoHeight, 'xs');
@@ -30,7 +38,7 @@
   }
 }
 
-// breakpoints
+// media breakpoints
 @mixin bp($point) {
   $bp-xs: 'screen and (max-width: 479px)';
   $bp-sm: 'screen and (min-width: 480px) and (max-width: 575px)';

@@ -64,7 +64,7 @@ $cloudsDarkest: #3e5063;
 
 // adding a new theme color
 $theme-colors: (
-  'simple-weather': $simpleWeather,
+  'simple-weather': $simpleWeather
 );
 
 // apply bg to body
@@ -78,5 +78,23 @@ $logoHeight: (
   'sm': 250px,
   'md': 350px,
   'lg': 450px,
-  'xl': 550px,
+  'xl': 550px
+);
+
+// FONT
+
+// font weights
+$fontWeight: (
+  'lt': 300,
+  'rg': 400,
+  'bd': 700
+);
+
+// font sizes
+$fontSize: (
+  'xs': 8px,
+  'sm': 10px,
+  'md': 12px,
+  'lg': 25px,
+  'xl': 35px
 );
