@@ -64,7 +64,7 @@ $cloudsDarkest: #3e5063;
 
 // adding a new theme color
 $theme-colors: (
-  'simple-weather': $simpleWeather
+	'simple-weather': $simpleWeather
 );
 
 // apply bg to body
@@ -74,27 +74,36 @@ $body-bg: $simpleWeather;
 
 // app logo heights
 $logoHeight: (
-  'xs': 150px,
-  'sm': 250px,
-  'md': 350px,
-  'lg': 450px,
-  'xl': 550px
+	'xs': 150px,
+	'sm': 250px,
+	'md': 350px,
+	'lg': 450px,
+	'xl': 550px
 );
 
 // FONT
 
 // font weights
 $fontWeight: (
-  'lt': 300,
-  'rg': 400,
-  'bd': 700
+	'lt': 300,
+	'rg': 400,
+	'bd': 700
 );
 
 // font sizes
 $fontSize: (
-  'xs': 8px,
-  'sm': 10px,
-  'md': 12px,
-  'lg': 25px,
-  'xl': 35px
+	'xs': 1.1rem,
+	'sm': 1.5rem,
+	'md': 2rem,
+	'lg': 2.2rem,
+	'xl': 2.4rem
+);
+
+// heading sizes
+$headingSize: (
+	'xs': 1.7rem,
+	'sm': 2.2rem,
+	'md': 3rem,
+	'lg': 3.2rem,
+	'xl': 4.2rem
 );

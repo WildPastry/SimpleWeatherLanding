@@ -3,69 +3,98 @@
 
 // general reset
 @mixin reset($pad: null, $mar: null, $box: null, $deco: null, $listo: null) {
-  padding: $pad;
-  margin: $mar;
-  box-sizing: $box;
-  text-decoration: $deco;
-  list-style-type: $listo;
+	padding: $pad;
+	margin: $mar;
+	box-sizing: $box;
+	text-decoration: $deco;
+	list-style-type: $listo;
 }
 
 // list reset
 @mixin reset-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-// font weights
-@mixin font-weight($weight) {
-  $lt: map-get($fontWeights, 'lt');
-  $rg: map-get($fontWeights, 'rg');
-  $bd: map-get($fontWeights, 'bd');
+// font sizes
+@mixin fontSize {
+	font-size: map-get($fontSize, 'xs');
+	@include bp(sm) {
+		font-size: map-get($fontSize, 'sm');
+	}
+	@include bp(md) {
+		font-size: map-get($fontSize, 'md');
+	}
+	@include bp(lg) {
+		font-size: map-get($fontSize, 'lg');
+	}
+	@include bp(xl) {
+		font-size: map-get($fontSize, 'xl');
+	}
 }
 
-// app logo height
-@mixin app-logo {
-  height: map-get($logoHeight, 'xs');
-  @include bp(md) {
-    height: map-get($logoHeight, 'md');
-  }
-  @include bp(lg) {
-    height: map-get($logoHeight, 'lg');
-  }
-  @include bp(xl) {
-    height: map-get($logoHeight, 'xl');
-  }
+// heading sizes
+@mixin headingSize {
+	font-size: map-get($headingSize, 'xs');
+	@include bp(sm) {
+		font-size: map-get($headingSize, 'sm');
+	}
+	@include bp(md) {
+		font-size: map-get($headingSize, 'md');
+	}
+	@include bp(lg) {
+		font-size: map-get($headingSize, 'lg');
+	}
+	@include bp(xl) {
+		font-size: map-get($headingSize, 'xl');
+	}
+}
+
+// logo heights
+@mixin logoHeight {
+	height: map-get($logoHeight, 'xs');
+	@include bp(sm) {
+		height: map-get($logoHeight, 'sm');
+	}
+	@include bp(md) {
+		height: map-get($logoHeight, 'md');
+	}
+	@include bp(lg) {
+		height: map-get($logoHeight, 'lg');
+	}
+	@include bp(xl) {
+		height: map-get($logoHeight, 'xl');
+	}
 }
 
 // media breakpoints
 @mixin bp($point) {
-  $bp-xs: 'screen and (max-width: 479px)';
-  $bp-sm: 'screen and (min-width: 480px) and (max-width: 575px)';
-  $bp-md: 'screen and (min-width: 576px) and (max-width: 767px)';
-  $bp-lg: 'screen and (min-width: 768px) and (max-width: 1023px)';
-  $bp-xl: 'screen and (min-width: 1024px)';
+	$bp-xs: 'screen and (max-width: 479px)';
+	$bp-sm: 'screen and (min-width: 480px) and (max-width: 575px)';
+	$bp-md: 'screen and (min-width: 576px) and (max-width: 767px)';
+	$bp-lg: 'screen and (min-width: 768px) and (max-width: 1023px)';
+	$bp-xl: 'screen and (min-width: 1024px)';
 
-  @if $point == xs {
-    @media #{$bp-xs} {
-      @content;
-    }
-  } @else if $point == sm {
-    @media #{$bp-sm} {
-      @content;
-    }
-  } @else if $point == md {
-    @media #{$bp-md} {
-      @content;
-    }
-  }
-  @if $point == lg {
-    @media #{$bp-lg} {
-      @content;
-    }
-  } @else if $point == xl {
-    @media #{$bp-xl} {
-      @content;
-    }
-  }
+	@if $point == xs {
+		@media #{$bp-xs} {
+			@content;
+		}
+	} @else if $point == sm {
+		@media #{$bp-sm} {
+			@content;
+		}
+	} @else if $point == md {
+		@media #{$bp-md} {
+			@content;
+		}
+	} @else if $point == lg {
+		@media #{$bp-lg} {
+			@content;
+		}
+	} @else if $point == xl {
+		@media #{$bp-xl} {
+			@content;
+		}
+	}
 }

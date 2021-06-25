@@ -1,40 +1,65 @@
 // font mixin
 @mixin font($font-family, $font-file) {
-  @font-face {
-    font-family: $font-family;
-    src: url($font-file);
-  }
+	@font-face {
+		font-family: $font-family;
+		src: url($font-file);
+	}
 }
 
 // import web font
-@include font('Merriweather Sans', 'https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap');
+@include font(
+	'Merriweather Sans',
+	'https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap'
+);
 
 // main font family
 $mainFont: 'Merriweather Sans', sans-serif;
 
 // fonts
 .fontLt {
-  color: $light;
-  font-family: $mainFont;
-  font-size: map-get($fontSize, 'xl');
-  font-weight: map-get($fontWeight, 'lt');
+	color: $light;
+	font-family: $mainFont;
+	@include fontSize;
+	font-weight: map-get($fontWeight, 'lt');
 }
 
 .fontRg {
-  color: $light;
-  font-family: $mainFont;
-  font-size: map-get($fontSize, 'xl');
-  font-weight: map-get($fontWeight, 'rg');
+	color: $light;
+	font-family: $mainFont;
+	@include fontSize;
+	font-weight: map-get($fontWeight, 'rg');
 }
 
 .fontBd {
-  color: $light;
-  font-family: $mainFont;
-  font-size: map-get($fontSize, 'xl');
-  font-weight: map-get($fontWeight, 'bd');
+	color: $light;
+	font-family: $mainFont;
+	@include fontSize;
+	font-weight: map-get($fontWeight, 'bd');
+}
+
+// headings
+.headingLt {
+	color: $light;
+	font-family: $mainFont;
+	@include headingSize;
+	font-weight: map-get($fontWeight, 'lt');
+}
+
+.headingRg {
+	color: $light;
+	font-family: $mainFont;
+	@include headingSize;
+	font-weight: map-get($fontWeight, 'rg');
+}
+
+.headingBd {
+	color: $light;
+	font-family: $mainFont;
+	@include headingSize;
+	font-weight: map-get($fontWeight, 'bd');
 }
 
 // cursor for text
 .cursorPointer {
-  cursor: pointer;
+	cursor: pointer;
 }
