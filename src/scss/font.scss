@@ -15,7 +15,7 @@
 // main font family
 $mainFont: 'Merriweather Sans', sans-serif;
 
-// fonts
+// font
 .fontLt {
 	color: $light;
 	font-family: $mainFont;
@@ -37,25 +37,47 @@ $mainFont: 'Merriweather Sans', sans-serif;
 	font-weight: map-get($fontWeight, 'bd');
 }
 
-// headings
-.headingLt {
+// h1
+.h1Lt {
 	color: $light;
 	font-family: $mainFont;
-	@include headingSize;
+	@include h1Size;
 	font-weight: map-get($fontWeight, 'lt');
 }
 
-.headingRg {
+.h1Rg {
 	color: $light;
 	font-family: $mainFont;
-	@include headingSize;
+	@include h1Size;
 	font-weight: map-get($fontWeight, 'rg');
 }
 
-.headingBd {
+.h1Bd {
 	color: $light;
 	font-family: $mainFont;
-	@include headingSize;
+	@include h1Size;
+	font-weight: map-get($fontWeight, 'bd');
+}
+
+// h2
+.h2Lt {
+	color: $light;
+	font-family: $mainFont;
+	@include h2Size;
+	font-weight: map-get($fontWeight, 'lt');
+}
+
+.h2Rg {
+	color: $light;
+	font-family: $mainFont;
+	@include h2Size;
+	font-weight: map-get($fontWeight, 'rg');
+}
+
+.h2Bd {
+	color: $light;
+	font-family: $mainFont;
+	@include h2Size;
 	font-weight: map-get($fontWeight, 'bd');
 }
 

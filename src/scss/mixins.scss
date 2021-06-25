@@ -34,20 +34,37 @@
 	}
 }
 
-// heading sizes
-@mixin headingSize {
-	font-size: map-get($headingSize, 'xs');
+// h1 sizes
+@mixin h1Size {
+	font-size: map-get($h1Size, 'xs');
 	@include bp(sm) {
-		font-size: map-get($headingSize, 'sm');
+		font-size: map-get($h1Size, 'sm');
 	}
 	@include bp(md) {
-		font-size: map-get($headingSize, 'md');
+		font-size: map-get($h1Size, 'md');
 	}
 	@include bp(lg) {
-		font-size: map-get($headingSize, 'lg');
+		font-size: map-get($h1Size, 'lg');
 	}
 	@include bp(xl) {
-		font-size: map-get($headingSize, 'xl');
+		font-size: map-get($h1Size, 'xl');
+	}
+}
+
+// h2 sizes
+@mixin h2Size {
+	font-size: map-get($h2Size, 'xs');
+	@include bp(sm) {
+		font-size: map-get($h2Size, 'sm');
+	}
+	@include bp(md) {
+		font-size: map-get($h2Size, 'md');
+	}
+	@include bp(lg) {
+		font-size: map-get($h2Size, 'lg');
+	}
+	@include bp(xl) {
+		font-size: map-get($h2Size, 'xl');
 	}
 }
 
