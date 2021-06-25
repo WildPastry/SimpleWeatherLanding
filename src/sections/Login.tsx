@@ -28,7 +28,7 @@ class Login extends React.Component<Props, State> {
 
 	render() {
 		return (
-			<Row>
+			<Row className='my-3'>
 				<Col xs={12}>
 					{(this.props.accessToken.accessToken && (
 						<p className='h2Lt textGreen'>SUCCESS</p>

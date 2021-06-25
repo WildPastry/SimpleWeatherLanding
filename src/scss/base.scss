@@ -1,23 +1,40 @@
+// master imports
+@import 'variables';
+@import 'mixins';
+
 // reset
 * {
-  @include reset(0, 0, border-box, none, none);
+	@include reset(0, 0, border-box, none, none);
 }
 
 // body
 html,
 body {
-  height: 100%;
-  min-height: 100vh;
+	height: 100%;
+	margin: 0;
 }
 
 body {
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  color: $light;
+	font-family: $mainFont;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	color: $light;
 }
 
 // code
 code {
-  font-family: 'Courier New', monospace;
+	font-family: 'Courier New', monospace;
+}
+
+// positions
+.positionRelative {
+	position: relative;
+}
+
+.positionAbsolute {
+	position: absolute;
+}
+
+.positionFixed {
+	position: fixed;
 }
