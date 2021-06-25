@@ -5,7 +5,7 @@ const Header = () => {
 		<Row className='my-3'>
 			<Col xs={12}>
 				<span className='h1Lt textLight me-1'>SIMPLE</span>
-				<span className='h1Bd textLight'>WEATHER</span>
+				<span className='h1Bd textBlue'>WEATHER</span>
 			</Col>
 		</Row>
 	);

@@ -31,10 +31,10 @@ class Login extends React.Component<Props, State> {
 			<Row>
 				<Col xs={12}>
 					{(this.props.accessToken.accessToken && (
-						<p className='cursorPointer h2Lt textGreen'>SUCCESS</p>
+						<p className='h2Lt textGreen'>SUCCESS</p>
 					)) ||
 						(this.props.accessToken.isFetching && (
-							<p className='cursorPointer h2Lt textYellow'>...</p>
+							<p className='h2Lt textYellow'>...</p>
 						)) || (
 							<p
 								className='cursorPointer h2Lt textLight'
