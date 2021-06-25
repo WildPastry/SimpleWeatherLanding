@@ -30,10 +30,14 @@ class Login extends React.Component<Props, State> {
 		return (
 			<Row>
 				<Col xs={12}>
-					{(this.props.accessToken.accessToken && 'SUCCESS') ||
-						(this.props.accessToken.isFetching && '...') || (
+					{(this.props.accessToken.accessToken && (
+						<p className='cursorPointer h2Lt textGreen'>SUCCESS</p>
+					)) ||
+						(this.props.accessToken.isFetching && (
+							<p className='cursorPointer h2Lt textYellow'>...</p>
+						)) || (
 							<p
-								className='cursorPointer h2Lt'
+								className='cursorPointer h2Lt textLight'
 								onClick={() => this.props.login('someusername', 'somepassword')}>
 								LOGIN
 							</p>

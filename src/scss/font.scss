@@ -17,21 +17,18 @@ $mainFont: 'Merriweather Sans', sans-serif;
 
 // font
 .fontLt {
-	color: $light;
 	font-family: $mainFont;
 	@include fontSize;
 	font-weight: map-get($fontWeight, 'lt');
 }
 
 .fontRg {
-	color: $light;
 	font-family: $mainFont;
 	@include fontSize;
 	font-weight: map-get($fontWeight, 'rg');
 }
 
 .fontBd {
-	color: $light;
 	font-family: $mainFont;
 	@include fontSize;
 	font-weight: map-get($fontWeight, 'bd');
@@ -39,21 +36,18 @@ $mainFont: 'Merriweather Sans', sans-serif;
 
 // h1
 .h1Lt {
-	color: $light;
 	font-family: $mainFont;
 	@include h1Size;
 	font-weight: map-get($fontWeight, 'lt');
 }
 
 .h1Rg {
-	color: $light;
 	font-family: $mainFont;
 	@include h1Size;
 	font-weight: map-get($fontWeight, 'rg');
 }
 
 .h1Bd {
-	color: $light;
 	font-family: $mainFont;
 	@include h1Size;
 	font-weight: map-get($fontWeight, 'bd');
@@ -61,24 +55,44 @@ $mainFont: 'Merriweather Sans', sans-serif;
 
 // h2
 .h2Lt {
-	color: $light;
 	font-family: $mainFont;
 	@include h2Size;
 	font-weight: map-get($fontWeight, 'lt');
 }
 
 .h2Rg {
-	color: $light;
 	font-family: $mainFont;
 	@include h2Size;
 	font-weight: map-get($fontWeight, 'rg');
 }
 
 .h2Bd {
-	color: $light;
 	font-family: $mainFont;
 	@include h2Size;
 	font-weight: map-get($fontWeight, 'bd');
+}
+
+// text colours
+.textDark {
+	color: $dark;
+}
+.textLight {
+	color: $light;
+}
+.textYellow {
+	color: $spotYellow;
+}
+.textBlue {
+	color: $spotBlue;
+}
+.textOrange {
+	color: $spotOrange;
+}
+.textGreen {
+	color: $spotGreen;
+}
+.textRed {
+	color: $spotRed;
 }
 
 // cursor for text
