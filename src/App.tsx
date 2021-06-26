@@ -25,14 +25,22 @@ const App = () => {
 					<Login />
 				</Container>
 			</div>
-			<div className='positionRelative'>SPACE 1 FOR TEXT</div>
-			<div className='bgimg-3'>
+			<div className='positionRelative'>
 				<Container fluid className='my-3'>
-        <div className='positionRelative'>SPACE 1 FOR COMPONENT</div>
+					SPACE 1 FOR TEXT
 				</Container>
 			</div>
-			<div className='positionRelative'>SPACE 2 FOR TEXT</div>
-			<div className='bgimg-1'>
+			<div className='bgimg-3'>
+				<Container fluid className='my-3'>
+					<div className='positionRelative'>SPACE 1 FOR COMPONENT</div>
+				</Container>
+			</div>
+			<div className='positionRelative'>
+				<Container fluid className='my-3'>
+					SPACE 2 FOR TEXT{' '}
+				</Container>
+			</div>
+			<div className='bgimg-4'>
 				<Container fluid className='my-3'>
 					<Footer />
 				</Container>
