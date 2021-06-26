@@ -1,0 +1,68 @@
+// master imports
+@import 'variables';
+@import 'mixins';
+
+$color: #00bfff;
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 4rem auto;
+}
+
+.controls {
+	text-align: center;
+
+	button {
+		border: none;
+		background: $color;
+		color: white;
+		cursor: pointer;
+		padding: 0.3rem 1rem;
+		border-radius: 2rem;
+		outline: none;
+		transition: background-color 0.2s linear;
+
+		&:hover {
+			background: darken($color, 20%);
+		}
+	}
+}
+
+.splide {
+	margin: 1rem 0 3rem;
+
+	&--nav {
+		padding: 0;
+	}
+
+	&__pagination {
+		bottom: -2em;
+	}
+
+	&__autoplay {
+		margin-top: 1rem;
+		text-align: left;
+	}
+
+	&__play,
+	&__pause {
+		border: none;
+		background: $color;
+		color: white;
+		transition: background-color 0.2s linear;
+		cursor: pointer;
+		padding: 0.3rem 1rem;
+		border-radius: 2rem;
+		outline: none;
+		margin: 0 0.2rem;
+
+		&:hover {
+			background: darken($color, 20%);
+		}
+	}
+}

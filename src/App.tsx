@@ -1,6 +1,6 @@
 import { Container } from 'react-bootstrap';
 import AppLoading from './components/AppLoading';
-import BgImg from './components/BgImg';
+// import Parallax from './components/Parallax';
 import Header from './sections/Header';
 import Main from './sections/Main';
 import Login from './sections/Login';
@@ -12,35 +12,44 @@ const App = () => {
 	return (
 		<>
 			<AppLoading />
+
 			<div className='bgimg-1'>
 				<Container fluid className='my-3'>
 					<Header />
 				</Container>
 			</div>
+			
 			<Container fluid className='my-3'>
 				<Main />
 			</Container>
+
 			<div className='bgimg-2'>
 				<Container fluid className='my-3'>
 					<Login />
 				</Container>
 			</div>
+
 			<div className='positionRelative'>
 				<Container fluid className='my-3'>
 					SPACE 1 FOR TEXT
 				</Container>
 			</div>
+
 			<div className='bgimg-3'>
-				<Container fluid className='my-3'>
-					<div className='positionRelative'>SPACE 1 FOR COMPONENT</div>
-				</Container>
+				<div className='positionRelative'>
+					<Container fluid className='my-3'>
+						SPACE 1 FOR COMPONENT
+					</Container>
+				</div>
 			</div>
+
 			<div className='positionRelative'>
 				<Container fluid className='my-3'>
-					SPACE 2 FOR TEXT{' '}
+					SPACE 2 FOR TEXT
 				</Container>
 			</div>
-			<div className='bgimg-4'>
+
+			<div className='bgimg-1'>
 				<Container fluid className='my-3'>
 					<Footer />
 				</Container>
