@@ -1,37 +1,10 @@
-// import {createStore, combineReducers, applyMiddleware} from 'redux';
-// import session, {State as SessionState} from './session/reducers';
-// import thunk from 'redux-thunk';
+import {combineReducers} from 'redux';
+import imageReducer from './imageReducer';
 
-// export interface RootState {
-//   session: SessionState;
-// }
+const rootReducers = combineReducers({    
+    imageData : imageReducer      
+});
 
-// export default createStore(
-//   combineReducers<RootState>({
-//     session,
-//   }),
-//   applyMiddleware(thunk)
-// );
+export type RootState = ReturnType<typeof rootReducers>
 
-import { createStore } from 'redux';
-
-const initialState = {
-	isLoadingComplete: false
-	// posts: [],
-	// signUpModal: {
-	//   open: false
-	// }
-};
-
-const reducer = (state = initialState, action: any) => {
-	if (action.type === 'LOAD_ASSETS') {
-		return Object.assign({}, state, {
-			isLoadingComplete: action.payload
-		});
-	}
-	return state;
-};
-
-const store = createStore(reducer);
-
-export default store;
+export default rootReducers;

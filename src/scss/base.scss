@@ -38,3 +38,26 @@ code {
 .positionFixed {
 	position: fixed;
 }
+
+// position control
+.fullPageFixed {
+	background: $dark;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 99;
+}
+
+.fullPageFixedInner {
+	bottom: 0;
+	height: 100px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}

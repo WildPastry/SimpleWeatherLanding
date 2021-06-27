@@ -25,5 +25,4 @@ const AppLoading = () => {
 };
 
 AppLoading.displayName = 'AppLoading';
-
 export default AppLoading;

@@ -3,5 +3,4 @@ const Parallax = () => {
 };
 
 Parallax.displayName = 'Parallax';
-
 export default Parallax;
