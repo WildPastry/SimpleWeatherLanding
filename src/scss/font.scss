@@ -10,11 +10,18 @@
 	}
 }
 
-// import web font
+// import web fonts
 @include font(
 	'Merriweather Sans',
 	'https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap'
 );
+
+@include font('Weatherfont', '../assets/font/weathericons-regular-webfont.ttf');
+
+// weatherfont
+.weatherFont {
+	font-family: 'Weatherfont';
+}
 
 // font
 .fontLt {

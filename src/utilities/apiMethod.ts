@@ -8,4 +8,9 @@ const apiMethod = {
 		});
 	}
 };
+
 export default apiMethod;
+
+// setTimeout(() => {
+// 	setLoadingComplete(true);
+// }, 4000);

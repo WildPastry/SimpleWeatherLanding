@@ -1,19 +1,20 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
+import { useSelector } from 'react-redux';
+import { RootState } from '../store';
 
-export default () => {
-	const IMAGE_URL = 'https://source.unsplash.com/random/800x450';
+const SlideShow = () => {
+	const pageData = useSelector((state: RootState) => {
+		return state.imageData;
+	});
 
-	function createSlides(length = 10, sig = 0) {
-		return Array.apply(null, Array(length)).map((_value, index) => {
-			index = sig || index;
+	let currentImages = [];
 
-			return {
-				src: `${IMAGE_URL}?sig=${index}`,
-				alt: `Image ${index}`
-			};
-		});
+	for (let i = 0; i < 9; i++) {
+		currentImages.push(pageData.imageList[i]);
 	}
+
+	const IMAGE_URL = currentImages;
 
 	return (
 		<div className='wrapper'>
@@ -29,12 +30,15 @@ export default () => {
 				hasSliderWrapper
 				hasAutoplayControls
 				hasAutoplayProgress>
-				{createSlides().map((slide) => (
-					<SplideSlide key={slide.src}>
-						<img src={slide.src} alt={slide.alt} />
+				{IMAGE_URL.map((slide: any) => (
+					<SplideSlide key={slide.id}>
+						<img src={slide.url} alt={slide.title} />
 					</SplideSlide>
 				))}
 			</Splide>
 		</div>
 	);
 };
+
+SlideShow.displayName = 'SlideShow';
+export default SlideShow;

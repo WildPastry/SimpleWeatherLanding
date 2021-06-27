@@ -8,6 +8,8 @@ import Header from './sections/Header';
 import Main from './sections/Main';
 import Footer from './sections/Footer';
 import Error from './components/Error';
+import Scroll from './sections/Scroll';
+// import SlideShow from './components/SlideShow';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/main.scss';
 
@@ -31,8 +33,6 @@ const App = () => {
 	};
 
 	const renderPage = (pageData: any) => {
-		console.log(pageData, 'from App.tsx');
-
 		return pageData.error ? (
 			errorContainer()
 		) : (
@@ -49,7 +49,7 @@ const App = () => {
 
 				<div className='bgimg-2'>
 					<Container fluid className='my-3'>
-						SPACE 1 FOR COMPONENT
+						<Scroll />
 					</Container>
 				</div>
 
@@ -62,7 +62,7 @@ const App = () => {
 				<div className='bgimg-3'>
 					<div className='positionRelative'>
 						<Container fluid className='my-3'>
-							SPACE 2 FOR COMPONENT
+							{/* <SlideShow /> */}
 						</Container>
 					</div>
 				</div>
