@@ -5,7 +5,7 @@ const Main = () => {
 	return (
 		<Row className='my-3'>
 			<Col xs={12}>
-				<SlideShow />
+				MAIN
 			</Col>
 		</Row>
 	);

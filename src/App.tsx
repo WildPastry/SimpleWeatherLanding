@@ -49,27 +49,27 @@ const App = () => {
 
 				<div className='bgimg-2'>
 					<Container fluid className='my-3'>
-						<Scroll />
+						...
 					</Container>
 				</div>
 
 				<div className='positionRelative'>
 					<Container fluid className='my-3'>
-						SPACE 1 FOR TEXT
+						<Scroll />
 					</Container>
 				</div>
 
 				<div className='bgimg-3'>
 					<div className='positionRelative'>
 						<Container fluid className='my-3'>
-							{/* <SlideShow /> */}
+							...
 						</Container>
 					</div>
 				</div>
 
 				<div className='positionRelative'>
 					<Container fluid className='my-3'>
-						SPACE 2 FOR TEXT
+						...
 					</Container>
 				</div>
 

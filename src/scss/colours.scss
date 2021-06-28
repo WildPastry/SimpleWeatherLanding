@@ -1,0 +1,265 @@
+// master imports
+@import 'variables';
+@import 'mixins';
+
+// BACKGROUND COLOURS
+
+// simpleWeather
+.bg-simpleWeather {
+	background: $simpleWeather;
+}
+
+// basic
+.bg-dark {
+	background: $dark;
+}
+.bg-light {
+	background: $light;
+}
+
+// spot colours
+.bg-spotYellow {
+	background: $spotYellow;
+}
+.bg-spotBlue {
+	background: $spotBlue;
+}
+.bg-spotOrange {
+	background: $spotOrange;
+}
+.bg-spotGreen {
+	background: $spotGreen;
+}
+.bg-spotRed {
+	background: $spotRed;
+}
+
+// spot greys
+.bg-spotGrey {
+	background: $spotGrey;
+}
+.bg-spotLightGrey {
+	background: $spotLightGrey;
+}
+.bg-spotGreyDark {
+	background: $spotGreyDark;
+}
+
+// all groups night
+.bg-night {
+	background: $night;
+}
+.bg-nightDark {
+	background: $nightDark;
+}
+.bg-nightDarkest {
+	background: $nightDarkest;
+}
+
+// group 2xx: thunderstorm
+.bg-thunderStorm {
+	background: $thunderStorm;
+}
+.bg-thunderStormDark {
+	background: $thunderStormDark;
+}
+.bg-thunderStormDarkest {
+	background: $thunderStormDarkest;
+}
+
+// group 3xx: drizzle
+.bg-drizzle {
+	background: $drizzle;
+}
+.bg-drizzleDark {
+	background: $drizzleDark;
+}
+.bg-drizzleDarkest {
+	background: $drizzleDarkest;
+}
+
+// group 5xx: rain
+.bg-rain {
+	background: $rain;
+}
+.bg-rainDark {
+	background: $rainDark;
+}
+.bg-rainDarkest {
+	background: $rainDarkest;
+}
+
+// group 6xx: snow
+.bg-snow {
+	background: $snow;
+}
+.bg-snowDark {
+	background: $snowDark;
+}
+.bg-snowDarkest {
+	background: $snowDarkest;
+}
+
+// group 7xx: atmosphere
+.bg-atmosphere {
+	background: $atmosphere;
+}
+.bg-atmosphereDark {
+	background: $atmosphereDark;
+}
+.bg-atmosphereDarkest {
+	background: $atmosphereDarkest;
+}
+
+// group 800: clear
+.bg-clearSky {
+	background: $clearSky;
+}
+.bg-clearSkyDark {
+	background: $clearSkyDark;
+}
+.bg-clearSkyDarkest {
+	background: $clearSkyDarkest;
+}
+
+// group 80x: clouds
+.bg-clouds {
+	background: $clouds;
+}
+.bg-cloudsDark {
+	background: $cloudsDark;
+}
+.bg-cloudsDarkest {
+	background: $cloudsDarkest;
+}
+
+// FOREGROUND COLOURS
+
+// simpleWeather
+.simpleWeather {
+	color: $simpleWeather;
+}
+
+// basic
+.dark {
+	color: $dark;
+}
+.light {
+	color: $light;
+}
+
+// spot colours
+.spotYellow {
+	color: $spotYellow;
+}
+.spotBlue {
+	color: $spotBlue;
+}
+.spotOrange {
+	color: $spotOrange;
+}
+.spotGreen {
+	color: $spotGreen;
+}
+.spotRed {
+	color: $spotRed;
+}
+
+// spot greys
+.spotGrey {
+	color: $spotGrey;
+}
+.spotLightGrey {
+	color: $spotLightGrey;
+}
+.spotGreyDark {
+	color: $spotGreyDark;
+}
+
+// all groups night
+.night {
+	color: $night;
+}
+.nightDark {
+	color: $nightDark;
+}
+.nightDarkest {
+	color: $nightDarkest;
+}
+
+// group 2xx: thunderstorm
+.thunderStorm {
+	color: $thunderStorm;
+}
+.thunderStormDark {
+	color: $thunderStormDark;
+}
+.thunderStormDarkest {
+	color: $thunderStormDarkest;
+}
+
+// group 3xx: drizzle
+.drizzle {
+	color: $drizzle;
+}
+.drizzleDark {
+	color: $drizzleDark;
+}
+.drizzleDarkest {
+	color: $drizzleDarkest;
+}
+
+// group 5xx: rain
+.rain {
+	color: $rain;
+}
+.rainDark {
+	color: $rainDark;
+}
+.rainDarkest {
+	color: $rainDarkest;
+}
+
+// group 6xx: snow
+.snow {
+	color: $snow;
+}
+.snowDark {
+	color: $snowDark;
+}
+.snowDarkest {
+	color: $snowDarkest;
+}
+
+// group 7xx: atmosphere
+.atmosphere {
+	color: $atmosphere;
+}
+.atmosphereDark {
+	color: $atmosphereDark;
+}
+.atmosphereDarkest {
+	color: $atmosphereDarkest;
+}
+
+// group 800: clear
+.clearSky {
+	color: $clearSky;
+}
+.clearSkyDark {
+	color: $clearSkyDark;
+}
+.clearSkyDarkest {
+	color: $clearSkyDarkest;
+}
+
+// group 80x: clouds
+.clouds {
+	color: $clouds;
+}
+.cloudsDark {
+	color: $cloudsDark;
+}
+.cloudsDarkest {
+	color: $cloudsDarkest;
+}

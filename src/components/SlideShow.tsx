@@ -22,7 +22,7 @@ const SlideShow = () => {
 				options={{
 					type: 'loop',
 					gap: '1rem',
-					autoplay: true,
+					autoplay: false,
 					pauseOnHover: false,
 					resetProgress: false,
 					arrows: 'slider'

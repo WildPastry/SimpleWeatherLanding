@@ -10,17 +10,27 @@
 	}
 }
 
-// import web fonts
+// import fonts
 @include font(
 	'Merriweather Sans',
 	'https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap'
 );
 
-@include font('Weatherfont', '../assets/font/weathericons-regular-webfont.ttf');
+@font-face {
+	font-family: 'Weather Icons';
+	src: url('../assets/font/WeatherIcons-Regular.woff2') format('woff2'),
+		url('../assets/font/WeatherIcons-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
 
 // weatherfont
 .weatherFont {
-	font-family: 'Weatherfont';
+	font-family: 'Weather Icons';
+	font-style: normal;
+	font-size: 5rem;
+	letter-spacing: 1.5rem;
 }
 
 // font
