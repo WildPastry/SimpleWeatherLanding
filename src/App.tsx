@@ -9,7 +9,6 @@ import Main from './sections/Main';
 import Footer from './sections/Footer';
 import Error from './components/Error';
 import Scroll from './sections/Scroll';
-// import SlideShow from './components/SlideShow';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/main.scss';
 
@@ -33,6 +32,8 @@ const App = () => {
 	};
 
 	const renderPage = (pageData: any) => {
+		console.log(pageData);
+		
 		return pageData.error ? (
 			errorContainer()
 		) : (

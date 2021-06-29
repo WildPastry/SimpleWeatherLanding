@@ -41,7 +41,31 @@
 }
 
 @media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-    background-attachment: scroll;
-  }
+	.bgimg-1,
+	.bgimg-2,
+	.bgimg-3,
+	.bgimg-4 {
+		background-attachment: scroll;
+	}
+}
+
+// icon slider img
+.icon-slider-wrapper {
+	overflow: hidden;
+}
+
+.icon-slider {
+	background: url('../assets/img/icon-slider.png') repeat-x;
+	height: 150px;
+	width: 9600px;
+	animation: slide 25s linear infinite;
+}
+
+@keyframes slide {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-3200px, 0, 0);
+	}
 }

@@ -1,5 +1,4 @@
 import { Col, Row } from 'react-bootstrap';
-import SlideShow from '../components/SlideShow';
 
 const Main = () => {
 	return (
