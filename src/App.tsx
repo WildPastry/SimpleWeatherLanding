@@ -9,6 +9,7 @@ import Main from './sections/Main';
 import Footer from './sections/Footer';
 import Error from './components/Error';
 import Scroll from './sections/Scroll';
+import googleBadge from './assets/img/google-play-badge.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/main.scss';
 
@@ -33,15 +34,15 @@ const App = () => {
 
 	const renderPage = (pageData: any) => {
 		console.log(pageData);
-		
+
 		return pageData.error ? (
 			errorContainer()
 		) : (
 			<>
+				<Header />
+
 				<div className='bgimg-1'>
-					<Container fluid className='my-3'>
-						<Header />
-					</Container>
+					<img src={googleBadge} className='googleBadge' alt='Google Play Store' />
 				</div>
 
 				<Container fluid className='my-3'>

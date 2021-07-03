@@ -90,29 +90,6 @@
 	font-weight: map-get($fontWeight, 'bd');
 }
 
-// text colours
-.textDark {
-	color: $dark;
-}
-.textLight {
-	color: $light;
-}
-.textYellow {
-	color: $spotYellow;
-}
-.textBlue {
-	color: $spotBlue;
-}
-.textOrange {
-	color: $spotOrange;
-}
-.textGreen {
-	color: $spotGreen;
-}
-.textRed {
-	color: $spotRed;
-}
-
 // cursor for text
 .cursorPointer {
 	cursor: pointer;
