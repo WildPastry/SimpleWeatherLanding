@@ -1,12 +1,16 @@
-import { Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 const Scroll = () => {
 	return (
-		<Row className='my-3'>
-			<div className='icon-slider-wrapper'>
-				<div className='icon-slider' />
-			</div>
-		</Row>
+		<div className='positionRelative'>
+			<Container fluid className='my-3'>
+				<Row className='my-3'>
+					<div className='icon-slider-wrapper'>
+						<div className='icon-slider' />
+					</div>
+				</Row>
+			</Container>
+		</div>
 	);
 };
 

@@ -70,6 +70,14 @@ $theme-colors: (
 // apply bg to body
 $body-bg: $simpleWeather;
 
+// setting container widths
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px
+);
+
 // LOGO
 
 // app logo heights

@@ -1,12 +1,12 @@
-import { Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const Main = () => {
 	return (
-		<Row className='my-3'>
-			<Col xs={12}>
-				MAIN
-			</Col>
-		</Row>
+		<Container fluid='lg' className='my-3'>
+			<Row className='my-3'>
+				<Col xs={12}>MAIN</Col>
+			</Row>
+		</Container>
 	);
 };
 

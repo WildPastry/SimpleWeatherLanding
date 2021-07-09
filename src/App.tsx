@@ -45,41 +45,31 @@ const App = () => {
 					<img src={googleBadge} className='googleBadge' alt='Google Play Store' />
 				</div>
 
-				<Container fluid className='my-3'>
-					<Main />
-				</Container>
+				<Main />
 
 				<div className='bgimg-2'>
-					<Container fluid className='my-3'>
+					<Container fluid='md' className='my-3'>
 						...
 					</Container>
 				</div>
 
-				<div className='positionRelative'>
-					<Container fluid className='my-3'>
-						<Scroll />
-					</Container>
-				</div>
+				<Scroll />
 
 				<div className='bgimg-3'>
 					<div className='positionRelative'>
-						<Container fluid className='my-3'>
+						<Container fluid='md' className='my-3'>
 							...
 						</Container>
 					</div>
 				</div>
 
 				<div className='positionRelative'>
-					<Container fluid className='my-3'>
+					<Container fluid='md' className='my-3'>
 						...
 					</Container>
 				</div>
 
-				<div className='bgimg-1'>
-					<Container fluid className='my-3'>
-						<Footer />
-					</Container>
-				</div>
+				<Footer />
 			</>
 		);
 	};
