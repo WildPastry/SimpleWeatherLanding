@@ -1,6 +1,6 @@
 import { Container, Row } from 'react-bootstrap';
 
-const Scroll = () => {
+const IconSlider = () => {
 	return (
 		<div className='positionRelative'>
 			<Container fluid className='my-3'>
@@ -14,5 +14,5 @@ const Scroll = () => {
 	);
 };
 
-Scroll.displayName = 'Scroll';
-export default Scroll;
+IconSlider.displayName = 'IconSlider';
+export default IconSlider;

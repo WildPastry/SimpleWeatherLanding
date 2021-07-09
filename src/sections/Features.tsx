@@ -1,16 +1,16 @@
 import { Col, Container, Row } from 'react-bootstrap';
 
-const Footer = () => {
+const Features = () => {
 	return (
 		<div className='bgimg-1'>
 			<Container fluid='lg' className='my-3'>
 				<Row className='my-3'>
-					<Col xs={12}>FOOTER</Col>
+					<Col xs={12}>FEATURES</Col>
 				</Row>
 			</Container>
 		</div>
 	);
 };
 
-Footer.displayName = 'Footer';
-export default Footer;
+Features.displayName = 'Features';
+export default Features;

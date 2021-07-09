@@ -5,11 +5,10 @@ import imageAction from './store/imageAction';
 import { Container } from 'react-bootstrap';
 import AppLoading from './components/AppLoading';
 import Header from './sections/Header';
-import Main from './sections/Main';
+import Intro from './sections/Intro';
 import Footer from './sections/Footer';
 import Error from './components/Error';
-import Scroll from './sections/Scroll';
-import googleBadge from './assets/img/google-play-badge.png';
+import IconSlider from './sections/IconSlider';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/main.scss';
 
@@ -41,31 +40,19 @@ const App = () => {
 			<>
 				<Header />
 
+				<Intro />
+
 				<div className='bgimg-1'>
-					<img src={googleBadge} className='googleBadge' alt='Google Play Store' />
-				</div>
-
-				<Main />
-
-				<div className='bgimg-2'>
 					<Container fluid='md' className='my-3'>
-						...
+						IMG 1 (INCLUDE TEXT)
 					</Container>
 				</div>
 
-				<Scroll />
+				<IconSlider />
 
-				<div className='bgimg-3'>
-					<div className='positionRelative'>
-						<Container fluid='md' className='my-3'>
-							...
-						</Container>
-					</div>
-				</div>
-
-				<div className='positionRelative'>
+				<div className='bgimg-2'>
 					<Container fluid='md' className='my-3'>
-						...
+						IMG 2 (PROBABLY NO TEXT)
 					</Container>
 				</div>
 
