@@ -1,5 +1,5 @@
 // import frameworks
-import { useRef, useEffect } from 'react';
+import { createRef, useRef, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from './store';
 import imageAction from './store/imageAction';
@@ -23,9 +23,22 @@ import './scss/main.scss';
 
 // APP
 const App: React.FC = () => {
+	let pageRef = [useRef(null), useRef(null)];
+
+	const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth' });
+	const scrollToPane = (num: number) => scrollToRef(pageRef[num]);
+
+	const sections = ['features', 'locations', 'weather', 'about'];
+	const refArray = useRef([]) as any;
+
+	const changeColor = (index: any) => {
+		// refArray.current[index].classList.toggle('CLASS_NAME');
+		console.log(refArray.current[index]);
+	};
+
 	// scroll functions
-	const myRef = useRef<any | null>(null);
-	const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' });
+	const section = useRef<any | null>(null);
+	const executeScroll = () => section.current.scrollIntoView({ behavior: 'smooth' });
 
 	// redux selector functions
 	const pageData = useSelector((state: RootState) => {
@@ -58,8 +71,30 @@ const App: React.FC = () => {
 			errorContainer()
 		) : (
 			<>
-				{/* <button onClick={executeScroll}>SCROLL</button> */}
 				<Header executeScroll={executeScroll} />
+
+				<div>
+					<button onClick={() => scrollToPane(0)}>Section 1</button>
+					<button onClick={() => scrollToPane(1)}>Section 2</button>
+				</div>
+
+				<div style={{ marginTop: '1500px', marginBottom: '1500px' }}>
+					<div ref={pageRef[0]}>Section 1</div>
+					<div ref={pageRef[1]}>Section 2</div>
+				</div>
+
+				<div>
+					{sections.map((section, index) => (
+						<p
+							onClick={changeColor.bind(null, index)}
+							ref={(ref) => {
+								refArray.current[index] = ref;
+							}}>
+							{section}
+						</p>
+					))}
+				</div>
+
 				<Intro />
 				<div className='bgimg-1' />
 				<Features />
@@ -69,7 +104,7 @@ const App: React.FC = () => {
 				<div className='bgimg-3' />
 				<Weather />
 				<div className='bgimg-1' />
-				<div ref={myRef}>...</div>
+				<div ref={section}>...</div>
 				<Footer />
 			</>
 		);
