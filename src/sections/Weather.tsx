@@ -2,13 +2,11 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const Weather = () => {
 	return (
-		<div className='bgimg-1'>
 			<Container fluid='lg' className='my-3'>
 				<Row className='my-3'>
-					<Col xs={12}>WEATHER</Col>
+					<Col xs={12}><h2 className='h2Rg'>WEATHER</h2></Col>
 				</Row>
 			</Container>
-		</div>
 	);
 };
 

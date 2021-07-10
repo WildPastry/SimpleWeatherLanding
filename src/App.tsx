@@ -3,12 +3,22 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from './store';
 import imageAction from './store/imageAction';
 import { Container } from 'react-bootstrap';
-import AppLoading from './components/AppLoading';
+
+// import sections
 import Header from './sections/Header';
 import Intro from './sections/Intro';
-import Footer from './sections/Footer';
-import Error from './components/Error';
+import Data from './sections/Data';
 import IconSlider from './sections/IconSlider';
+import Locations from './sections/Locations';
+import Weather from './sections/Weather';
+import Features from './sections/Features';
+import Footer from './sections/Footer';
+
+// import components
+import AppLoading from './components/AppLoading';
+import Error from './components/Error';
+
+// import styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/main.scss';
 
@@ -42,19 +52,23 @@ const App = () => {
 
 				<Intro />
 
-				<div className='bgimg-1'>
-					<Container fluid='md' className='my-3'>
-						IMG 1 (INCLUDE TEXT)
-					</Container>
-				</div>
+				<div className='bgimg-1' />
+
+				<Features />
 
 				<IconSlider />
 
-				<div className='bgimg-2'>
-					<Container fluid='md' className='my-3'>
-						IMG 2 (PROBABLY NO TEXT)
-					</Container>
-				</div>
+				<div className='bgimg-2' />
+
+				<Locations />
+
+				<Weather />
+
+				<div className='bgimg-3' />
+
+				<Data />
+				
+				<div className='bgimg-1' />
 
 				<Footer />
 			</>
