@@ -17,14 +17,13 @@ const Header = () => {
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
 					<Nav className='mr-auto fontRg'>
-						<Nav.Link href='#Data'>Data</Nav.Link>
+					  <Nav.Link href='#Features'>Features</Nav.Link>
 						<Nav.Link href='#Locations'>Locations</Nav.Link>
 						<Nav.Link href='#Weather'>Weather</Nav.Link>
-						<Nav.Link href='#Features'>Features</Nav.Link>
 						<Nav.Link href='#About'>About</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
-			</Navbar>
+			</Navbar> 
 		</Container>
 	);
 };
