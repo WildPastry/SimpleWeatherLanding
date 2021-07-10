@@ -2,9 +2,9 @@
 @import 'variables';
 @import 'mixins';
 
-// logo
-.appLogo {
-	@include logoHeight;
+// main icon
+.mainIcon {
+	@include iconHeight;
 }
 
 .appLogoNav {
@@ -15,6 +15,9 @@
 // google badge
 .googleBadge {
 	height: 60px;
+	@include bp(xs) {
+		height: 45px;
+	}
 	max-height: 60px;
 	max-width: 100%;
 }
@@ -25,7 +28,6 @@
 .bgimg-3,
 .bgimg-4 {
 	position: relative;
-	opacity: 1;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -35,28 +37,31 @@
 .bgimg-1 {
 	background-image: url('../assets/img/bgimg-1.jpg');
 	min-height: 100vh;
+	@include bp(xl) {
+		background-attachment: scroll;
+	}
 }
 
 .bgimg-2 {
 	background-image: url('../assets/img/bgimg-2.jpg');
 	min-height: 400px;
+	@include bp(xl) {
+		background-attachment: scroll;
+	}
 }
 
 .bgimg-3 {
 	background-image: url('../assets/img/bgimg-3.jpg');
 	min-height: 400px;
+	@include bp(xl) {
+		background-attachment: scroll;
+	}
 }
 
 .bgimg-4 {
 	background-image: url('../assets/img/bgimg-4.jpg');
 	min-height: 400px;
-}
-
-@media only screen and (max-device-width: 1024px) {
-	.bgimg-1,
-	.bgimg-2,
-	.bgimg-3,
-	.bgimg-4 {
+	@include bp(xl) {
 		background-attachment: scroll;
 	}
 }

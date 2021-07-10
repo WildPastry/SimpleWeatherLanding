@@ -26,6 +26,11 @@ code {
 	font-family: 'Courier New', monospace;
 }
 
+// links
+a {
+	text-decoration: none;
+}
+
 // positions
 .positionRelative {
 	position: relative;
@@ -60,4 +65,12 @@ code {
 	right: 0;
 	top: 0;
 	width: 100%;
+}
+
+// navbar
+.navbar-xxs {
+	@include bp(xxs) {
+		flex-direction: column;
+		text-align: center;
+	}
 }

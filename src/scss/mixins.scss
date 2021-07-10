@@ -68,32 +68,59 @@
 	}
 }
 
-// logo heights
-@mixin logoHeight {
-	height: map-get($logoHeight, 'xs');
+// icon heights
+@mixin iconHeight {
+	height: map-get($iconHeight, 'xs');
 	@include bp(sm) {
-		height: map-get($logoHeight, 'sm');
+		height: map-get($iconHeight, 'sm');
 	}
 	@include bp(md) {
-		height: map-get($logoHeight, 'md');
+		height: map-get($iconHeight, 'md');
 	}
 	@include bp(lg) {
-		height: map-get($logoHeight, 'lg');
+		height: map-get($iconHeight, 'lg');
 	}
 	@include bp(xl) {
-		height: map-get($logoHeight, 'xl');
+		height: map-get($iconHeight, 'xl');
+	}
+}
+
+// lists
+$channel1: #19bc9c;
+$channel2: #f1c40e;
+$channel3: #9b59b6;
+$channel4: #3398db;
+
+@mixin box-shadow($values...) {
+	-webkit-box-shadow: $values;
+	-moz-box-shadow: $values;
+	box-shadow: $values;
+}
+
+li {
+	$colours: $channel1, $channel2, $channel3, $channel4;
+
+	@for $i from 1 through length($colours) {
+		&.channel#{$i} {
+			@include box-shadow(inset -3px 0 0 0 nth($colours, $i));
+		}
 	}
 }
 
 // media breakpoints
 @mixin bp($point) {
+	$bp-xxs: 'screen and (max-width: 310px)';
 	$bp-xs: 'screen and (max-width: 479px)';
 	$bp-sm: 'screen and (min-width: 480px) and (max-width: 575px)';
 	$bp-md: 'screen and (min-width: 576px) and (max-width: 767px)';
 	$bp-lg: 'screen and (min-width: 768px) and (max-width: 1023px)';
 	$bp-xl: 'screen and (min-width: 1024px)';
 
-	@if $point == xs {
+	@if $point == xxs {
+		@media #{$bp-xxs} {
+			@content;
+		}
+	} @else if $point == xs {
 		@media #{$bp-xs} {
 			@content;
 		}
