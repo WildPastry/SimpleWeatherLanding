@@ -1,3 +1,4 @@
+// import frameworks
 import { useRef, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from './store';
@@ -6,7 +7,6 @@ import imageAction from './store/imageAction';
 // import sections
 import Header from './sections/Header';
 import Intro from './sections/Intro';
-import Data from './sections/Data';
 import IconSlider from './sections/IconSlider';
 import Locations from './sections/Locations';
 import Weather from './sections/Weather';
@@ -21,8 +21,8 @@ import Error from './components/Error';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/main.scss';
 
-// MAIN APP
-const App = () => {
+// APP
+const App: React.FC = () => {
 	// scroll functions
 	const myRef = useRef<any | null>(null);
 	const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -58,17 +58,16 @@ const App = () => {
 			errorContainer()
 		) : (
 			<>
-				<button onClick={executeScroll}>SCROLL</button>
-				<Header />
+				{/* <button onClick={executeScroll}>SCROLL</button> */}
+				<Header executeScroll={executeScroll} />
 				<Intro />
 				<div className='bgimg-1' />
 				<Features />
 				<IconSlider />
 				<div className='bgimg-2' />
 				<Locations />
-				<Weather />
 				<div className='bgimg-3' />
-				<Data />
+				<Weather />
 				<div className='bgimg-1' />
 				<div ref={myRef}>...</div>
 				<Footer />
@@ -79,6 +78,6 @@ const App = () => {
 	return pageData.loading ? showLoader() : renderPage(pageData);
 };
 
-// EXPORT MAIN APP
+// EXPORT APP
 App.displayName = 'App';
 export default App;
