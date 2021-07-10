@@ -4,8 +4,12 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 const Header = () => {
 	return (
 		<Container className='my-2' fluid='lg'>
-			<Navbar className='navbar-xxs' collapseOnSelect expand='md' bg='light' variant='light'>
-				<Navbar.Brand className='p-0'>
+			<Navbar
+				collapseOnSelect
+				expand='md'
+				bg='light'
+				variant='light'>
+				<Navbar.Brand className='d-flex align-items-center'>
 					<img src={logo} className='appLogoNav' alt='SimpleWeather' />
 					<span className='h2Lt me-1'>SIMPLE</span>
 					<span className='h2Bd spotBlue'>WEATHER</span>

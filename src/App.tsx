@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from './store';
 import imageAction from './store/imageAction';
-import { Container } from 'react-bootstrap';
 
 // import sections
 import Header from './sections/Header';

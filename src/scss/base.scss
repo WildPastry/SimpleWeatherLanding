@@ -68,7 +68,8 @@ a {
 }
 
 // navbar
-.navbar-xxs {
+.navbar {
+	text-align: right;
 	@include bp(xxs) {
 		flex-direction: column;
 		text-align: center;
