@@ -7,10 +7,11 @@ import imageAction from './store/imageAction';
 // import sections
 import Header from './sections/Header';
 import Intro from './sections/Intro';
+import Features from './sections/Features';
 import IconSlider from './sections/IconSlider';
 import Locations from './sections/Locations';
 import Weather from './sections/Weather';
-import Features from './sections/Features';
+import About from './sections/About';
 import Footer from './sections/Footer';
 
 // import components
@@ -23,22 +24,10 @@ import './scss/main.scss';
 
 // APP
 const App: React.FC = () => {
-	let pageRef = [useRef(null), useRef(null)];
-
-	const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth' });
-	const scrollToPane = (num: number) => scrollToRef(pageRef[num]);
-
-	const sections = ['features', 'locations', 'weather', 'about'];
-	const refArray = useRef([]) as any;
-
-	const changeColor = (index: any) => {
-		// refArray.current[index].classList.toggle('CLASS_NAME');
-		console.log(refArray.current[index]);
-	};
-
 	// scroll functions
-	const section = useRef<any | null>(null);
-	const executeScroll = () => section.current.scrollIntoView({ behavior: 'smooth' });
+	let currentSection = [useRef(null), useRef(null), useRef(null), useRef(null)];
+	const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth' });
+	const scrollToPane = (num: number) => scrollToRef(currentSection[num]);
 
 	// redux selector functions
 	const pageData = useSelector((state: RootState) => {
@@ -71,40 +60,21 @@ const App: React.FC = () => {
 			errorContainer()
 		) : (
 			<>
-				<Header executeScroll={executeScroll} />
-
-				<div>
-					<button onClick={() => scrollToPane(0)}>Section 1</button>
-					<button onClick={() => scrollToPane(1)}>Section 2</button>
-				</div>
-
-				<div style={{ marginTop: '1500px', marginBottom: '1500px' }}>
-					<div ref={pageRef[0]}>Section 1</div>
-					<div ref={pageRef[1]}>Section 2</div>
-				</div>
-
-				<div>
-					{sections.map((section, index) => (
-						<p
-							onClick={changeColor.bind(null, index)}
-							ref={(ref) => {
-								refArray.current[index] = ref;
-							}}>
-							{section}
-						</p>
-					))}
-				</div>
-
+				<Header scrollToPane={scrollToPane} />
 				<Intro />
 				<div className='bgimg-1' />
+				<div ref={currentSection[0]} />
 				<Features />
 				<IconSlider />
 				<div className='bgimg-2' />
+				<div ref={currentSection[1]} />
 				<Locations />
 				<div className='bgimg-3' />
+				<div ref={currentSection[2]} />
 				<Weather />
+				<div ref={currentSection[3]} />
+				<About />
 				<div className='bgimg-1' />
-				<div ref={section}>...</div>
 				<Footer />
 			</>
 		);

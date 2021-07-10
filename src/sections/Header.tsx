@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 // scroll function from APP
 interface ScrollProps {
-	executeScroll(): void;
+	scrollToPane(num: number): any;
 }
 
 // HEADER
@@ -19,16 +19,16 @@ const Header: React.FC<ScrollProps> = (props) => {
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
 					<Nav className='mr-auto fontRg'>
-						<Nav.Link onClick={props.executeScroll} href='#Features'>
+						<Nav.Link onClick={() => props.scrollToPane(0)} href='#Features'>
 							Features
 						</Nav.Link>
-						<Nav.Link onClick={props.executeScroll} href='#Locations'>
+						<Nav.Link onClick={() => props.scrollToPane(1)} href='#Locations'>
 							Locations
 						</Nav.Link>
-						<Nav.Link onClick={props.executeScroll} href='#Weather'>
+						<Nav.Link onClick={() => props.scrollToPane(2)} href='#Weather'>
 							Weather
 						</Nav.Link>
-						<Nav.Link onClick={props.executeScroll} href='#About'>
+						<Nav.Link onClick={() => props.scrollToPane(3)} href='#About'>
 							About
 						</Nav.Link>
 					</Nav>
