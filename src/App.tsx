@@ -25,7 +25,13 @@ import './scss/main.scss';
 // APP
 const App: React.FC = () => {
 	// scroll functions
-	let currentSection = [useRef(null), useRef(null), useRef(null), useRef(null)];
+	let currentSection = [
+		useRef(null),
+		useRef(null),
+		useRef(null),
+		useRef(null),
+		useRef(null)
+	];
 
 	const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth' });
 	const scrollToPane = (num: number) => scrollToRef(currentSection[num]);
@@ -61,22 +67,23 @@ const App: React.FC = () => {
 			errorContainer()
 		) : (
 			<>
+				<div ref={currentSection[0]} />
 				<Header scrollToPane={scrollToPane} />
 				<Intro />
 				<div className='bgimg-1' />
-				<div ref={currentSection[0]} />
+				<div ref={currentSection[1]} />
 				<Features />
 				<IconSlider />
 				<div className='bgimg-2' />
-				<div ref={currentSection[1]} />
+				<div ref={currentSection[2]} />
 				<Locations />
 				<div className='bgimg-3' />
-				<div ref={currentSection[2]} />
-				<Weather />
 				<div ref={currentSection[3]} />
+				<Weather />
+				<div ref={currentSection[4]} />
 				<About />
 				<div className='bgimg-1' />
-				<Footer />
+				<Footer scrollToPane={scrollToPane} />
 			</>
 		);
 	};

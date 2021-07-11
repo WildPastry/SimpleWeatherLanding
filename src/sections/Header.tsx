@@ -14,7 +14,9 @@ const Header: React.FC<ScrollProps> = (props) => {
 	return (
 		<Container className='my-2' fluid='lg'>
 			<Navbar collapseOnSelect expand='md' bg='light' variant='light'>
-				<Navbar.Brand className='d-flex align-items-center'>
+				<Navbar.Brand
+					className='d-flex align-items-center'
+					onClick={() => props.scrollToPane(0)}>
 					<img src={logo} className='appLogoNav' alt='SimpleWeather' />
 					<span className='h2Lt me-1'>SIMPLE</span>
 					<span className='h2Bd spotBlue'>WEATHER</span>
@@ -22,16 +24,16 @@ const Header: React.FC<ScrollProps> = (props) => {
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
 					<Nav className='mr-auto fontRg'>
-						<Nav.Link onClick={() => props.scrollToPane(0)} href='#Features'>
+						<Nav.Link onClick={() => props.scrollToPane(1)} href='#Features'>
 							Features
 						</Nav.Link>
-						<Nav.Link onClick={() => props.scrollToPane(1)} href='#Locations'>
+						<Nav.Link onClick={() => props.scrollToPane(2)} href='#Locations'>
 							Locations
 						</Nav.Link>
-						<Nav.Link onClick={() => props.scrollToPane(2)} href='#Weather'>
+						<Nav.Link onClick={() => props.scrollToPane(3)} href='#Weather'>
 							Weather
 						</Nav.Link>
-						<Nav.Link onClick={() => props.scrollToPane(3)} href='#About'>
+						<Nav.Link onClick={() => props.scrollToPane(4)} href='#About'>
 							About
 						</Nav.Link>
 					</Nav>

@@ -18,7 +18,7 @@ body {
 	font-family: $mainFont;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	color: $dark;
+	color: $simpleWeather;
 }
 
 // code
@@ -28,11 +28,11 @@ code {
 
 // links
 a {
+	color: $spotBlue;
 	text-decoration: none;
-}
-
-a:hover {
-	color: $cloudsDark;
+	&:hover {
+		color: $cloudsDarkest;
+	}
 }
 
 // lists
@@ -42,8 +42,12 @@ ul {
 }
 
 li {
- padding: 0.2rem 0;
- color: $cloudsDark;
+	padding: 0.2rem 0;
+	color: $clouds;
+	cursor: pointer;
+	&:hover {
+		color: $cloudsDarkest;
+	}
 }
 
 // hr
@@ -52,6 +56,11 @@ hr {
 	width: 200px;
 	height: 4px;
 	color: $clouds;
+}
+
+// cursor
+.pointerCursor {
+	cursor: pointer;
 }
 
 // positions
