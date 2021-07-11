@@ -31,6 +31,29 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: $cloudsDark;
+}
+
+// lists
+ul {
+	text-align: center;
+	padding-left: 0;
+}
+
+li {
+ padding: 0.2rem 0;
+ color: $cloudsDark;
+}
+
+// hr
+hr {
+	margin: 1rem auto;
+	width: 200px;
+	height: 4px;
+	color: $clouds;
+}
+
 // positions
 .positionRelative {
 	position: relative;

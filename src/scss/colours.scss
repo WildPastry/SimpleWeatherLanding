@@ -38,8 +38,11 @@
 .bg-spotGrey {
 	background: $spotGrey;
 }
-.bg-spotLightGrey {
-	background: $spotLightGrey;
+.bg-spotGreyLight {
+	background: $spotGreyLight;
+}
+.bg-spotGreyMed {
+	background: $spotGreyMed;
 }
 .bg-spotGreyDark {
 	background: $spotGreyDark;
@@ -169,8 +172,11 @@
 .spotGrey {
 	color: $spotGrey;
 }
-.spotLightGrey {
-	color: $spotLightGrey;
+.spotGreyLight {
+	color: $spotGreyLight;
+}
+.spotGreyMed {
+	color: $spotGreyMed;
 }
 .spotGreyDark {
 	color: $spotGreyDark;

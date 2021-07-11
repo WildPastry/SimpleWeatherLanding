@@ -1,5 +1,5 @@
 // import frameworks
-import { createRef, useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from './store';
 import imageAction from './store/imageAction';
@@ -26,6 +26,7 @@ import './scss/main.scss';
 const App: React.FC = () => {
 	// scroll functions
 	let currentSection = [useRef(null), useRef(null), useRef(null), useRef(null)];
+
 	const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth' });
 	const scrollToPane = (num: number) => scrollToRef(currentSection[num]);
 
