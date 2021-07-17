@@ -25,6 +25,17 @@
 	font-display: swap;
 }
 
+// main font
+p,
+b,
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: $mainFont;
+}
+
 // weatherfont
 .weatherFont {
 	font-family: 'Weather Icons';
@@ -35,57 +46,48 @@
 
 // font
 .fontLt {
-	font-family: $mainFont;
 	@include fontSize;
 	font-weight: map-get($fontWeight, 'lt');
 }
 
 .fontRg {
-	font-family: $mainFont;
 	@include fontSize;
 	font-weight: map-get($fontWeight, 'rg');
 }
 
 .fontBd {
-	font-family: $mainFont;
 	@include fontSize;
 	font-weight: map-get($fontWeight, 'bd');
 }
 
 // h1
 .h1Lt {
-	font-family: $mainFont;
 	@include h1Size;
 	font-weight: map-get($fontWeight, 'lt');
 }
 
 .h1Rg {
-	font-family: $mainFont;
 	@include h1Size;
 	font-weight: map-get($fontWeight, 'rg');
 }
 
 .h1Bd {
-	font-family: $mainFont;
 	@include h1Size;
 	font-weight: map-get($fontWeight, 'bd');
 }
 
 // h2
 .h2Lt {
-	font-family: $mainFont;
 	@include h2Size;
 	font-weight: map-get($fontWeight, 'lt');
 }
 
 .h2Rg {
-	font-family: $mainFont;
 	@include h2Size;
 	font-weight: map-get($fontWeight, 'rg');
 }
 
 .h2Bd {
-	font-family: $mainFont;
 	@include h2Size;
 	font-weight: map-get($fontWeight, 'bd');
 }

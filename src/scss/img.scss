@@ -7,6 +7,7 @@
 	@include iconHeight;
 }
 
+// main logo
 .appLogoNav {
 	height: 35px;
 	margin-right: 10px;
@@ -66,7 +67,28 @@
 	}
 }
 
-// icon slider img
+// screenshots
+.screenShotWrapper {
+	position: relative;
+}
+
+.screenShot {
+	height: 600px;
+	border-radius: 30px;
+	box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.25);
+	@include bp(sm) {
+		height: 400px;
+	}
+}
+
+.screenShotUnder {
+	position: absolute;
+	z-index: -1;
+	top: 60px;
+	left: 180px;
+}
+
+// icon slider
 .icon-slider-wrapper {
 	overflow: hidden;
 }
