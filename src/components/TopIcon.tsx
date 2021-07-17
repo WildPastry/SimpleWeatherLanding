@@ -11,7 +11,7 @@ interface ScrollProps {
 
 // TOPICON
 const TopIcon: React.FC<ScrollProps> = (props) => {
-	// scroll icon display logic
+	// icon display logic
   const [showScroll, setShowScroll] = useState(false)
 
   const checkScrollTop = () => {
