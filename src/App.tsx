@@ -17,6 +17,7 @@ import Footer from './sections/Footer';
 // import components
 import AppLoading from './components/AppLoading';
 import Error from './components/Error';
+import TopIcon from './components/TopIcon';
 
 // import styles
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -84,6 +85,7 @@ const App: React.FC = () => {
 				<About />
 				<div className='bgimg-1' />
 				<Footer scrollToPane={scrollToPane} />
+				<TopIcon scrollToPane={scrollToPane} />
 			</>
 		);
 	};
