@@ -110,7 +110,14 @@ hr {
 
 // top icon
 .topIcon {
+	cursor: pointer;
 	position: fixed;
 	bottom: 50px;
 	right: 50px;
+	animation: fadeIn 0.3s;
+	transition: opacity 0.4s;
+	opacity: 0.5;
+	&:hover {
+		opacity: 1;
+	}
 }
