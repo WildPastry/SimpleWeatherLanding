@@ -9,7 +9,7 @@ interface ScrollProps {
 	scrollToPane(num: number): any;
 }
 
-// HEADER
+// Header
 const Header: React.FC<ScrollProps> = (props) => {
 	return (
 		<Container className='my-2' fluid='lg'>
@@ -35,6 +35,6 @@ const Header: React.FC<ScrollProps> = (props) => {
 	);
 };
 
-// EXPORT HEADER
+// EXPORT Header
 Header.displayName = 'Header';
 export default Header;

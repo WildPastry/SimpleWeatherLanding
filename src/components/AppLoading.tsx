@@ -1,3 +1,4 @@
+// AppLoading
 const AppLoading = () => {
 	return (
 		<>
@@ -24,5 +25,6 @@ const AppLoading = () => {
 	);
 };
 
+// EXPORT AppLoading
 AppLoading.displayName = 'AppLoading';
 export default AppLoading;

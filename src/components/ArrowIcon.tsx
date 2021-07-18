@@ -9,8 +9,8 @@ interface ScrollProps {
 	scrollToPane(num: number): any;
 }
 
-// TOPICON
-const TopIcon: React.FC<ScrollProps> = (props) => {
+// ArrowIcon
+const ArrowIcon: React.FC<ScrollProps> = (props) => {
 	// icon display logic
   const [showScroll, setShowScroll] = useState(false)
 
@@ -27,7 +27,7 @@ const TopIcon: React.FC<ScrollProps> = (props) => {
 		<ArrowUpOutline
 		  style={{display: showScroll ? 'block' : 'none'}}
 			onClick={() => props.scrollToPane(0)}
-			cssClasses='topIcon'
+			cssClasses='arrowIcon'
 			color={'#1faadb'}
 			title={'TOP'}
 			height='50px'
@@ -36,6 +36,6 @@ const TopIcon: React.FC<ScrollProps> = (props) => {
 	);
 };
 
-// EXPORT TOPICON
-TopIcon.displayName = 'TopIcon';
-export default TopIcon;
+// EXPORT ArrowIcon
+ArrowIcon.displayName = 'ArrowIcon';
+export default ArrowIcon;

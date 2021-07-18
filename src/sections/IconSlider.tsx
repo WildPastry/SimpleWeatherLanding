@@ -1,7 +1,7 @@
 // import frameworks
 import { Container, Row } from 'react-bootstrap';
 
-// ICONSLIDER
+// IconSlider
 const IconSlider: React.FC = () => {
 	return (
 		<div className='positionRelative'>
@@ -16,6 +16,6 @@ const IconSlider: React.FC = () => {
 	);
 };
 
-// EXPORT ICONSLIDER
+// EXPORT IconSlider
 IconSlider.displayName = 'IconSlider';
 export default IconSlider;

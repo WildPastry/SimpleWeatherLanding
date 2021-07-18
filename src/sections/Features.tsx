@@ -5,7 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import screenOne from '../assets/img/screen-1.jpg';
 import screenTwo from '../assets/img/screen-2.jpg';
 
-// FEATURES
+// Features
 const Features: React.FC = () => {
 	return (
 		<Container fluid='xl' className='featureContainer'>
@@ -25,17 +25,17 @@ const Features: React.FC = () => {
 					</div>
 				</Col>
 				<Col sm={12} lg={6}>
-					<div className='featuresTextWrapper'>
+					<div className='featuresTextWrapper fontRg'>
 						<h2 className='h2Bd'>Features.</h2>
-						<p className='fontRg'>
+						<p>
 							Data provided by OpenWeather and DarkSky with access to <b>thousands</b> of
 							locations worldwide.
 						</p>
-						<p className='fontRg'>
+						<p>
 							Location search with Google for fast and reliable results.
 						</p>
-						<p className='fontRg'>Sign up to the app to be able to save locations for faster access to your most searched locations.</p>
-						<p className='fontRg'>Easy to use with a basic daily summary and a 5 day forecast.</p>
+						<p>Sign up to the app to be able to save locations for faster access to your most searched locations.</p>
+						<p>Easy to use with a basic daily summary and a 5 day forecast.</p>
 					</div>
 				</Col>
 			</Row>
@@ -43,6 +43,6 @@ const Features: React.FC = () => {
 	);
 };
 
-// EXPORT FEATURES
+// EXPORT Features
 Features.displayName = 'Features';
 export default Features;

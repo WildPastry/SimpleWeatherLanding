@@ -1,3 +1,4 @@
+// Error
 const Error = () => {
 	return (
 		<>
@@ -11,5 +12,6 @@ const Error = () => {
 	);
 };
 
+// EXPORT Error
 Error.displayName = 'Error';
 export default Error;

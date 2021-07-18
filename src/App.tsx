@@ -17,15 +17,15 @@ import Footer from './sections/Footer';
 // import components
 import AppLoading from './components/AppLoading';
 import Error from './components/Error';
-import TopIcon from './components/TopIcon';
+import ArrowIcon from './components/ArrowIcon';
 
 // import styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/main.scss';
 
-// APP
+// App
 const App: React.FC = () => {
-	// scroll functions
+	// scroll function useRef setup
 	let currentSection = [
 		useRef(null),
 		useRef(null),
@@ -33,7 +33,7 @@ const App: React.FC = () => {
 		useRef(null),
 		useRef(null)
 	];
-
+// scroll to sections
 	const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth' });
 	const scrollToPane = (num: number) => scrollToRef(currentSection[num]);
 
@@ -85,7 +85,7 @@ const App: React.FC = () => {
 				<About />
 				<div className='bgimg-1' />
 				<Footer scrollToPane={scrollToPane} />
-				<TopIcon scrollToPane={scrollToPane} />
+				<ArrowIcon scrollToPane={scrollToPane} />
 			</>
 		);
 	};
@@ -93,6 +93,6 @@ const App: React.FC = () => {
 	return pageData.loading ? showLoader() : renderPage(pageData);
 };
 
-// EXPORT APP
+// EXPORT App
 App.displayName = 'App';
 export default App;

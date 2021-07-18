@@ -9,7 +9,7 @@ interface ScrollProps {
 	scrollToPane(num: number): any;
 }
 
-// FOOTER
+// Footer
 const Footer: React.FC<ScrollProps> = (props) => {
 	// get date
 	const currentDate = new Date().getFullYear();
@@ -52,6 +52,6 @@ const Footer: React.FC<ScrollProps> = (props) => {
 	);
 };
 
-// EXPORT FOOTER
+// EXPORT Footer
 Footer.displayName = 'Footer';
 export default Footer;
