@@ -113,8 +113,8 @@ li {
 	$bp-xs: 'screen and (max-width: 479px)';
 	$bp-sm: 'screen and (min-width: 480px) and (max-width: 575px)';
 	$bp-md: 'screen and (min-width: 576px) and (max-width: 767px)';
-	$bp-lg: 'screen and (min-width: 768px) and (max-width: 1023px)';
-	$bp-xl: 'screen and (min-width: 1024px)';
+	$bp-lg: 'screen and (min-width: 768px) and (max-width: 1399px)';
+	$bp-xl: 'screen and (min-width: 1400px)';
 
 	@if $point == xxs {
 		@media #{$bp-xxs} {
@@ -142,3 +142,28 @@ li {
 		}
 	}
 }
+
+// @mixin bpWrap($point) {
+// 	$bp-sm: 'screen and (max-width: 480px)';
+// 	$bp-md: 'screen and (min-width: 481px) and (max-width: 1099px)';
+// 	$bp-lg: 'screen and (min-width: 1100px) and (max-width: 1399px)';
+// 	$bp-xl: 'screen and (min-width: 1400px)';
+
+// 	@if $point == sm {
+// 		@media #{$bp-sm} {
+// 			@content;
+// 		}
+// 	} @else if $point == md {
+// 		@media #{$bp-md} {
+// 			@content;
+// 		}
+// 	} @else if $point == lg {
+// 		@media #{$bp-lg} {
+// 			@content;
+// 		}
+// 	} @else if $point == xl {
+// 		@media #{$bp-xl} {
+// 			@content;
+// 		}
+// 	}
+// }

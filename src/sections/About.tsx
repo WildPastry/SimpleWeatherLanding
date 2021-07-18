@@ -7,7 +7,7 @@ const About: React.FC = () => {
 		<Container fluid='lg' className='my-3'>
 			<Row className='my-3'>
 				<Col xs={12}>
-					<h2 className='h2Rg'>ABOUT</h2>
+				<h2 className='h2Bd'>About.</h2>
 				</Col>
 			</Row>
 		</Container>

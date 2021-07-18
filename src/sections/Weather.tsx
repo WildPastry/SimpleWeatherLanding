@@ -7,7 +7,7 @@ const Weather: React.FC = () => {
 		<Container fluid='lg' className='my-3'>
 			<Row className='my-3'>
 				<Col xs={12}>
-					<h2 className='h2Rg'>WEATHER</h2>
+				<h2 className='h2Bd'>Weather.</h2>
 				</Col>
 			</Row>
 		</Container>
