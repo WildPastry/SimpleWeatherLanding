@@ -30,8 +30,8 @@ const TopIcon: React.FC<ScrollProps> = (props) => {
 			cssClasses='topIcon'
 			color={'#1faadb'}
 			title={'TOP'}
-			height='65px'
-			width='65px'
+			height='50px'
+			width='50px'
 		/>
 	);
 };

@@ -85,35 +85,16 @@
 	}
 }
 
-// lists
-$channel1: #19bc9c;
-$channel2: #f1c40e;
-$channel3: #9b59b6;
-$channel4: #3398db;
-
-@mixin box-shadow($values...) {
-	-webkit-box-shadow: $values;
-	-moz-box-shadow: $values;
-	box-shadow: $values;
-}
-
-li {
-	$colours: $channel1, $channel2, $channel3, $channel4;
-
-	@for $i from 1 through length($colours) {
-		&.channel#{$i} {
-			@include box-shadow(inset -3px 0 0 0 nth($colours, $i));
-		}
-	}
-}
-
 // media breakpoints
 @mixin bp($point) {
 	$bp-xxs: 'screen and (max-width: 310px)';
 	$bp-xs: 'screen and (max-width: 479px)';
 	$bp-sm: 'screen and (min-width: 480px) and (max-width: 575px)';
+	$bp-smmd: 'screen and (max-width: 995px)';
 	$bp-md: 'screen and (min-width: 576px) and (max-width: 767px)';
+	$bp-mdlg: 'screen and (min-width: 996px) and (max-width: 1079px)';
 	$bp-lg: 'screen and (min-width: 768px) and (max-width: 1399px)';
+	$bp-lgxl: 'screen and (min-width: 1080px) and (max-width: 1399px)';
 	$bp-xl: 'screen and (min-width: 1400px)';
 
 	@if $point == xxs {
@@ -128,12 +109,24 @@ li {
 		@media #{$bp-sm} {
 			@content;
 		}
+	} @else if $point == smmd {
+		@media #{$bp-smmd} {
+			@content;
+		}
 	} @else if $point == md {
 		@media #{$bp-md} {
 			@content;
 		}
+	} @else if $point == mdlg {
+		@media #{$bp-mdlg} {
+			@content;
+		}
 	} @else if $point == lg {
 		@media #{$bp-lg} {
+			@content;
+		}
+	} @else if $point == lgxl {
+		@media #{$bp-lgxl} {
 			@content;
 		}
 	} @else if $point == xl {
@@ -142,28 +135,3 @@ li {
 		}
 	}
 }
-
-// @mixin bpWrap($point) {
-// 	$bp-sm: 'screen and (max-width: 480px)';
-// 	$bp-md: 'screen and (min-width: 481px) and (max-width: 1099px)';
-// 	$bp-lg: 'screen and (min-width: 1100px) and (max-width: 1399px)';
-// 	$bp-xl: 'screen and (min-width: 1400px)';
-
-// 	@if $point == sm {
-// 		@media #{$bp-sm} {
-// 			@content;
-// 		}
-// 	} @else if $point == md {
-// 		@media #{$bp-md} {
-// 			@content;
-// 		}
-// 	} @else if $point == lg {
-// 		@media #{$bp-lg} {
-// 			@content;
-// 		}
-// 	} @else if $point == xl {
-// 		@media #{$bp-xl} {
-// 			@content;
-// 		}
-// 	}
-// }

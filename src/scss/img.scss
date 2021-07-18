@@ -70,18 +70,10 @@
 // screenshots
 .screenShotWrapper {
 	position: relative;
-	// @include bp(sm) {
-	// 	display: flex;
-	// 	align-content: center;
-	// 	justify-content: center;
-	// 	padding-right: 7em;
-	// }
-	// @include bp(md) {
-	// 	display: flex;
-	// 	align-content: center;
-	// 	justify-content: center;
-	// 	padding-right: 7em;
-	// }
+	@include bp(smmd) {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .screenShot {
@@ -90,6 +82,15 @@
 	box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.25);
 	@include bp(lg) {
 		height: 500px;
+	}
+	@include bp(smmd) {
+		height: 500px;
+	}
+	@include bp(sm) {
+		height: 450px;
+	}
+	@include bp(xs) {
+		height: 400px;
 	}
 }
 
@@ -101,6 +102,16 @@
 	@include bp(lg) {
 		top: 60px;
 		left: 210px;
+	}
+	@include bp(smmd) {
+		position: initial;
+		margin-left: 30px;
+	}
+	@include bp(sm) {
+		margin-left: 15px;
+	}
+	@include bp(xs) {
+		display: none;
 	}
 }
 
