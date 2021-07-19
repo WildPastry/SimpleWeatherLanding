@@ -1,6 +1,9 @@
+// import assets
+import WeatherIconOne from '../assets/img/weather-icon.png';
+
 // WeatherIcon
 const WeatherIcon: React.FC = () => {
-	return <div className='spotRed h1Lt'>ICON</div>;
+	return <img className='weatherIcon' src={WeatherIconOne} alt='Weather Icon One' />;
 };
 
 // EXPORT WeatherIcon

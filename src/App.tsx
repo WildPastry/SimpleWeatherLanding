@@ -8,7 +8,6 @@ import imageAction from './store/imageAction';
 import Header from './sections/Header';
 import Intro from './sections/Intro';
 import Features from './sections/Features';
-import IconSlider from './sections/IconSlider';
 import Locations from './sections/Locations';
 import Weather from './sections/Weather';
 import About from './sections/About';
@@ -16,6 +15,7 @@ import Footer from './sections/Footer';
 
 // import components
 import AppLoading from './components/AppLoading';
+import IconSlider from './components/IconSlider';
 import Error from './components/Error';
 import ArrowIcon from './components/ArrowIcon';
 

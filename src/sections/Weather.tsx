@@ -9,7 +9,7 @@ const Weather: React.FC = () => {
 	return (
 		<Container fluid='lg' className='my-3'>
 			<Row className='my-3'>
-				<Col sm={6} className='d-flex justify-content-center align-items-center bg-dark'>
+				<Col sm={6} className='d-flex justify-content-center align-items-center'>
 					<WeatherIcon />
 				</Col>
 				<Col xs={12} sm={6} className='fontRg'>

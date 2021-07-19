@@ -1,7 +1,7 @@
 // import frameworks
 import { Col, Container, Row } from 'react-bootstrap';
 
-// import images
+// import assets
 import screenOne from '../assets/img/screen-1.jpg';
 import screenTwo from '../assets/img/screen-2.jpg';
 

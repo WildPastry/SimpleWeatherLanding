@@ -15,7 +15,6 @@ const Intro: React.FC = () => {
 						Fast, accurate, and intuitive weather app designed for iOS and Android.
 					</h2>
 				</Col>
-
 			</Row>
 			<img src={googleBadge} className='googleBadge' alt='Google Play Store' />
 		</Container>

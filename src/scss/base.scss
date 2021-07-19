@@ -107,28 +107,3 @@ hr {
 		text-align: center;
 	}
 }
-
-// arrow icon
-.arrowIcon {
-	z-index: 5;
-	background-color: $dark;
-	border-radius: 20%;
-	cursor: pointer;
-	position: fixed;
-	bottom: 45px;
-	right: 45px;
-	animation: fadeIn 0.3s;
-	transition: opacity 0.4s;
-	opacity: 0.7;
-	&:hover {
-		opacity: 1;
-	}
-	@include bp(sm) {
-		bottom: 25px;
-		right: 25px;
-	}
-	@include bp(xs) {
-		bottom: 20px;
-		right: 20px;
-	}
-}
