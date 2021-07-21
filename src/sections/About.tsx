@@ -2,34 +2,39 @@
 import { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
-/**
- * @param {Object} params
- * @param {WeatherData} params.day
- * @param {Function} close
- * @returns
- */
+// /**
+//  * @param {Object} params
+//  * @param {WeatherData} params.day
+//  * @param {Function} close
+//  * @returns
+//  */
 
-  /** @type {[ WeatherData, (wT:WeatherData)=>void]} */
-  const [ link, checkData ] = useState(day ? { ...day } : {
-		id: 0,
-		label: '',
-		openData: 'weekly',
-		darkSkyData: 'current',
-		icon: '',
-		type: 'day',
-		desc: ''
-  });
+//  const AddViewlink = ({day}) => {
+//   if (!day) {
+//     var currentWd = 'WEATHER';
+//   }
 
-  /** @param {(wT:WeatherData) => void} func */
-  const updateViewlink = (func: (wT: WeatherData) => void) => {
-    const wT = { ...link };
-    func(wT);
-    checkData(wT);
-  };
+//   /** @type {[ WeatherData, (wT:WeatherData)=>void]} */
+//   const [ link, checkData ] = useState(day ? { ...day } : {
+// 		id: 0,
+// 		label: '',
+// 		openData: 'weekly',
+// 		darkSkyData: 'current',
+// 		icon: '',
+// 		type: 'day',
+// 		desc: ''
+//   });
 
-  const consoleData = (id: number, label: string, openData: WetherType, darkSkyData: WetherType, icon: string, type: string, desc: string ) => {
-		console.log((wT: { label: string; }) => wT.label = 'THIS');
-  };
+//   /** @param {(wT:WeatherData) => void} func */
+//   const updateViewlink = (func: (wT: WeatherData) => void) => {
+//     const wT = { ...link };
+//     func(wT);
+//     checkData(wT);
+//   };
+
+//   const consoleData = (id: number, label: string, openData: WetherType, darkSkyData: WetherType, icon: string, type: string, desc: string ) => {
+// 		console.log((wT: { label: string; }) => wT.label = 'THIS');
+//   };
 
 // About
 const About: React.FC = () => {

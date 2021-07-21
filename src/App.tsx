@@ -83,7 +83,7 @@ const App: React.FC = () => {
 				<Weather />
 				<div ref={currentSection[4]} />
 				<About />
-				<div className='bgimg-1' />
+				<div className='bgimg-4' />
 				<Footer scrollToPane={scrollToPane} />
 				<ArrowIcon scrollToPane={scrollToPane} />
 			</>

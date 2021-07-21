@@ -61,7 +61,7 @@
 
 .bgimg-4 {
 	background-image: url('../assets/img/bgimg-4.jpg');
-	min-height: 400px;
+	min-height: 100vh;
 	@include bp(sm) {
 		min-height: 200px;
 	}

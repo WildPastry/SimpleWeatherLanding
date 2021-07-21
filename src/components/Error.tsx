@@ -1,11 +1,11 @@
 // Error
-const Error = () => {
+const Error: React.FC = () => {
 	return (
 		<>
 			<div className='fullPageFixed'>
 				<div className='fullPageFixedInner'>
-					<h2 className='h2Bd textRed text-center'>ERROR LOADING DATA</h2>
-					<p className='textLight text-center'>Please try again later</p>
+					<h1 className='spotOrange text-center'>ERROR LOADING DATA</h1>
+					<h5 className='light text-center'>Please try again later</h5>
 				</div>
 			</div>
 		</>
