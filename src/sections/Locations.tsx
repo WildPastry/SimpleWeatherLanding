@@ -1,8 +1,8 @@
 // import frameworks
 import { Col, Container, Row } from 'react-bootstrap';
 
-// import assets
-import LocationIcon from '../assets/img/location-icon.png';
+// import components
+import LocationIcon from '../components/LocationIcon';
 
 // Locations
 const Locations: React.FC = () => {
@@ -22,7 +22,7 @@ const Locations: React.FC = () => {
 						<p>Easy to use with a basic daily summary and a 5 day forecast.</p>
 				</Col>
 				<Col sm={12} lg={6}>
-				<img className='locationIcon' src={LocationIcon} alt='Location Icon' />
+				<LocationIcon />
 				</Col>
 			</Row>
 		</Container>
