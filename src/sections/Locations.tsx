@@ -12,17 +12,19 @@ const Locations: React.FC = () => {
 				<Col sm={12} lg={6} className='locationsTextWrapper fontRg'>
 					<h2 className='h2Bd thunderStorm'>Locations.</h2>
 					<p>
-							Data provided by OpenWeather and DarkSky with access to <b>thousands</b> of
-							locations worldwide.
-						</p>
-						<p>
-							Location search with Google for fast and reliable results.
-						</p>
-						<p>Sign up to the app to be able to save locations for faster access to your most searched locations.</p>
-						<p>Easy to use with a basic daily summary and a 5 day forecast.</p>
+						Data provided by OpenWeather and DarkSky with access to <b>thousands</b> of
+						locations worldwide.
+					</p>
+					<p>Location search with Google for fast and reliable results.</p>
+					<p>
+						Sign up to the app to be able to save locations for faster access to your most
+						searched locations.
+					</p>
+					<p>Easy to use with a basic daily summary and a 5 day forecast.</p>
 				</Col>
-				<Col sm={12} lg={6}>
-				<LocationIcon />
+				<Col sm={12} lg={6} className='positionRelative d-flex justify-content-center'>
+					<div className='locationBackGround' />
+					<LocationIcon />
 				</Col>
 			</Row>
 		</Container>
