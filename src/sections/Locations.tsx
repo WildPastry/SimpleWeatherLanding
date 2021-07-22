@@ -7,9 +7,9 @@ import LocationIcon from '../assets/img/location-icon.png';
 // Locations
 const Locations: React.FC = () => {
 	return (
-		<Container fluid='lg'>
-			<Row>
-				<Col sm={12} lg={6} className='fontRg'>
+		<Container fluid='xl' className='locationsContainer'>
+			<Row className='locationsWrapper'>
+				<Col sm={12} lg={6} className='locationsTextWrapper fontRg'>
 					<h2 className='h2Bd'>Locations.</h2>
 					<p>
 							Data provided by OpenWeather and DarkSky with access to <b>thousands</b> of

@@ -50,3 +50,48 @@
 		padding-right: 0;
 	}
 }
+
+// locations
+.locationsContainer {
+	margin-top: 0;
+	margin-bottom: 3rem;
+}
+
+.locationsWrapper {
+	padding-left: 0;
+	padding-right: 0;
+	@include bp(lgxl) {
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+	@include bp(mdlg) {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	@include bp(smmd) {
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+	}
+}
+
+.locationsTextWrapper {
+	padding-right: 4.4em;
+	@include bp(lg) {
+		padding-right: 3em;
+	}
+	@include bp(smmd) {
+		padding-left: 9em;
+		padding-right: 9em;
+	}
+	@include bp(sm) {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+	@include bp(xs) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

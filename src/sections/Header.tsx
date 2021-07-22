@@ -2,7 +2,7 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
 // import assets
-import logo from '../assets/logo.svg';
+import logo from '../assets/icon/logo.svg';
 
 // scroll function from APP
 interface ScrollProps {

@@ -8,7 +8,7 @@ import screenTwo from '../assets/img/screen-2.jpg';
 // Features
 const Features: React.FC = () => {
 	return (
-		<Container fluid='lg' className='featureContainer'>
+		<Container fluid='xl' className='featureContainer'>
 			<Row className='featuresWrapper'>
 				<Col sm={12} lg={6}>
 					<div className='screenShotWrapper'>
@@ -24,8 +24,7 @@ const Features: React.FC = () => {
 						/>
 					</div>
 				</Col>
-				<Col sm={12} lg={6}>
-					<div className='featuresTextWrapper fontRg'>
+				<Col sm={12} lg={6} className='featuresTextWrapper fontRg'>
 						<h2 className='h2Bd'>Features.</h2>
 						<p>
 							Data provided by OpenWeather and DarkSky with access to <b>thousands</b> of
@@ -36,7 +35,6 @@ const Features: React.FC = () => {
 						</p>
 						<p>Sign up to the app to be able to save locations for faster access to your most searched locations.</p>
 						<p>Easy to use with a basic daily summary and a 5 day forecast.</p>
-					</div>
 				</Col>
 			</Row>
 		</Container>
