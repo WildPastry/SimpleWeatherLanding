@@ -23,7 +23,7 @@ const Header: React.FC<ScrollProps> = (props) => {
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
-					<Nav className='mr-auto fontRg'>
+					<Nav className='mr-auto fontRg thunderStorm'>
 						<div className='px-2 navLink' onClick={() => props.scrollToPane(1)}>Features</div>
 						<div className='px-2 navLink' onClick={() => props.scrollToPane(2)}>Locations</div>
 						<div className='px-2 navLink' onClick={() => props.scrollToPane(3)}>Weather</div>

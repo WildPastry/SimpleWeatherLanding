@@ -13,7 +13,7 @@ const Weather: React.FC = () => {
 					<WeatherIcon />
 				</Col>
 				<Col xs={12} sm={6} className='fontRg'>
-					<h2 className='h2Bd'>Weather.</h2>
+					<h2 className='h2Bd thunderStorm'>Weather.</h2>
 					<p>
 						Data provided by OpenWeather and DarkSky with access to <b>thousands</b> of
 						locations worldwide.

@@ -10,7 +10,7 @@ const Locations: React.FC = () => {
 		<Container fluid='xl' className='locationsContainer'>
 			<Row className='locationsWrapper'>
 				<Col sm={12} lg={6} className='locationsTextWrapper fontRg'>
-					<h2 className='h2Bd'>Locations.</h2>
+					<h2 className='h2Bd thunderStorm'>Locations.</h2>
 					<p>
 							Data provided by OpenWeather and DarkSky with access to <b>thousands</b> of
 							locations worldwide.

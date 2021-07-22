@@ -42,8 +42,8 @@ const About: React.FC = () => {
 		<Container fluid='lg' className='my-3'>
 			<Row className='my-3'>
 				<Col xs={12} className='fontRg'>
-					<h2 className='h2Bd'>About.</h2>
-						<p>CHECK DATA</p>
+					<h2 className='h2Bd thunderStorm'>About.</h2>
+						<p className='spotOrange pointerCursor'>CHECK DATA</p>
 						<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo justo ut libero pretium, sit amet lobortis turpis auctor. Morbi vel libero purus. Vestibulum dapibus felis id lectus fermentum condimentum. Aliquam dictum ut diam tempus porttitor. Morbi egestas elit a odio lobortis aliquet. Nullam sollicitudin, odio et tempor cursus, eros felis hendrerit tortor, a egestas nibh ligula quis augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget felis ut libero congue accumsan sed sed eros. </h5>
 				</Col>
 			</Row>
