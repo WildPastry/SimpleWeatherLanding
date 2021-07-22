@@ -1,12 +1,11 @@
-// import assets
-import LocationIconOne from '../assets/img/location-icon.png';
+// import icons
+import { Location } from 'react-ionicons';
 
 // LocationIcon
 const LocationIcon: React.FC = () => {
-
 	return (
 		<>
-			<img className='locationIcon' src={LocationIconOne} alt='Location Icon' />
+			<Location color={'#37d493'} title={'Location Pin'} height='300px' width='300px' />
 		</>
 	);
 };
