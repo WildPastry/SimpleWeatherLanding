@@ -75,7 +75,7 @@ const App: React.FC = () => {
 				<div ref={currentSection[1]} />
 				<Features />
 				<IconSlider />
-				<div className='bgimg-2' />
+				{/* <div className='bgimg-2' /> */}
 				<div ref={currentSection[2]} />
 				<Locations />
 				<div className='bgimg-3' />

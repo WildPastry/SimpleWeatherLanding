@@ -8,7 +8,7 @@ import screenTwo from '../assets/img/screen-2.jpg';
 // Features
 const Features: React.FC = () => {
 	return (
-		<Container fluid='xl' className='featureContainer'>
+		<Container fluid='lg' className='featureContainer'>
 			<Row className='featuresWrapper'>
 				<Col sm={12} lg={6}>
 					<div className='screenShotWrapper'>

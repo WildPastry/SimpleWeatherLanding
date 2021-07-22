@@ -139,7 +139,7 @@
 // arrow icon
 .arrowIcon {
 	z-index: 5;
-	background-color: $dark;
+	background-color: $thunderStorm;
 	border-radius: 20%;
 	cursor: pointer;
 	position: fixed;
@@ -161,8 +161,9 @@
 	}
 }
 
-// weather icon
-.weatherIcon {
+// icons
+.weatherIcon,
+.locationIcon {
 	height: 300px;
 	width: 300px;
 }
