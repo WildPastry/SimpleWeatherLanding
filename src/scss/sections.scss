@@ -100,9 +100,51 @@
 .weatherContainer {
 	margin-top: 5rem;
 	margin-bottom: 3rem;
+	@include bp(sm) {
+		margin-top: 3rem;
+	}
+	@include bp(xs) {
+		margin-top: 3rem;
+	}
 }
 
-.weathersWrapper {
+.weatherWrapper {
 	padding-left: 0;
 	padding-right: 0;
+	@include bp(lgxl) {
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+	@include bp(mdlg) {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	@include bp(smmd) {
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+	}
+}
+
+.weatherTextWrapper {
+	padding-left: 4.4em;
+	@include bp(lg) {
+		padding-left: 3em;
+	}
+	@include bp(smmd) {
+		padding-left: 9em;
+		padding-right: 9em;
+	}
+	@include bp(sm) {
+		padding-top: 2em;
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+	@include bp(xs) {
+		padding-top: 2em;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
