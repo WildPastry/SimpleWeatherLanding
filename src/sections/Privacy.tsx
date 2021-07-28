@@ -1,8 +1,11 @@
+/** @type {TogglePrivacy} */
+/** @param {TogglePrivacy} params.togglePrivacy */
+
 // Privacy
-const Privacy: React.FC = () => {
+const Privacy: React.FC<TogglePrivacy> = (props) => {
 	return (
 		<>
-			<div className='fullPageFixed'>
+			<div className='fullPageFixed' onClick={() => props.togglePrivacy()}>
 				<div className='fullPageFixedInner'>
 					<h1 className='spotOrange text-center'>PRIVACY</h1>
 					<h5 className='light text-center'>Information here</h5>

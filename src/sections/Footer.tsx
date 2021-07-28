@@ -4,12 +4,10 @@ import { Col, Container, Row } from 'react-bootstrap';
 // import assets
 import logo from '../assets/icon/logo.svg';
 
-// functions from APP
-interface SectionProps {
-	scrollToPane(num: number): any;
-	showPrivacy(): any;
-	showTerms(): any;
-}
+/** @type {SectionProps} */
+/** @param {SectionProps} params.scrollToSection */
+/** @param {SectionProps} params.togglePrivacy */
+/** @param {SectionProps} params.toggleTerms */
 
 // Footer
 const Footer: React.FC<SectionProps> = (props) => {
@@ -22,19 +20,19 @@ const Footer: React.FC<SectionProps> = (props) => {
 				<Col xs={12}>
 					<div
 						className='d-flex justify-content-center align-items-center pointerCursor'
-						onClick={() => props.scrollToPane(0)}>
+						onClick={() => props.scrollToSection(0)}>
 						<img src={logo} className='appLogoNav' alt='SimpleWeather' />
 						<span className='h2Lt me-1'>SIMPLE</span>
 						<span className='h2Bd spotBlue'>WEATHER</span>
 					</div>
 					<hr />
 					<ul>
-						<li onClick={() => props.scrollToPane(1)}>Features</li>
-						<li onClick={() => props.scrollToPane(2)}>Locations</li>
-						<li onClick={() => props.scrollToPane(3)}>Weather</li>
-						<li onClick={() => props.scrollToPane(4)}>About</li>
-						<li onClick={() => props.showPrivacy()}>Privacy</li>
-						<li onClick={() => props.showTerms()}>Terms</li>
+						<li onClick={() => props.scrollToSection(1)}>Features</li>
+						<li onClick={() => props.scrollToSection(2)}>Locations</li>
+						<li onClick={() => props.scrollToSection(3)}>Weather</li>
+						<li onClick={() => props.scrollToSection(4)}>About</li>
+						<li onClick={() => props.togglePrivacy()}>Privacy</li>
+						<li onClick={() => props.toggleTerms()}>Terms</li>
 					</ul>
 					<div className='text-center'>
 						<p className='clouds'>

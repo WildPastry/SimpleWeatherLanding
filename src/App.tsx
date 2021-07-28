@@ -1,5 +1,5 @@
 // import frameworks
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from './store';
 import imageAction from './store/imageAction';
@@ -24,11 +24,10 @@ import ArrowIcon from './components/ArrowIcon';
 // import styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/main.scss';
-import { render } from '@testing-library/react';
 
 // App
 const App: React.FC = () => {
-	// scroll function useRef setup
+	// scroll function reference setup
 	let currentSection = [
 		useRef(null),
 		useRef(null),
@@ -39,98 +38,38 @@ const App: React.FC = () => {
 
 	// scroll to sections
 	const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth' });
-	const scrollToPane = (num: number) => scrollToRef(currentSection[num]);
+	const scrollToSection = (num: number) => scrollToRef(currentSection[num]);
 
-	// redux selector functions
+	// redux selector
 	const pageData = useSelector((state: RootState) => {
 		return state.imageData;
 	});
 
-	// redux dispatch and effect functions
+	// redux dispatch
 	const dispatch = useDispatch();
 
+	// redux effect
 	useEffect(() => {
 		imageAction.loadImages(dispatch);
 	}, [dispatch]);
 
-	// errorContainer function
-	const errorContainer = () => {
-		return <Error />;
-	};
-
-	// showLoader function
+	// showLoader
 	const showLoader = () => {
 		return <AppLoading />;
 	};
 
-	// renderDisplay
-	// const renderDisplay = () => {
-	// 	let renderThis;
-	// 	const night = this.props.night;
-	// 	if (night) {
-	// 		sunDisplay = (
-	// 			<View style={currentStyles.currentDetailsWrap}>
-	// 				<Text
-	// 					style={{
-	// 						fontFamily: 'weatherfont',
-	// 						fontSize: 18,
-	// 						color: colours.spotYellow
-	// 					}}>
-	// 					{weatherIcons.sunrise.code}
-	// 				</Text>
-	// 				<Text style={currentStyles.currentDetails}>
-	// 					{'  '}Sunrise at {sunrise}
-	// 				</Text>
-	// 			</View>
-	// 		);
-	// 	} else {
-	// 		sunDisplay = (
-	// 			<View style={currentStyles.currentDetailsWrap}>
-	// 				<Text
-	// 					style={{
-	// 						fontFamily: 'weatherfont',
-	// 						fontSize: 18,
-	// 						color: colours.spotYellow
-	// 					}}>
-	// 					{weatherIcons.sunset.code}
-	// 				</Text>
-	// 				<Text style={currentStyles.currentDetails}>
-	// 					{'  '}Sunset at {sunset}
-	// 				</Text>
-	// 			</View>
-	// 		);
-	// 	}
-	// 	return sunDisplay;
-	// }
-
-	// const Search = () => {
-	// 	const [showResults, setShowResults] = React.useState(false)
-	// 	const onClick = () => setShowResults(true)
-	// 	return (
-	// 		<div>
-	// 			<input type="submit" value="Search" onClick={onClick} />
-	// 			{ showResults ? <Results /> : null }
-	// 		</div>
-	// 	)
-	// }
-
-	// const Results = () => (
-	// 	<div id="results" className="search-results">
-	// 		Some Results
-	// 	</div>
-	// )
-
-	// showPrivacy function
-	const showPrivacy = () => {
-		console.log('inside showPrivacy');
-		return <Privacy />;
+	// errorContainer
+	const errorContainer = () => {
+		return <Error />;
 	};
 
-	// showTerms function
-	const showTerms = () => {
-		console.log('inside showTerms');
-		return <Terms />;
-	};
+	// toggle privacy section
+	const [showPrivacy, setShowPrivacy] = useState(false);
+	const togglePrivacy = () => showPrivacy == false ? setShowPrivacy(true) : setShowPrivacy(false);
+
+	// toggle terms section
+	const [showTerms, setShowTerms] = useState(false);
+	const toggleTerms = () => showTerms == false ? setShowTerms(true) : setShowTerms(false);
 
 	// renderPage
 	const renderPage = (pageData: any) => {
@@ -141,8 +80,10 @@ const App: React.FC = () => {
 			errorContainer()
 		) : (
 			<>
+			<div>{showPrivacy ? <Privacy togglePrivacy={togglePrivacy} /> : null}</div>
+				<div>{showTerms ? <Terms toggleTerms={toggleTerms} /> : null}</div>
 				<div ref={currentSection[0]} />
-				<Header scrollToPane={scrollToPane} />
+				<Header scrollToSection={scrollToSection} />
 				<Intro />
 				<div className='bgimg-1' />
 				<div ref={currentSection[1]} />
@@ -157,11 +98,11 @@ const App: React.FC = () => {
 				<About />
 				<div className='bgimg-3' />
 				<Footer
-					showPrivacy={showPrivacy}
-					showTerms={showTerms}
-					scrollToPane={scrollToPane}
+					togglePrivacy={togglePrivacy}
+					toggleTerms={toggleTerms}
+					scrollToSection={scrollToSection}
 				/>
-				<ArrowIcon scrollToPane={scrollToPane} />
+				<ArrowIcon scrollToSection={scrollToSection} />
 			</>
 		);
 	};

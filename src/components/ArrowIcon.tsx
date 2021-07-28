@@ -4,13 +4,11 @@ import { useState } from 'react';
 // import icon
 import { ArrowUpOutline } from 'react-ionicons';
 
-// scroll function from APP
-interface ScrollProps {
-	scrollToPane(num: number): any;
-}
+/** @type {ScrollToSection} */
+/** @param {ScrollToSection} params.scrollToSection */
 
 // ArrowIcon
-const ArrowIcon: React.FC<ScrollProps> = (props) => {
+const ArrowIcon: React.FC<ScrollToSection> = (props) => {
 	// icon display logic
   const [showScroll, setShowScroll] = useState(false)
 
@@ -26,7 +24,7 @@ const ArrowIcon: React.FC<ScrollProps> = (props) => {
 	return (
 		<ArrowUpOutline
 		  style={{display: showScroll ? 'block' : 'none'}}
-			onClick={() => props.scrollToPane(0)}
+			onClick={() => props.scrollToSection(0)}
 			cssClasses='arrowIcon'
 			color={'#1faadb'}
 			title={'TOP'}

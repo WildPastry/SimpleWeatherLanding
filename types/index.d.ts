@@ -1,13 +1,11 @@
 // declarations
-declare module '@splidejs/react-splide';
-
 declare enum WetherType {
 	'daily',
 	'weekly',
 	'current'
 }
 
-// interface
+// interfaces
 interface WeatherData {
 	id: number;
 	label: string;
@@ -16,4 +14,22 @@ interface WeatherData {
 	icon: string;
 	type: 'day' | 'night';
 	desc: string;
+}
+
+interface ScrollToSection {
+	scrollToSection(num: number): any;
+}
+
+interface TogglePrivacy {
+	togglePrivacy(): any;
+}
+
+interface ToggleTerms {
+	toggleTerms(): any;
+}
+
+interface SectionProps {
+	scrollToSection(num: number): any;
+	togglePrivacy(): any;
+	toggleTerms(): any;
 }
