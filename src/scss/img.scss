@@ -59,13 +59,13 @@
 }
 
 // screenshots
-// .screenShotWrapper {
-// 	position: relative;
-// 	@include bp(smmd) {
-// 		display: flex;
-// 		justify-content: center;
-// 	}
-// }
+.screenShotWrapper {
+	position: relative;
+	@include bp(smmd) {
+		display: flex;
+		justify-content: center;
+	}
+}
 
 .screenShot {
 	height: 600px;

@@ -24,6 +24,7 @@ import ArrowIcon from './components/ArrowIcon';
 // import styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/main.scss';
+import { render } from '@testing-library/react';
 
 // App
 const App: React.FC = () => {
@@ -61,6 +62,63 @@ const App: React.FC = () => {
 	const showLoader = () => {
 		return <AppLoading />;
 	};
+
+	// renderDisplay
+	// const renderDisplay = () => {
+	// 	let renderThis;
+	// 	const night = this.props.night;
+	// 	if (night) {
+	// 		sunDisplay = (
+	// 			<View style={currentStyles.currentDetailsWrap}>
+	// 				<Text
+	// 					style={{
+	// 						fontFamily: 'weatherfont',
+	// 						fontSize: 18,
+	// 						color: colours.spotYellow
+	// 					}}>
+	// 					{weatherIcons.sunrise.code}
+	// 				</Text>
+	// 				<Text style={currentStyles.currentDetails}>
+	// 					{'  '}Sunrise at {sunrise}
+	// 				</Text>
+	// 			</View>
+	// 		);
+	// 	} else {
+	// 		sunDisplay = (
+	// 			<View style={currentStyles.currentDetailsWrap}>
+	// 				<Text
+	// 					style={{
+	// 						fontFamily: 'weatherfont',
+	// 						fontSize: 18,
+	// 						color: colours.spotYellow
+	// 					}}>
+	// 					{weatherIcons.sunset.code}
+	// 				</Text>
+	// 				<Text style={currentStyles.currentDetails}>
+	// 					{'  '}Sunset at {sunset}
+	// 				</Text>
+	// 			</View>
+	// 		);
+	// 	}
+	// 	return sunDisplay;
+	// }
+
+	// const Search = () => {
+	// 	const [showResults, setShowResults] = React.useState(false)
+	// 	const onClick = () => setShowResults(true)
+	// 	return (
+	// 		<div>
+	// 			<input type="submit" value="Search" onClick={onClick} />
+	// 			{ showResults ? <Results /> : null }
+	// 		</div>
+	// 	)
+	// }
+
+	// const Results = () => (
+	// 	<div id="results" className="search-results">
+	// 		Some Results
+	// 	</div>
+	// )
 
 	// showPrivacy function
 	const showPrivacy = () => {
