@@ -4,13 +4,15 @@ import { Col, Container, Row } from 'react-bootstrap';
 // import assets
 import logo from '../assets/icon/logo.svg';
 
-// scroll function from APP
-interface ScrollProps {
+// functions from APP
+interface SectionProps {
 	scrollToPane(num: number): any;
+	showPrivacy(): any;
+	showTerms(): any;
 }
 
 // Footer
-const Footer: React.FC<ScrollProps> = (props) => {
+const Footer: React.FC<SectionProps> = (props) => {
 	// get date
 	const currentDate = new Date().getFullYear();
 
@@ -31,8 +33,8 @@ const Footer: React.FC<ScrollProps> = (props) => {
 						<li onClick={() => props.scrollToPane(2)}>Locations</li>
 						<li onClick={() => props.scrollToPane(3)}>Weather</li>
 						<li onClick={() => props.scrollToPane(4)}>About</li>
-						<li>Privacy</li>
-						<li>Terms</li>
+						<li onClick={() => props.showPrivacy()}>Privacy</li>
+						<li onClick={() => props.showTerms()}>Terms</li>
 					</ul>
 					<div className='text-center'>
 						<p className='clouds'>

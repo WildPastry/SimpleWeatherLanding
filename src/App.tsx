@@ -5,6 +5,8 @@ import { RootState } from './store';
 import imageAction from './store/imageAction';
 
 // import sections
+import Privacy from './sections/Privacy';
+import Terms from './sections/Terms';
 import Header from './sections/Header';
 import Intro from './sections/Intro';
 import Features from './sections/Features';
@@ -33,7 +35,8 @@ const App: React.FC = () => {
 		useRef(null),
 		useRef(null)
 	];
-// scroll to sections
+
+	// scroll to sections
 	const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth' });
 	const scrollToPane = (num: number) => scrollToRef(currentSection[num]);
 
@@ -59,6 +62,18 @@ const App: React.FC = () => {
 		return <AppLoading />;
 	};
 
+	// showPrivacy function
+	const showPrivacy = () => {
+		console.log('inside showPrivacy');
+		return <Privacy />;
+	};
+
+	// showTerms function
+	const showTerms = () => {
+		console.log('inside showTerms');
+		return <Terms />;
+	};
+
 	// renderPage
 	const renderPage = (pageData: any) => {
 		console.log(pageData);
@@ -75,16 +90,19 @@ const App: React.FC = () => {
 				<div ref={currentSection[1]} />
 				<Features />
 				<IconSlider />
-				{/* <div className='bgimg-2' /> */}
 				<div ref={currentSection[2]} />
 				<Locations />
-				<div className='bgimg-3' />
+				<div className='bgimg-2' />
 				<div ref={currentSection[3]} />
 				<Weather />
 				<div ref={currentSection[4]} />
 				<About />
-				<div className='bgimg-4' />
-				<Footer scrollToPane={scrollToPane} />
+				<div className='bgimg-3' />
+				<Footer
+					showPrivacy={showPrivacy}
+					showTerms={showTerms}
+					scrollToPane={scrollToPane}
+				/>
 				<ArrowIcon scrollToPane={scrollToPane} />
 			</>
 		);

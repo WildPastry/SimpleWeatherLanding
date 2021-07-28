@@ -26,8 +26,7 @@
 // bg images
 .bgimg-1,
 .bgimg-2,
-.bgimg-3,
-.bgimg-4 {
+.bgimg-3 {
 	position: relative;
 	background-attachment: fixed;
 	background-position: center;
@@ -53,14 +52,6 @@
 
 .bgimg-3 {
 	background-image: url('../assets/img/bgimg-3.jpg');
-	min-height: 400px;
-	@include bp(sm) {
-		min-height: 200px;
-	}
-}
-
-.bgimg-4 {
-	background-image: url('../assets/img/bgimg-4.jpg');
 	min-height: 100vh;
 	@include bp(sm) {
 		min-height: 200px;
@@ -68,13 +59,13 @@
 }
 
 // screenshots
-.screenShotWrapper {
-	position: relative;
-	@include bp(smmd) {
-		display: flex;
-		justify-content: center;
-	}
-}
+// .screenShotWrapper {
+// 	position: relative;
+// 	@include bp(smmd) {
+// 		display: flex;
+// 		justify-content: center;
+// 	}
+// }
 
 .screenShot {
 	height: 600px;
@@ -95,26 +86,43 @@
 }
 
 .screenShotUnder {
-	display: none;
-	// position: absolute;
-	// z-index: -1;
-	// top: 60px;
-	// left: 250px;
-	// @include bp(lg) {
-	// 	top: 60px;
-	// 	left: 210px;
-	// }
-	// @include bp(smmd) {
-	// 	position: initial;
-	// 	margin-left: 30px;
-	// }
-	// @include bp(sm) {
-	// 	margin-left: 15px;
-	// }
-	// @include bp(xs) {
-	// 	display: none;
-	// }
+	height: 600px;
+	border-radius: 30px;
+	box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.25);
+	@include bp(lg) {
+		height: 500px;
+	}
+	@include bp(smmd) {
+		height: 500px;
+	}
+	@include bp(sm) {
+		height: 450px;
+	}
+	@include bp(xs) {
+		height: 400px;
+	}
 }
+
+// .screenShotUnder {
+// 	position: absolute;
+// 	z-index: -1;
+// 	top: 60px;
+// 	left: 250px;
+// 	@include bp(lg) {
+// 		top: 60px;
+// 		left: 210px;
+// 	}
+// 	@include bp(smmd) {
+// 		position: initial;
+// 		margin-left: 30px;
+// 	}
+// 	@include bp(sm) {
+// 		margin-left: 15px;
+// 	}
+// 	@include bp(xs) {
+// 		display: none;
+// 	}
+// }
 
 // icon slider
 .icon-slider-wrapper {

@@ -12,7 +12,7 @@ const Weather: React.FC = () => {
 				<Col
 					sm={12}
 					lg={6}
-					className='positionRelative d-flex justify-content-center align-items-center'>
+					className='positionRelative d-flex justify-content-center align-items-center bg-spotGreyLight'>
 					{/* <div className='weatherBackGround' /> */}
 					<WeatherIcon />
 				</Col>
