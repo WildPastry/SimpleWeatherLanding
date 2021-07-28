@@ -4,9 +4,9 @@ import { Container, Row } from 'react-bootstrap';
 // IconSlider
 const IconSlider: React.FC = () => {
 	return (
-		<div className='positionRelative pt-5 pb-4'>
+		<div className='positionRelative'>
 			<Container fluid className='py-5'>
-				<Row className='mt-2'>
+				<Row>
 					<div className='icon-slider-wrapper'>
 						<div className='icon-slider' />
 					</div>

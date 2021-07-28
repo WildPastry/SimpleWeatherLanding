@@ -95,24 +95,25 @@
 }
 
 .screenShotUnder {
-	position: absolute;
-	z-index: -1;
-	top: 60px;
-	left: 250px;
-	@include bp(lg) {
-		top: 60px;
-		left: 210px;
-	}
-	@include bp(smmd) {
-		position: initial;
-		margin-left: 30px;
-	}
-	@include bp(sm) {
-		margin-left: 15px;
-	}
-	@include bp(xs) {
-		display: none;
-	}
+	display: none;
+	// position: absolute;
+	// z-index: -1;
+	// top: 60px;
+	// left: 250px;
+	// @include bp(lg) {
+	// 	top: 60px;
+	// 	left: 210px;
+	// }
+	// @include bp(smmd) {
+	// 	position: initial;
+	// 	margin-left: 30px;
+	// }
+	// @include bp(sm) {
+	// 	margin-left: 15px;
+	// }
+	// @include bp(xs) {
+	// 	display: none;
+	// }
 }
 
 // icon slider
@@ -167,50 +168,50 @@
 	width: 300px;
 }
 
-// location
-.locationBackGround {
-	z-index: -1;
-  width: 100%;
-  height: 50px;
-  position: absolute;
-	top: 50%;
-  background: white;
-	border-radius: 13px;
-	opacity: 0.3;
-	@include bp(lg) {
-		width: 90%;
-	}
-	@include bp(md) {
-		width: 50%;
-	}
-	@include bp(sm) {
-		width: 50%;
-	}
-	@include bp(xs) {
-		width: 80%;
-	}
-}
+// // location
+// .locationBackGround {
+// 	z-index: -1;
+//   width: 100%;
+//   height: 50px;
+//   position: absolute;
+// 	top: 50%;
+//   background: white;
+// 	border-radius: 13px;
+// 	opacity: 0.3;
+// 	@include bp(lg) {
+// 		width: 90%;
+// 	}
+// 	@include bp(md) {
+// 		width: 50%;
+// 	}
+// 	@include bp(sm) {
+// 		width: 50%;
+// 	}
+// 	@include bp(xs) {
+// 		width: 80%;
+// 	}
+// }
 
-// weather
-.weatherBackGround {
-	z-index: -1;
-  width: 100%;
-  height: 50px;
-  position: absolute;
-	top: 50%;
-  background: white;
-	border-radius: 13px;
-	opacity: 0.3;
-	@include bp(lg) {
-		width: 90%;
-	}
-	@include bp(md) {
-		width: 50%;
-	}
-	@include bp(sm) {
-		width: 50%;
-	}
-	@include bp(xs) {
-		width: 80%;
-	}
-}
+// // weather
+// .weatherBackGround {
+// 	z-index: -1;
+//   width: 100%;
+//   height: 50px;
+//   position: absolute;
+// 	top: 50%;
+//   background: white;
+// 	border-radius: 13px;
+// 	opacity: 0.3;
+// 	@include bp(lg) {
+// 		width: 90%;
+// 	}
+// 	@include bp(md) {
+// 		width: 50%;
+// 	}
+// 	@include bp(sm) {
+// 		width: 50%;
+// 	}
+// 	@include bp(xs) {
+// 		width: 80%;
+// 	}
+// }

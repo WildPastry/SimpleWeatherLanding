@@ -7,7 +7,7 @@ import LocationIcon from '../components/LocationIcon';
 // Locations
 const Locations: React.FC = () => {
 	return (
-		<Container fluid='xl' className='locationsContainer'>
+		<Container fluid='md' className='locationsContainer'>
 			<Row className='locationsWrapper'>
 				<Col sm={12} lg={6} className='locationsTextWrapper fontRg'>
 					<h2 className='h2Bd thunderStorm'>Locations.</h2>
@@ -23,7 +23,7 @@ const Locations: React.FC = () => {
 					<p>Easy to use with a basic daily summary and a 5 day forecast.</p>
 				</Col>
 				<Col sm={12} lg={6} className='positionRelative d-flex justify-content-center align-items-center'>
-					<div className='locationBackGround' />
+					{/* <div className='locationBackGround' /> */}
 					<LocationIcon />
 				</Col>
 			</Row>

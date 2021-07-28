@@ -7,13 +7,13 @@ import WeatherIcon from '../components/WeatherIcon';
 // WEATHER
 const Weather: React.FC = () => {
 	return (
-		<Container fluid='xl' className='weatherContainer'>
+		<Container fluid='md' className='weatherContainer'>
 			<Row className='weatherWrapper'>
 				<Col
 					sm={12}
 					lg={6}
 					className='positionRelative d-flex justify-content-center align-items-center'>
-					<div className='weatherBackGround' />
+					{/* <div className='weatherBackGround' /> */}
 					<WeatherIcon />
 				</Col>
 				<Col sm={12} lg={6} className='weatherTextWrapper fontRg'>

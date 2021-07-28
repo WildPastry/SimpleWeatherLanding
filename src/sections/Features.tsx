@@ -11,7 +11,7 @@ import { AddCircle, ArrowUp, ArrowDown, CloseCircle, Home, Search } from 'react-
 // Features
 const Features: React.FC = () => {
 	return (
-		<Container fluid='xl' className='featureContainer'>
+		<Container fluid='md' className='featureContainer'>
 			<Row className='featuresWrapper'>
 				<Col sm={12} lg={6}>
 					<div className='screenShotWrapper'>
