@@ -27,6 +27,9 @@ import './scss/main.scss';
 
 // App
 const App: React.FC = () => {
+	// reference the body
+	let body = document.getElementsByTagName('body')[0];
+
 	// scroll function reference setup
 	let currentSection = [
 		useRef(null),
@@ -63,13 +66,24 @@ const App: React.FC = () => {
 		return <Error />;
 	};
 
+	// remove scrolling from the body
+	const toggleBody = (type: any) => {
+		type == false ? body.classList.remove('overFlow') : body.classList.add('overFlow');
+	};
+
 	// toggle privacy section
 	const [showPrivacy, setShowPrivacy] = useState(false);
-	const togglePrivacy = () => showPrivacy == false ? setShowPrivacy(true) : setShowPrivacy(false);
+	const togglePrivacy = () =>
+		showPrivacy == false
+			? (setShowPrivacy(true), toggleBody(true))
+			: (setShowPrivacy(false), toggleBody(false));
 
 	// toggle terms section
 	const [showTerms, setShowTerms] = useState(false);
-	const toggleTerms = () => showTerms == false ? setShowTerms(true) : setShowTerms(false);
+	const toggleTerms = () =>
+		showTerms == false
+			? (setShowTerms(true), toggleBody(true))
+			: (setShowTerms(false), toggleBody(false));
 
 	// renderPage
 	const renderPage = (pageData: any) => {
@@ -80,7 +94,7 @@ const App: React.FC = () => {
 			errorContainer()
 		) : (
 			<>
-			<div>{showPrivacy ? <Privacy togglePrivacy={togglePrivacy} /> : null}</div>
+				<div>{showPrivacy ? <Privacy togglePrivacy={togglePrivacy} /> : null}</div>
 				<div>{showTerms ? <Terms toggleTerms={toggleTerms} /> : null}</div>
 				<div ref={currentSection[0]} />
 				<Header scrollToSection={scrollToSection} />
