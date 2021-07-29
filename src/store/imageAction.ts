@@ -23,4 +23,5 @@ const imageAction = {
 			.finally(() => {});
 	}
 };
+
 export default imageAction;
