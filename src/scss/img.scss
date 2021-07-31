@@ -60,11 +60,8 @@
 
 // screenshots
 .screenShotWrapper {
-	position: relative;
-	@include bp(smmd) {
 		display: flex;
 		justify-content: center;
-	}
 }
 
 .screenShot {
@@ -85,23 +82,23 @@
 	}
 }
 
-.screenShotUnder {
-	height: 600px;
-	border-radius: 30px;
-	box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.25);
-	@include bp(lg) {
-		height: 500px;
-	}
-	@include bp(smmd) {
-		height: 500px;
-	}
-	@include bp(sm) {
-		height: 450px;
-	}
-	@include bp(xs) {
-		height: 400px;
-	}
-}
+// .screenShotUnder {
+// 	height: 600px;
+// 	border-radius: 30px;
+// 	box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.25);
+// 	@include bp(lg) {
+// 		height: 500px;
+// 	}
+// 	@include bp(smmd) {
+// 		height: 500px;
+// 	}
+// 	@include bp(sm) {
+// 		height: 450px;
+// 	}
+// 	@include bp(xs) {
+// 		height: 400px;
+// 	}
+// }
 
 // .screenShotUnder {
 // 	position: absolute;

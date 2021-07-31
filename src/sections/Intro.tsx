@@ -10,7 +10,7 @@ const Intro: React.FC = () => {
 		<Container fluid='lg' className='my-3'>
 			<Row className='my-3'>
 				<Col xs={12}>
-					<h1 className='h1Bd'>Does what the name suggests.</h1>
+					<h1 className='h1Bd'>Does what the name suggests</h1>
 					<h2 className='h2Rg'>
 						Fast, accurate, and intuitive weather app designed for iOS and Android.
 					</h2>

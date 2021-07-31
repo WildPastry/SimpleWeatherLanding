@@ -11,24 +11,24 @@ import { AddCircle, ArrowUp, ArrowDown, CloseCircle, Home, Search } from 'react-
 // Features
 const Features: React.FC = () => {
 	return (
-		<Container fluid='md' className='featureContainer'>
-			<Row className='featuresWrapper'>
+		<Container fluid='md' className='sectionContainer'>
+			<Row>
 				<Col sm={12} lg={6}>
 					<div className='screenShotWrapper'>
 						<img
 							src={screenOne}
-							className='screenShot screenShotOver'
+							className='screenShot'
 							alt='SimpleWeather Christchurch Summary Screen'
 						/>
 						<img
 							src={screenTwo}
-							className='screenShot screenShotUnder'
-							alt='SimpleWeather Help Screen'
+							className='screenShot'
+							alt='SimpleWeather Los Angeles Summary Screen'
 						/>
 					</div>
 				</Col>
-				<Col sm={12} lg={6} className='featuresTextWrapper fontRg'>
-					<h2 className='h2Bd thunderStorm'>Features.</h2>
+				<Col sm={12} lg={6} className='fontRg'>
+					<h2 className='h2Bd thunderStorm'>Features</h2>
 					<p>
 						Data provided by OpenWeather and DarkSky with access to <b>thousands</b> of
 						locations worldwide.

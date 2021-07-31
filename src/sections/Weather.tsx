@@ -7,16 +7,15 @@ import WeatherIcon from '../components/WeatherIcon';
 // WEATHER
 const Weather: React.FC = () => {
 	return (
-		<Container fluid='md' className='weatherContainer'>
-			<Row className='weatherWrapper'>
+		<Container fluid='md' className='sectionContainer'>
+			<Row>
 				<Col
 					sm={12}
 					lg={6}
-					className='positionRelative d-flex justify-content-center align-items-center bg-spotGreyLight'>
-					{/* <div className='weatherBackGround' /> */}
+					className='positionRelative d-flex justify-content-center align-items-center'>
 					<WeatherIcon />
 				</Col>
-				<Col sm={12} lg={6} className='weatherTextWrapper fontRg'>
+				<Col sm={12} lg={6} className='fontRg'>
 					<h2 className='h2Bd thunderStorm'>Weather.</h2>
 					<p>
 						Data provided by OpenWeather and DarkSky with access to <b>thousands</b> of

@@ -3,13 +3,10 @@
 @import 'mixins';
 
 // // features
-// .featureContainer {
-// 	margin-top: 5rem;
-// 	margin-bottom: 3rem;
-// 	@include bp(smmd) {
-// 		margin-bottom: 0;
-// 	}
-// }
+.sectionContainer {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
 
 // .featuresWrapper {
 // 	padding-left: 0;
