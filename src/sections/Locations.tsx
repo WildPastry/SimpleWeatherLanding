@@ -7,10 +7,10 @@ import LocationIcon from '../components/LocationIcon';
 // Locations
 const Locations: React.FC = () => {
 	return (
-		<Container fluid='md' className='sectionContainer'>
+		<Container fluid='lg' className='sectionContainer'>
 			<Row>
 				<Col sm={12} lg={6} className='fontRg'>
-					<h2 className='h2Bd thunderStorm'>Locations.</h2>
+					<h2 className='h2Bd thunderStorm'>Locations</h2>
 					<p>
 						Data provided by OpenWeather and DarkSky with access to <b>thousands</b> of
 						locations worldwide.

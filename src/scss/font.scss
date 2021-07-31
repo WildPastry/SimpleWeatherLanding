@@ -99,3 +99,11 @@ h5 {
 		cursor: pointer;
 	}
 }
+
+@media (max-width: 767px) {
+	.navLink {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		padding-bottom: 0.5rem !important;
+	}
+}

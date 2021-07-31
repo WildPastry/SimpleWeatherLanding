@@ -68,20 +68,20 @@ const App: React.FC = () => {
 
 	// remove scrolling from the body
 	const toggleBody = (type: any) => {
-		type == false ? body.classList.remove('overFlow') : body.classList.add('overFlow');
+		type === false ? body.classList.remove('overFlow') : body.classList.add('overFlow');
 	};
 
 	// toggle privacy section
 	const [showPrivacy, setShowPrivacy] = useState(false);
 	const togglePrivacy = () =>
-		showPrivacy == false
+		showPrivacy === false
 			? (setShowPrivacy(true), toggleBody(true))
 			: (setShowPrivacy(false), toggleBody(false));
 
 	// toggle terms section
 	const [showTerms, setShowTerms] = useState(false);
 	const toggleTerms = () =>
-		showTerms == false
+		showTerms === false
 			? (setShowTerms(true), toggleBody(true))
 			: (setShowTerms(false), toggleBody(false));
 
