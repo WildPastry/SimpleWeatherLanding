@@ -102,7 +102,7 @@ hr {
 // navbar
 .navbar {
 	text-align: right;
-	@include bp(xxs) {
+	@include bp(xs) {
 		flex-direction: column;
 		text-align: center;
 	}
