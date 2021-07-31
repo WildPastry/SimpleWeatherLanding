@@ -1,35 +1,44 @@
+// import frameworks
+import { useLottie } from 'lottie-react';
+
 // import assets
-import WeatherIconOne from '../assets/img/weather-icon-1.png';
-// import WeatherIconTwo from '../assets/img/weather-icon-2.png';
-// import axios from 'axios';
-// fetch('../assets/data/weatherIcons.json')
-// 	.then((res) => res.json())
-// 	.then((data) => {
-// 		console.log(data);
-// 	});
+import dayClear from '../assets/animations/weather/dayClear.json';
+import brokenClouds from '../assets/animations/weather/brokenClouds.json';
+import nightClear from '../assets/animations/weather/nightClear.json';
+import thunderStorm from '../assets/animations/weather/thunderStorm.json';
+import lightDrizzle from '../assets/animations/weather/lightDrizzle.json';
+import snow from '../assets/animations/weather/snow.json';
 
 // WeatherIcon
 const WeatherIcon: React.FC = () => {
+	const weatherIcons = [
+		dayClear,
+		brokenClouds,
+		nightClear,
+		thunderStorm,
+		lightDrizzle,
+		snow
+	];
 
-// 	useEffect(() => {
-//     fetch('data.json')
-//         .then(response => response.json())
-//         .then((json) => setData(json))
-// }, [])
+	// select a random weather icon
+	var randomWeather = Math.floor(Math.random() * weatherIcons.length);
+	var currentIcon = weatherIcons[randomWeather];
 
-// axios.get('data.json')
-// .then(res => console.log(res.data))
-// .catch(err => console.log(err)
+	// icon styles
+	const style = {
+		height: 300
+	};
 
-	// fetch("src/assets/data/weatherIcons.json")
-	// .then(res => console.log(res))
+	// icon options
+	const options = {
+		animationData: currentIcon,
+		loop: true,
+		autoplay: true
+	};
 
-	return (
-		<>
-			<img className='weatherIcon' src={WeatherIconOne} alt='Weather Icon One' />
-			{/* <img className='weatherIcon' src={WeatherIconTwo} alt='Weather Icon Two' /> */}
-		</>
-	);
+	// diplay the weather animation
+	const { View } = useLottie(options, style);
+	return View;
 };
 
 // EXPORT WeatherIcon

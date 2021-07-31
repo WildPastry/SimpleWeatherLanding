@@ -1,28 +1,26 @@
+// import frameworks
+import { useLottie } from 'lottie-react';
+
+// import assets
+import loader from '../assets/animations/loader.json';
+
 // AppLoading
 const AppLoading = () => {
-	return (
-		<>
-			<div className='loader'>
-				<div className='loader-inner'>
-					<div className='loader-line-wrap'>
-						<div className='loader-line'></div>
-					</div>
-					<div className='loader-line-wrap'>
-						<div className='loader-line'></div>
-					</div>
-					<div className='loader-line-wrap'>
-						<div className='loader-line'></div>
-					</div>
-					<div className='loader-line-wrap'>
-						<div className='loader-line'></div>
-					</div>
-					<div className='loader-line-wrap'>
-						<div className='loader-line'></div>
-					</div>
-				</div>
-			</div>
-		</>
-	);
+	// icon styles
+	const style = {
+		height: 200
+	};
+
+	// icon options
+	const options = {
+		animationData: loader,
+		loop: true,
+		autoplay: true
+	};
+
+	// diplay the loading animation
+	const { View } = useLottie(options, style);
+	return <div className='loader'>{View}</div>;
 };
 
 // EXPORT AppLoading
