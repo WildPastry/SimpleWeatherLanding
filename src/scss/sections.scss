@@ -2,12 +2,13 @@
 @import 'variables';
 @import 'mixins';
 
-// sections
+// section container
 .sectionContainer {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 }
 
+// weather section container
 .weatherContainer {
 	padding-top: 3rem;
 	padding-bottom: 3rem;	

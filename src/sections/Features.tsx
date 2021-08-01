@@ -1,5 +1,7 @@
 // import frameworks
 import { Col, Container, Row } from 'react-bootstrap';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 // import assets
 import screenOne from '../assets/img/screen-1.jpg';
@@ -40,22 +42,60 @@ const Features: React.FC = () => {
 					</p>
 					<p>Easy to use with a basic daily summary and a 5 day forecast.</p>
 					<div className='mt-4 appIcons'>
-						<Home color={'#37d493'} title={'Home'} height='50px' width='50px' />
-						<AddCircle
-							color={'#17577a'}
-							title={'Add Circle'}
-							height='50px'
-							width='50px'
-						/>
-						<CloseCircle
-							color={'#17577a'}
-							title={'Close Circle'}
-							height='50px'
-							width='50px'
-						/>
-						<Search color={'#313136'} title={'Search'} height='50px' width='50px' />
-						<ArrowUp color={'#2485c7'} title={'High Temp'} height='50px' width='50px' />
-						<ArrowDown color={'#2485c7'} title={'Low Temp'} height='50px' width='50px' />
+						<Tippy
+							theme='simpleWeather'
+							className='p-1'
+							content='Set locations as home'
+							placement='bottom'>
+							<span className='tippyWrapper'>
+								<Home color={'#37d493'} height='50px' width='50px' />
+							</span>
+						</Tippy>
+						<Tippy
+							theme='simpleWeather'
+							className='p-1'
+							content='Save locations'
+							placement='bottom'>
+							<span className='tippyWrapper'>
+								<AddCircle color={'#17577a'} height='50px' width='50px' />
+							</span>
+						</Tippy>
+						<Tippy
+							theme='simpleWeather'
+							className='p-1'
+							content='Remove locations'
+							placement='bottom'>
+							<span className='tippyWrapper'>
+								<CloseCircle color={'#17577a'} height='50px' width='50px' />
+							</span>
+						</Tippy>
+						<Tippy
+							theme='simpleWeather'
+							className='p-1'
+							content='Search for locations'
+							placement='bottom'>
+							<span className='tippyWrapper'>
+								<Search color={'#313136'} height='50px' width='50px' />
+							</span>
+						</Tippy>
+						<Tippy
+							theme='simpleWeather'
+							className='p-1'
+							content='High temperature'
+							placement='bottom'>
+							<span className='tippyWrapper'>
+								<ArrowUp color={'#2485c7'} height='50px' width='50px' />
+							</span>
+						</Tippy>
+						<Tippy
+							theme='simpleWeather'
+							className='p-1'
+							content='Low temperature'
+							placement='bottom'>
+							<span className='tippyWrapper'>
+								<ArrowDown color={'#2485c7'} height='50px' width='50px' />
+							</span>
+						</Tippy>
 					</div>
 				</Col>
 			</Row>

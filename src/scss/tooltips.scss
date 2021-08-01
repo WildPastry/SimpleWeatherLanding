@@ -1,0 +1,22 @@
+// master imports
+@import 'variables';
+@import 'mixins';
+
+// tippy theme
+.tippy-box[data-theme~='simpleWeather'] {
+	background-color: $thunderStorm;
+	color: $light;
+}
+
+.tippy-box[data-theme~='simpleWeather'][data-placement^='top'] > .tippy-arrow::before {
+	border-top-color: $thunderStorm;
+}
+.tippy-box[data-theme~='simpleWeather'][data-placement^='bottom'] > .tippy-arrow::before {
+	border-bottom-color: $thunderStorm;
+}
+.tippy-box[data-theme~='simpleWeather'][data-placement^='left'] > .tippy-arrow::before {
+	border-left-color: $thunderStorm;
+}
+.tippy-box[data-theme~='simpleWeather'][data-placement^='right'] > .tippy-arrow::before {
+	border-right-color: $thunderStorm;
+}
