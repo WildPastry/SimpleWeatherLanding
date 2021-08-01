@@ -17,14 +17,14 @@ const Features: React.FC = () => {
 					<div className='screenShotWrapper'>
 						<img
 							src={screenOne}
-							className='screenShot'
+							className='screenShot screenShotOne'
 							alt='SimpleWeather Christchurch Summary Screen'
 						/>
-						{/* <img
+						<img
 							src={screenTwo}
-							className='screenShot'
+							className='screenShot screenShotTwo'
 							alt='SimpleWeather Los Angeles Summary Screen'
-						/> */}
+						/>
 					</div>
 				</Col>
 				<Col sm={12} lg={6} className='fontRg'>
@@ -40,12 +40,7 @@ const Features: React.FC = () => {
 					</p>
 					<p>Easy to use with a basic daily summary and a 5 day forecast.</p>
 					<div className='mt-4 appIcons'>
-						<Home
-							color={'#37d493'}
-							title={'Home'}
-							height='50px'
-							width='50px'
-						/>
+						<Home color={'#37d493'} title={'Home'} height='50px' width='50px' />
 						<AddCircle
 							color={'#17577a'}
 							title={'Add Circle'}
@@ -58,24 +53,9 @@ const Features: React.FC = () => {
 							height='50px'
 							width='50px'
 						/>
-						<Search
-							color={'#313136'}
-							title={'Search'}
-							height='50px'
-							width='50px'
-						/>
-						<ArrowUp
-							color={'#2485c7'}
-							title={'High Temp'}
-							height='50px'
-							width='50px'
-						/>
-						<ArrowDown
-							color={'#2485c7'}
-							title={'Low Temp'}
-							height='50px'
-							width='50px'
-						/>
+						<Search color={'#313136'} title={'Search'} height='50px' width='50px' />
+						<ArrowUp color={'#2485c7'} title={'High Temp'} height='50px' width='50px' />
+						<ArrowDown color={'#2485c7'} title={'Low Temp'} height='50px' width='50px' />
 					</div>
 				</Col>
 			</Row>

@@ -32,6 +32,9 @@
 	@include bp(xl) {
 		font-size: map-get($fontSize, 'xl');
 	}
+	@include bp(xxl) {
+		font-size: map-get($fontSize, 'xxl');
+	}
 }
 
 // h1 sizes
@@ -48,6 +51,9 @@
 	}
 	@include bp(xl) {
 		font-size: map-get($h1Size, 'xl');
+	}
+	@include bp(xxl) {
+		font-size: map-get($h1Size, 'xxl');
 	}
 }
 
@@ -66,6 +72,9 @@
 	@include bp(xl) {
 		font-size: map-get($h2Size, 'xl');
 	}
+	@include bp(xxl) {
+		font-size: map-get($h2Size, 'xxl');
+	}
 }
 
 // icon heights
@@ -83,15 +92,19 @@
 	@include bp(xl) {
 		height: map-get($iconHeight, 'xl');
 	}
+	@include bp(xxl) {
+		height: map-get($iconHeight, 'xxl');
+	}
 }
 
 // media breakpoints
 @mixin bp($point) {
-	$bp-xs: 'screen and (max-width: 479px)';
-	$bp-sm: 'screen and (min-width: 480px) and (max-width: 575px)';
-	$bp-md: 'screen and (min-width: 576px) and (max-width: 767px)';
-	$bp-lg: 'screen and (min-width: 768px) and (max-width: 1399px)';
-	$bp-xl: 'screen and (min-width: 1400px)';
+	$bp-xs: 'screen and (max-width: 575px)';
+	$bp-sm: 'screen and (min-width: 576px) and (max-width: 767px)';
+	$bp-md: 'screen and (min-width: 768px) and (max-width: 991px)';
+	$bp-lg: 'screen and (min-width: 992px) and (max-width: 1199px)';
+	$bp-xl: 'screen and (min-width: 1200px) and (max-width: 1399px)';
+	$bp-xxl: 'screen and (min-width: 1400px)';
 
 	@if $point == xs {
 		@media #{$bp-xs} {
@@ -111,6 +124,10 @@
 		}
 	} @else if $point == xl {
 		@media #{$bp-xl} {
+			@content;
+		}
+	} @else if $point == xxl {
+		@media #{$bp-xxl} {
 			@content;
 		}
 	}

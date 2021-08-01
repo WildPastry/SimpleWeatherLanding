@@ -2,11 +2,6 @@
 @import 'variables';
 @import 'mixins';
 
-// main icon
-.mainIcon {
-	@include iconHeight;
-}
-
 // main logo
 .appLogoNav {
 	height: 35px;
@@ -16,11 +11,11 @@
 // google badge
 .googleBadge {
 	height: 60px;
+	max-height: 60px;
+	max-width: 100%;
 	@include bp(xs) {
 		height: 45px;
 	}
-	max-height: 60px;
-	max-width: 100%;
 }
 
 // bg images
@@ -40,12 +35,18 @@
 	@include bp(sm) {
 		min-height: 200px;
 	}
+	@include bp(xs) {
+		min-height: 200px;
+	}
 }
 
 .bgimg-2 {
 	background-image: url('../assets/img/bgimg-2.jpg');
 	min-height: 400px;
 	@include bp(sm) {
+		min-height: 200px;
+	}
+	@include bp(xs) {
 		min-height: 200px;
 	}
 }
@@ -56,35 +57,68 @@
 	@include bp(sm) {
 		min-height: 200px;
 	}
+	@include bp(xs) {
+		min-height: 200px;
+	}
 }
 
 // screenshots
 .screenShotWrapper {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 2rem;
-		@include bp(xl) {
-			margin-bottom: 0;
-		}
-		@include bp(lg) {
-			margin-bottom: 0;
-		}
+	position: relative;
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+	@include bp(xxl) {
+		display: block;
+	}
+	@include bp(xl) {
+		display: block;
+	}
+	@include bp(lg) {
+		display: block;
+	}
 }
 
 .screenShot {
-	height: 600px;
+	height: 550px;
 	border-radius: 25px;
-	@include bp(lg) {
-		height: 550px;
-	}
-	@include bp(md) {
-		height: 500px;
-	}
+	box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
 	@include bp(sm) {
-		height: 450px;
+		height: 500px;
 	}
 	@include bp(xs) {
 		height: 450px;
+	}
+}
+
+.screenShotOne {
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+	@include bp(sm) {
+		margin-left: 30px;
+	}
+	@include bp(xs) {
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+
+.screenShotTwo {
+	position: absolute;
+	left: 210px;
+	-ms-transform: rotate(10deg);
+	transform: rotate(10deg);
+	@include bp(lg) {
+		left: 100px;
+	}
+	@include bp(md) {
+		position: initial;
+	}
+	@include bp(sm) {
+		position: initial;
+	}
+	@include bp(xs) {
+		display: none;
 	}
 }
 

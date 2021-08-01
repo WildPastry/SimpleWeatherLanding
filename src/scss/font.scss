@@ -98,10 +98,12 @@ h5 {
 		color: $spotBlue;
 		cursor: pointer;
 	}
-}
-
-@media (max-width: 767px) {
-	.navLink {
+	@include bp(xs) {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0.5rem;
+	}
+	@include bp(sm) {
 		padding-left: 0;
 		padding-right: 0;
 		padding-bottom: 0.5rem;
