@@ -1,4 +1,4 @@
-// import icons
+// import icon
 import { Location } from 'react-ionicons';
 
 // LocationIcon

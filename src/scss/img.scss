@@ -175,6 +175,29 @@
 	width: 300px;
 }
 
+// close icon
+.closeIcon {
+	z-index: 5;
+	cursor: pointer;
+	position: fixed;
+	top: 45px;
+	right: 45px;
+	animation: fadeIn 0.3s;
+	transition: opacity 0.4s;
+	opacity: 0.7;
+	&:hover {
+		opacity: 1;
+	}
+	@include bp(sm) {
+		top: 25px;
+		right: 25px;
+	}
+	@include bp(xs) {
+		top: 20px;
+		right: 20px;
+	}
+}
+
 // app icons
 .appIcons {
 	display: flex;

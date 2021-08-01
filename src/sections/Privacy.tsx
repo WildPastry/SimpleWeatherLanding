@@ -5,7 +5,7 @@
 const Privacy: React.FC<TogglePrivacy> = (props) => {
 	return (
 		<>
-			<div className='fullPageFixed' onClick={() => props.togglePrivacy()}>
+			<div className='fullPageFixed bg-dark' onClick={() => props.togglePrivacy()}>
 				<div className='fullPageFixedInner'>
 					<h1 className='spotOrange text-center'>PRIVACY</h1>
 					<h5 className='light text-center'>Information here</h5>

@@ -41,13 +41,23 @@ ul {
 	padding-left: 0;
 }
 
-li {
+ul li {
 	padding: 0.2rem 0;
 	color: $clouds;
 	cursor: pointer;
 	&:hover {
 		color: $cloudsDarkest;
 	}
+}
+
+ol {
+	text-align: left;
+	padding-left: 0;
+}
+
+ol li {
+	padding: 0.2rem 0;
+	color: $clouds;
 }
 
 // hr
@@ -78,7 +88,6 @@ hr {
 
 // position control
 .fullPageFixed {
-	background: $dark;
 	bottom: 0;
 	left: 0;
 	overflow: hidden;
@@ -115,4 +124,8 @@ hr {
 // overflow
 .overFlow {
 	overflow: hidden;
+}
+
+.overFlowScroll {
+	overflow-y: scroll;
 }
