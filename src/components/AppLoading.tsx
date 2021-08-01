@@ -20,7 +20,7 @@ const AppLoading = () => {
 
 	// diplay the loading animation
 	const { View } = useLottie(options, style);
-	return <div className='loader'>{View}</div>;
+	return <section className='loader'>{View}</section>;
 };
 
 // EXPORT AppLoading

@@ -94,21 +94,21 @@ const App: React.FC = () => {
 			errorContainer()
 		) : (
 			<>
-				<div>{showPrivacy ? <Privacy togglePrivacy={togglePrivacy} /> : null}</div>
-				<div>{showTerms ? <Terms toggleTerms={toggleTerms} /> : null}</div>
-				<div ref={currentSection[0]} />
+				<section>{showPrivacy ? <Privacy togglePrivacy={togglePrivacy} /> : null}</section>
+				<section>{showTerms ? <Terms toggleTerms={toggleTerms} /> : null}</section>
+				<section ref={currentSection[0]} />
 				<Header scrollToSection={scrollToSection} />
 				<Intro />
 				<div className='bgimg-1' />
-				<div ref={currentSection[1]} />
+				<section ref={currentSection[1]} />
 				<Features />
 				<IconSlider />
-				<div ref={currentSection[2]} />
+				<section ref={currentSection[2]} />
 				<Locations />
 				<div className='bgimg-2' />
-				<div ref={currentSection[3]} />
+				<section ref={currentSection[3]} />
 				<Weather />
-				<div ref={currentSection[4]} />
+				<section ref={currentSection[4]} />
 				<About />
 				<div className='bgimg-3' />
 				<Footer

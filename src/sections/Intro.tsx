@@ -7,7 +7,7 @@ import googleBadge from '../assets/img/google-play-badge.png';
 // Intro
 const Intro: React.FC = () => {
 	return (
-		<Container fluid='lg' className='my-3'>
+		<Container fluid='lg' className='mt-3 mb-5'>
 			<Row className='my-3'>
 				<Col xs={12}>
 					<h1 className='h1Bd'>Does what the name suggests</h1>

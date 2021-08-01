@@ -102,8 +102,15 @@ h5 {
 
 @media (max-width: 767px) {
 	.navLink {
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-		padding-bottom: 0.5rem !important;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0.5rem;
 	}
+}
+
+// about text
+.aboutText {
+	font-size: 5rem;
+	text-align: right;
+	font-weight: map-get($fontWeight, 'bd');
 }
