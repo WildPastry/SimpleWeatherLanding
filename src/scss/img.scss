@@ -3,6 +3,10 @@
 @import 'mixins';
 
 // main logo
+.appLogo {
+	height: 300px;
+}
+
 .appLogoNav {
 	height: 35px;
 	margin-right: 10px;
@@ -147,7 +151,6 @@
 // arrow icon
 .arrowIcon {
 	z-index: 5;
-	background-color: $thunderStorm;
 	border-radius: 20%;
 	cursor: pointer;
 	position: fixed;

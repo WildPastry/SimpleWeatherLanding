@@ -1,8 +1,8 @@
 // import frameworks
 import { Col, Container, Row } from 'react-bootstrap';
 
-// import components
-import CloseIcon from '../components/CloseIcon';
+// import icon
+import { Close } from 'react-ionicons';
 
 /** @type {ToggleTerms} */
 /** @param {ToggleTerms} params.toggleTerms */
@@ -10,8 +10,15 @@ import CloseIcon from '../components/CloseIcon';
 // Terms
 const Terms: React.FC<ToggleTerms> = (props) => {
 	return (
-		<div className='fullPageFixed bg-light overFlowScroll'>
-			<CloseIcon toggleTerms={props.toggleTerms} />
+		<section className='fullPageFixed bg-light overFlowScroll'>
+			<Close
+				onClick={() => props.toggleTerms()}
+				cssClasses='closeIcon'
+				color={'#1faadb'}
+				title={'CLOSE'}
+				height='50px'
+				width='50px'
+			/>
 			<Container fluid='lg' className='sectionContainerPadded'>
 				<Row>
 					<Col sm={12}>
@@ -58,7 +65,7 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 							password” link.
 						</p>
 						<h5>PROHIBITED ACTIVITIES</h5>
-						<p>
+						<p className='mb-1'>
 							You may not access or use the App for any purpose other than that for which
 							we make the App available. The App may not be used in connection with any
 							commercial endeavours except those that are specifically endorsed or
@@ -163,7 +170,7 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 						</ol>
 
 						<h5>MOBILE APPLICATION LICENSE</h5>
-						<p>
+						<p className='mb-1'>
 							Use License If you access the App via a mobile application, then we grant
 							you a revocable, non-exclusive, non-transferable, limited right to install
 							and use the mobile application on wireless electronic devices owned or
@@ -199,7 +206,7 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 						</ol>
 
 						<h5>APPLE AND ANDROID DEVICES</h5>
-						<p>
+						<p className='mb-1'>
 							The following terms apply when you use a mobile application obtained from
 							either the Apple Store or Google Play (each an “App Distributor”) to access
 							the App:
@@ -283,7 +290,7 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 						</p>
 
 						<h5>APP MANAGEMENT</h5>
-						<p>We reserve the right, but not the obligation, to:</p>
+						<p className='mb-1'>We reserve the right, but not the obligation, to:</p>
 						<ol>
 							<li>(1) monitor the App for violations of these Terms and Conditions.</li>
 							<li>
@@ -471,7 +478,7 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 					</Col>
 				</Row>
 			</Container>
-		</div>
+		</section>
 	);
 };
 

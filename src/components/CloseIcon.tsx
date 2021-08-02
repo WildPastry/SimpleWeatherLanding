@@ -1,14 +1,10 @@
 // import icon
 import { Close } from 'react-ionicons';
 
-/** @type {ToggleTerms} */
-/** @param {ToggleTerms} params.toggleTerms */
-
 // CloseIcon
-const CloseIcon: React.FC<ToggleTerms> = (props) => {
+const CloseIcon: React.FC = () => {
 	return (
 		<Close
-			onClick={() => props.toggleTerms()}
 			cssClasses='closeIcon'
 			color={'#1faadb'}
 			title={'CLOSE'}

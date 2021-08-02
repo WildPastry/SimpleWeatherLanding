@@ -33,3 +33,9 @@ interface SectionProps {
 	togglePrivacy(): any;
 	toggleTerms(): any;
 }
+
+// modules
+declare module '*.svg' {
+	const content: string;
+	export default content;
+}
