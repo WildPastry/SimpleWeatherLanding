@@ -12,7 +12,6 @@ import Intro from './sections/Intro';
 import Features from './sections/Features';
 import Locations from './sections/Locations';
 import Weather from './sections/Weather';
-import About from './sections/About';
 import Footer from './sections/Footer';
 
 // import components
@@ -31,13 +30,7 @@ const App: React.FC = () => {
 	let body = document.getElementsByTagName('body')[0];
 
 	// scroll function reference setup
-	let currentSection = [
-		useRef(null),
-		useRef(null),
-		useRef(null),
-		useRef(null),
-		useRef(null)
-	];
+	let currentSection = [useRef(null), useRef(null), useRef(null), useRef(null)];
 
 	// scroll to sections
 	const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -94,8 +87,8 @@ const App: React.FC = () => {
 			errorContainer()
 		) : (
 			<>
-				<section>{showPrivacy ? <Privacy togglePrivacy={togglePrivacy} /> : null}</section>
-				<section>{showTerms ? <Terms toggleTerms={toggleTerms} /> : null}</section>
+				{showPrivacy ? <Privacy togglePrivacy={togglePrivacy} /> : null}
+				{showTerms ? <Terms toggleTerms={toggleTerms} /> : null}
 				<section ref={currentSection[0]} />
 				<Header scrollToSection={scrollToSection} />
 				<Intro />
@@ -108,8 +101,6 @@ const App: React.FC = () => {
 				<div className='bgimg-2' />
 				<section ref={currentSection[3]} />
 				<Weather />
-				<section ref={currentSection[4]} />
-				<About />
 				<div className='bgimg-3' />
 				<Footer
 					togglePrivacy={togglePrivacy}

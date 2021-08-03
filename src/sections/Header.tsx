@@ -21,11 +21,10 @@ const Header: React.FC<ScrollToSection> = (props) => {
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
-					<Nav className='mr-auto fontRg thunderStorm'>
+					<Nav className='mr-auto fontRg clouds'>
 						<div className='px-2 navLink' onClick={() => props.scrollToSection(1)}>Features</div>
 						<div className='px-2 navLink' onClick={() => props.scrollToSection(2)}>Locations</div>
 						<div className='px-2 navLink' onClick={() => props.scrollToSection(3)}>Weather</div>
-						<div className='px-2 navLink' onClick={() => props.scrollToSection(4)}>About</div>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>

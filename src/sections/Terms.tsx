@@ -4,6 +4,9 @@ import { Col, Container, Row } from 'react-bootstrap';
 // import icon
 import { Close } from 'react-ionicons';
 
+// import assets
+import logo from '../assets/icon/logo.svg';
+
 /** @type {ToggleTerms} */
 /** @param {ToggleTerms} params.toggleTerms */
 
@@ -22,7 +25,10 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 			<Container fluid='lg' className='sectionContainerPadded'>
 				<Row>
 					<Col sm={12}>
-						<h2 className='h2Bd thunderStorm'>TERMS AND CONDITIONS</h2>
+						<div className='d-flex align-items-center mb-3'>
+				  	<img src={logo} className='appLogoNav' alt='SimpleWeather' />
+						<h2 className='h2Bd thunderStorm mb-0'>TERMS AND CONDITIONS</h2>
+						</div>
 						<p>
 							These Terms and Conditions constitute a legally binding agreement made
 							between you, whether personally or on behalf of an entity (“you”) and SIMPLE

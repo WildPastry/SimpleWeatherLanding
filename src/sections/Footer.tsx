@@ -30,7 +30,6 @@ const Footer: React.FC<SectionProps> = (props) => {
 						<li onClick={() => props.scrollToSection(1)}>Features</li>
 						<li onClick={() => props.scrollToSection(2)}>Locations</li>
 						<li onClick={() => props.scrollToSection(3)}>Weather</li>
-						<li onClick={() => props.scrollToSection(4)}>About</li>
 						<li onClick={() => props.togglePrivacy()}>Privacy</li>
 						<li onClick={() => props.toggleTerms()}>Terms</li>
 					</ul>
