@@ -24,9 +24,11 @@ const Privacy: React.FC<TogglePrivacy> = (props) => {
 					height='50px'
 					width='50px'
 				/>
-				<img src={logo} className='appLogo my-2' alt='SimpleWeather' />
+				<img src={logo} className='appLogo mb-4' alt='SimpleWeather' />
 				<h1 className='spotBlue my-2'>WE TAKE PRIVACY SERIOUSLY</h1>
-				<h5 className='light my-2'>Information here</h5>
+				<p className='light my-2 fontRg'>SIMPLEWEATHER does not have access to user passwords. If you forget it a new one can be securely generated and sent to you.</p>
+				<p className='light my-2 fontRg'>SIMPLEWEATHER will not under any circumstances reveal or share your data with any other source.</p>
+				<p className='light my-2 fontRg'>Your account can be securely removed from our database if requested by an authenticated user.</p>
 				</Container>
 			</div>
 		</>
