@@ -20,6 +20,14 @@
 	padding-bottom: 3rem;
 	padding-left: 5rem;
 	padding-right: 5rem;
+	@include bp(sm) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	@include bp(xs) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 .privacyContainer {

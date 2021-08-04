@@ -30,7 +30,7 @@ const App: React.FC = () => {
 	let body = document.getElementsByTagName('body')[0];
 
 	// scroll function reference setup
-	let currentSection = [useRef(null), useRef(null), useRef(null), useRef(null)];
+	let currentSection = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
 
 	// scroll to sections
 	const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -102,6 +102,7 @@ const App: React.FC = () => {
 				<section ref={currentSection[3]} />
 				<Weather />
 				<div className='bgimg-3' />
+				<section ref={currentSection[4]} />
 				<Footer
 					togglePrivacy={togglePrivacy}
 					toggleTerms={toggleTerms}

@@ -25,6 +25,7 @@ const Header: React.FC<ScrollToSection> = (props) => {
 						<div className='px-2 navLink' onClick={() => props.scrollToSection(1)}>Features</div>
 						<div className='px-2 navLink' onClick={() => props.scrollToSection(2)}>Locations</div>
 						<div className='px-2 navLink' onClick={() => props.scrollToSection(3)}>Weather</div>
+						<div className='px-2 navLink' onClick={() => props.scrollToSection(4)}>Contact</div>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
