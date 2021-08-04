@@ -12,12 +12,11 @@
 	margin-right: 10px;
 }
 
-// google badge
-.googleBadge {
+// badge
+.storeBadge {
 	height: 60px;
 	max-height: 60px;
 	max-width: 100%;
-	cursor: pointer;
 	@include bp(xs) {
 		height: 45px;
 	}

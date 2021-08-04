@@ -269,3 +269,9 @@
 .cloudsDarkest {
 	color: $cloudsDarkest;
 }
+
+// GREYSCALE
+.greyScale {
+	filter: grayscale(1);
+	opacity: 0.5;
+}

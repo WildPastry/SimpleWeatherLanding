@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 // import assets
 import googleBadge from '../assets/img/google-play-badge.png';
+import appleBadge from '../assets/img/app-store-badge.png';
 
 // Intro
 const Intro: React.FC = () => {
@@ -12,11 +13,14 @@ const Intro: React.FC = () => {
 				<Col xs={12}>
 					<h1 className='h1Bd'>Does what the name suggests</h1>
 					<h2 className='h2Rg'>
-						Fast, accurate, and intuitive weather app designed for iOS and Android.
+						Fast, accurate, and intuitive weather app designed for iOS and Android
+						<span className='spotGreyMed'> *</span>
 					</h2>
+					<p className='spotGreyMed mb-0'>* Currently only available on Android</p>
 				</Col>
 			</Row>
-			<img src={googleBadge} className='googleBadge' alt='Google Play Store' />
+			<img src={googleBadge} className='storeBadge pointerCursor' alt='Google Play Store' />
+			<img src={appleBadge} className='storeBadge disabledCursor greyScale mx-3' alt='App Store' />
 		</Container>
 	);
 };

@@ -39,6 +39,10 @@ hr {
 	cursor: pointer;
 }
 
+.disabledCursor {
+	cursor: not-allowed;
+}
+
 // positions
 .positionRelative {
 	position: relative;
