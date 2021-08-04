@@ -21,22 +21,22 @@ const Header: React.FC<ScrollToSection> = (props) => {
 				<Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
 					<Nav className='mr-auto fontRg clouds'>
 						<div className='px-2 navLink'>
-							<span className='pointerCursor' onClick={() => props.scrollToSection(1)}>
+							<span className='pointerCursor spanLink' onClick={() => props.scrollToSection(1)}>
 								Features
 							</span>
 						</div>
 						<div className='px-2 navLink'>
-							<span className='pointerCursor' onClick={() => props.scrollToSection(2)}>
+							<span className='pointerCursor spanLink' onClick={() => props.scrollToSection(2)}>
 								Locations
 							</span>
 						</div>
 						<div className='px-2 navLink'>
-							<span className='pointerCursor' onClick={() => props.scrollToSection(3)}>
+							<span className='pointerCursor spanLink' onClick={() => props.scrollToSection(3)}>
 								Weather
 							</span>
 						</div>
 						<div className='px-2 navLink'>
-							<span className='pointerCursor' onClick={() => props.scrollToSection(4)}>
+							<span className='pointerCursor spanLink' onClick={() => props.scrollToSection(4)}>
 								Contact
 							</span>
 						</div>

@@ -28,27 +28,27 @@ const Footer: React.FC<SectionProps> = (props) => {
 					<hr />
 					<ul>
 						<li>
-							<span className='pointerCursor' onClick={() => props.scrollToSection(1)}>
+							<span className='pointerCursor spanLink' onClick={() => props.scrollToSection(1)}>
 								Features
 							</span>
 						</li>
 						<li>
-							<span className='pointerCursor' onClick={() => props.scrollToSection(2)}>
+							<span className='pointerCursor spanLink' onClick={() => props.scrollToSection(2)}>
 								Locations
 							</span>
 						</li>
 						<li>
-							<span className='pointerCursor' onClick={() => props.scrollToSection(3)}>
+							<span className='pointerCursor spanLink' onClick={() => props.scrollToSection(3)}>
 								Weather
 							</span>
 						</li>
 						<li>
-							<span className='pointerCursor' onClick={() => props.togglePrivacy()}>
+							<span className='pointerCursor spanLink' onClick={() => props.togglePrivacy()}>
 								Privacy
 							</span>
 						</li>
 						<li>
-							<span className='pointerCursor' onClick={() => props.toggleTerms()}>
+							<span className='pointerCursor spanLink' onClick={() => props.toggleTerms()}>
 								Terms
 							</span>
 						</li>

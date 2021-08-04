@@ -62,9 +62,6 @@ ul {
 ul li {
 	padding: 0.2rem 0;
 	color: $clouds;
-	&:hover {
-		color: $cloudsDarkest;
-	}
 }
 
 ol {
@@ -127,9 +124,6 @@ ol li {
 
 // nav links
 .navLink {
-	&:hover {
-		color: $cloudsDarkest;
-	}
 	@include bp(xs) {
 		padding-left: 0;
 		padding-right: 0;
@@ -139,6 +133,12 @@ ol li {
 		padding-left: 0;
 		padding-right: 0;
 		padding-bottom: 0.5rem;
+	}
+}
+
+.spanLink {
+	&:hover {
+		color: $cloudsDarkest;
 	}
 }
 
