@@ -62,7 +62,6 @@ ul {
 ul li {
 	padding: 0.2rem 0;
 	color: $clouds;
-	cursor: pointer;
 	&:hover {
 		color: $cloudsDarkest;
 	}
@@ -130,7 +129,6 @@ ol li {
 .navLink {
 	&:hover {
 		color: $cloudsDarkest;
-		cursor: pointer;
 	}
 	@include bp(xs) {
 		padding-left: 0;

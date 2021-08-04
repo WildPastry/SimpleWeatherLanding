@@ -36,6 +36,9 @@
 .bgimg-1 {
 	background-image: url('../assets/img/bgimg-1.jpg');
 	min-height: 100vh;
+	@include bp(md) {
+		min-height: 400px;
+	}
 	@include bp(sm) {
 		min-height: 200px;
 	}
@@ -58,6 +61,9 @@
 .bgimg-3 {
 	background-image: url('../assets/img/bgimg-3.jpg');
 	min-height: 100vh;
+	@include bp(md) {
+		min-height: 400px;
+	}
 	@include bp(sm) {
 		min-height: 200px;
 	}
