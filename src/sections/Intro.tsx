@@ -14,13 +14,13 @@ const Intro: React.FC = () => {
 					<h1 className='h1Bd'>Does what the name suggests</h1>
 					<h2 className='h2Rg'>
 						Fast, accurate, and intuitive weather app designed for iOS and Android
-						<span className='spotGreyMed'> *</span>
+						<span className='spotGreyMed'>*</span>
 					</h2>
-					<p className='spotGreyMed mb-0'>* Currently only available on Android</p>
+					<p className='spotGreyMed mb-0'>*Currently only available on Android</p>
 				</Col>
 			</Row>
 			<img src={googleBadge} className='storeBadge pointerCursor' alt='Google Play Store' />
-			<img src={appleBadge} className='storeBadge disabledCursor greyScale mx-3' alt='App Store' />
+			{/* <img src={appleBadge} className='storeBadge disabledCursor greyScale mx-3' alt='App Store' /> */}
 		</Container>
 	);
 };
