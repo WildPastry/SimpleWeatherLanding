@@ -19,10 +19,10 @@ const Weather: React.FC = () => {
 					<Col sm={12} lg={6} className='fontRg light'>
 						<h2 className='h2Bd'>Weather</h2>
 						<p>
-							Data provided by OpenWeather and DarkSky with access to <b>thousands</b> of
+							Weather data provided by OpenWeather with access to <b>thousands</b> of
 							locations worldwide.
 						</p>
-						<p>Location search with Google for fast and reliable results.</p>
+						<p>Data sets ncluded are: the current temperature, a daily low and high, the weather condition.</p>
 						<p>
 							Sign up to the app to be able to save locations for faster access to your
 							most searched locations.

@@ -32,7 +32,7 @@ const Features: React.FC = () => {
 				<Col sm={12} lg={6} className='fontRg'>
 					<h2 className='h2Bd thunderStorm'>Features</h2>
 					<p>
-						Data provided by OpenWeather and DarkSky with access to <b>thousands</b> of
+						Data provided by OpenWeather with access to <b>thousands</b> of
 						locations worldwide.
 					</p>
 					<p>Location search with Google for fast and reliable results.</p>
