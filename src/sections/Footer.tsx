@@ -1,6 +1,9 @@
 // import frameworks
 import { Col, Container, Row } from 'react-bootstrap';
 
+// import icons
+import { Mail } from 'react-ionicons';
+
 // import assets
 import logo from '../assets/icon/logo.svg';
 
@@ -19,7 +22,7 @@ const Footer: React.FC<SectionProps> = (props) => {
 			<Row className='my-3'>
 				<Col xs={12}>
 					<div
-						className='d-flex justify-content-center align-items-center pointerCursor'
+						className='positionFlex pointerCursor'
 						onClick={() => props.scrollToSection(0)}>
 						<img src={logo} className='appLogoNav' alt='SimpleWeather' />
 						<span className='h2Lt me-1'>SIMPLE</span>
@@ -53,7 +56,15 @@ const Footer: React.FC<SectionProps> = (props) => {
 							</span>
 						</li>
 					</ul>
+					<hr />
 					<div className='text-center'>
+					<span className='contactContainer mb-2'>
+								<Mail color={'#6e859e'} cssClasses='me-1' height='25px' width='25px' />
+							<a
+								className='clouds'
+								href='mailto:mike@mikeparker.co.nz'>mike@mikeparker.co.nz
+							</a>
+							</span>
 						<p className='clouds'>
 							© {currentDate}
 							<a

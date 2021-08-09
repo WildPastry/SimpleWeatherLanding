@@ -34,13 +34,17 @@ hr {
 	color: $clouds;
 }
 
-// cursor
+// cursors
 .pointerCursor {
 	cursor: pointer;
 }
 
 .disabledCursor {
 	cursor: not-allowed;
+}
+
+.defaultCursor {
+	cursor: default;
 }
 
 // positions
@@ -54,6 +58,12 @@ hr {
 
 .positionFixed {
 	position: fixed;
+}
+
+.positionFlex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 // position control

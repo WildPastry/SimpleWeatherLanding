@@ -12,7 +12,6 @@ import Intro from './sections/Intro';
 import Features from './sections/Features';
 import Locations from './sections/Locations';
 import Weather from './sections/Weather';
-import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
 // import components
@@ -104,7 +103,6 @@ const App: React.FC = () => {
 				<Weather />
 				<div className='bgimg-3' />
 				<section ref={currentSection[4]} />
-				{/* <Contact /> */}
 				<Footer
 					togglePrivacy={togglePrivacy}
 					toggleTerms={toggleTerms}

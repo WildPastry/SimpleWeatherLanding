@@ -8,7 +8,7 @@ import appleBadge from '../assets/img/app-store-badge.png';
 // Intro
 const Intro: React.FC = () => {
 	return (
-		<Container fluid='lg' className='mt-3 mb-5'>
+		<Container fluid='lg' className='mt-3 mb-4'>
 			<Row className='my-3'>
 				<Col xs={12}>
 					<h1 className='h1Bd'>Does what the name suggests</h1>
@@ -20,7 +20,7 @@ const Intro: React.FC = () => {
 				</Col>
 			</Row>
 			<img src={googleBadge} className='storeBadge pointerCursor' alt='Google Play Store' />
-			{/* <img src={appleBadge} className='storeBadge disabledCursor greyScale mx-3' alt='App Store' /> */}
+			<img src={appleBadge} className='storeBadge defaultCursor greyScale mx-3' alt='App Store' />
 		</Container>
 	);
 };
