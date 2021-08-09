@@ -31,16 +31,21 @@ const Features: React.FC = () => {
 				</Col>
 				<Col sm={12} lg={6} className='fontRg'>
 					<h2 className='h2Bd thunderStorm'>Features</h2>
-					<p>
-						Data provided by OpenWeather with access to <b>thousands</b> of
-						locations worldwide.
-					</p>
-					<p>Location search with Google for fast and reliable results.</p>
-					<p>
-						Sign up to the app to be able to save locations for faster access to your most
-						searched locations.
-					</p>
-					<p>Easy to use with a basic daily summary and a 5 day forecast.</p>
+					<p>Current temp, daily low temp, daily high temp</p>
+					<p>Ability to sign up to the App’s database. Signing up will let you: save up to 5 locations, set up to one location as “home” (which will then load every time you open the app until you change or remove it), remove locations and remove or change “home” locations</p>
+					<p>Authentication screen to enter a valid email and password for signing in</p>
+					<p>Help screen explaining the basic icons and functions of the App</p>
+					<p>Password recovery logic to send the user a new “temp” password if they forget it (SIMPLEWEATHER has no way to see or supply user passwords)</p>
+					<p>Icons by React IonIcons</p>
+					<p>Fonts by Aller and Merriweather</p>
+					<p>Google time zone API</p>
+					<p>Google places API</p>
+					<p>OpenWeather API</p>
+					<p>Firebase API</p>
+					<p>13 Navigation screens</p>
+					<p>3 Authentication screens</p>
+					<p>IOS and Android compatible (only releasing on Android for now)</p>
+					<p>Collapsible menu with options to sign-out or sign-in, sign-up (if you haven’t signed-in) and a help section explaining the controls/operation/icons of the App</p>
 					<div className='mt-4 appIcons'>
 						<Tippy
 							theme='simpleWeather'

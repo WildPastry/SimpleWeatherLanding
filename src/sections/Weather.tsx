@@ -18,16 +18,24 @@ const Weather: React.FC = () => {
 					</Col>
 					<Col sm={12} lg={6} className='fontRg light'>
 						<h2 className='h2Bd'>Weather</h2>
+						<p>Colour coded to suit different weather conditions</p>
+						<p>26 animated weather icons to suit different weather conditions</p>
 						<p>
-							Weather data provided by OpenWeather with access to <b>thousands</b> of
-							locations worldwide.
+							Current temp, daily low temp, daily high temp and the full date and local
+							time
 						</p>
-						<p>Data sets ncluded are: the current temperature, a daily low and high, the weather condition.</p>
+						<p>Short current summary</p>
+						<p>9am / mid-day / 6pm weather condition icons</p>
 						<p>
-							Sign up to the app to be able to save locations for faster access to your
-							most searched locations.
+							Five-day forecast starting from the next day which includes: weather
+							condition icon, low temp, high temp, short summary, wind speed km and icon,
+							humidity percentage and icon
 						</p>
-						<p>Easy to use with a basic daily summary and a 5 day forecast.</p>
+						<p>
+							Long daily summary which includes: “feels like” temp, wind speed, humidity
+							percentage, expected daily high and sunset time (if day) or sunrise time (if
+							night)
+						</p>
 					</Col>
 				</Row>
 			</Container>
