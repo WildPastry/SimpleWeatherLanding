@@ -18,23 +18,13 @@ const Weather: React.FC = () => {
 					</Col>
 					<Col sm={12} lg={6} className='fontRg light'>
 						<h2 className='h2Bd'>Weather</h2>
-						<p>Colour coded to suit different weather conditions</p>
-						<p>26 animated weather icons to suit different weather conditions</p>
-						<p>
-							Current temp, daily low temp, daily high temp and the full date and local
-							time
+						<p>Colour coded backgrounds paired with 26 animated weather icons to suit different weather conditions.</p>
+						<p>Initial details include the current temp, daily low temp, daily high temp with a short description.
 						</p>
-						<p>Short current summary</p>
-						<p>9am / mid-day / 6pm weather condition icons</p>
-						<p>
-							Five-day forecast starting from the next day which includes: weather
-							condition icon, low temp, high temp, short summary, wind speed km and icon,
-							humidity percentage and icon
+						<p>More details include 9am / mid-day / 6pm weather condition icons for the current day, a description, with “feels like” temp, wind speed, humidity percentage, expected daily high and sunset time (if day) or sunrise time (if night).
 						</p>
 						<p>
-							Long daily summary which includes: “feels like” temp, wind speed, humidity
-							percentage, expected daily high and sunset time (if day) or sunrise time (if
-							night)
+						Five-day forecast starting from the next day includes a weather condition icon, low temp, high temp, description, wind speed km and icon, humidity percentage and icon.
 						</p>
 					</Col>
 				</Row>

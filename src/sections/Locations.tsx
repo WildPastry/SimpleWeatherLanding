@@ -10,9 +10,18 @@ const Locations: React.FC = () => {
 		<Container fluid='lg' className='sectionContainer'>
 			<Row>
 				<Col sm={12} lg={6} className='fontRg'>
-					<h2 className='h2Bd thunderStorm'>Locations</h2>
-					<h5>Millions of search results powered by Google Places.</h5>
-					<h5>Millions of locations of weather data provided by OpenWeather.</h5>
+					<h2>Millions of search results using the<a className='ms-1 spotBlue'
+								href='https://cloud.google.com/maps-platform/places'
+								target='_blank'
+								rel='noopener noreferrer'>
+								Google places API
+							</a></h2>
+					<h2>Millions of locations for weather data including over 200,000 cities worldwide provided by<a className='ms-1 spotBlue'
+								href='https://openweathermap.org/'
+								target='_blank'
+								rel='noopener noreferrer'>
+								OpenWeather
+							</a></h2>
 				</Col>
 				<Col
 					sm={12}
