@@ -1,5 +1,5 @@
+// import utilities
 import Communication from '../utilities/apiMethod';
-import config from '../utilities/config';
 
 const imageAction = {
 	loadImages(dispatch: any) {
@@ -7,7 +7,7 @@ const imageAction = {
 			type: 'LOAD_IMAGES',
 			payload: null
 		});
-		Communication.getMethod(config.endPoints.images)
+		Communication.getMethod()
 			.then((images) => {
 				dispatch({
 					type: 'GET_IMAGES',
