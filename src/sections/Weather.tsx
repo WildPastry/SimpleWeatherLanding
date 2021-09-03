@@ -21,10 +21,10 @@ const Weather: React.FC = () => {
 						<p>Colour coded backgrounds paired with 26 animated weather icons to suit different weather conditions.</p>
 						<p>Initial details include the current temp, daily low temp, daily high temp with a short description.
 						</p>
-						<p>More details include 9am / mid-day / 6pm weather condition icons for the current day, a description, with “feels like” temp, wind speed, humidity percentage, expected daily high and sunset time (if day) or sunrise time (if night).
+						<p>More details include 7am / mid-day / 5pm weather condition icons for the current day, a description, with “feels like” temp, wind speed, humidity percentage, expected daily high and sunset time (if day) or sunrise time (if night).
 						</p>
 						<p>
-						Five-day forecast starting from the next day includes a weather condition icon, low temp, high temp, description, wind speed km and icon, humidity percentage and icon.
+						Six-day forecast starting from the next day includes a weather condition icon, low temp, high temp, description, wind speed km and icon, humidity percentage and icon.
 						</p>
 					</Col>
 				</Row>
