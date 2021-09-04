@@ -24,7 +24,7 @@ const Weather: React.FC = () => {
 						<p>More details include 7am / mid-day / 5pm weather condition icons for the current day, a description, with “feels like” temp, wind speed, humidity percentage, expected daily high and sunset time (if day) or sunrise time (if night).
 						</p>
 						<p>
-						Six-day forecast starting from the next day includes a weather condition icon, low temp, high temp, description, wind speed km and icon, humidity percentage and icon.
+						Six-day forecast starting from the next day includes a weather condition icon, low temp, high temp, description, wind speed and humidity.
 						</p>
 					</Col>
 				</Row>

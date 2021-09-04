@@ -1,31 +1,34 @@
 // import frameworks
 import { Col, Container, Row } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
+import { RootState } from '../store';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
-
-// import assets
-import screenOne from '../assets/img/screen-1.jpg';
-import screenTwo from '../assets/img/screen-2.jpg';
 
 // import icons
 import { AddCircle, ArrowUp, ArrowDown, CloseCircle, Home, Search } from 'react-ionicons';
 
 // Features
 const Features: React.FC = () => {
+		// redux selector
+		const pageData = useSelector((state: RootState) => {
+			return state.imageData;
+		});
+
 	return (
 		<Container fluid='lg' className='sectionContainer'>
 			<Row>
 				<Col sm={12} lg={6}>
 					<div className='screenShotWrapper'>
 						<img
-							src={screenOne}
+							src={pageData.imageList[3]}
 							className='screenShot screenShotOne'
-							alt='SimpleWeather Christchurch Summary Screen'
+							alt='SimpleWeather Cloudy Screen Example'
 						/>
 						<img
-							src={screenTwo}
+							src={pageData.imageList[4]}
 							className='screenShot screenShotTwo'
-							alt='SimpleWeather Los Angeles Summary Screen'
+							alt='SimpleWeather Thunder Screen Example'
 						/>
 					</div>
 				</Col>
@@ -34,7 +37,7 @@ const Features: React.FC = () => {
 					<p>Free App with no ads.</p>
 					<p>Sign up to the database to save up to 5 locations, set one location as “home”, remove locations and remove or change “home” locations.</p>
 					<p>Authentication screens for secure signing in.</p>
-					<p>IOS and Android compatible (only releasing on Android for now)</p>
+					<p>IOS and Android compatible (though only releasing on Android for now)</p>
 					<p>Collapsible menu with options to sign-in, sign-out or sign-up (if you haven’t signed-in) and a help section explaining the controls/operation/icons of the App.</p>
 					<div className='mt-4 appIcons'>
 						<Tippy
