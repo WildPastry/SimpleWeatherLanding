@@ -9,10 +9,12 @@ const imageAction = {
 		});
 		Communication.getMethod()
 			.then((images) => {
-				dispatch({
-					type: 'GET_IMAGES',
-					payload: images
-				});
+				setTimeout(() => {
+					dispatch({
+						type: 'GET_IMAGES',
+						payload: images
+					});
+				}, 1000);
 			})
 			.catch(() => {
 				dispatch({

@@ -24,11 +24,6 @@ import ArrowIcon from './components/ArrowIcon';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/main.scss';
 
-// import assets
-import bgImgOne from './assets/img/bgimg-1.jpg';
-import bgImgTwo from './assets/img/bgimg-2.jpg';
-import bgImgThree from './assets/img/bgimg-3.jpg';
-
 // App
 const App: React.FC = () => {
 	// reference the body
@@ -97,16 +92,16 @@ const App: React.FC = () => {
 				<section ref={currentSection[0]} />
 				<Header scrollToSection={scrollToSection} />
 				<Intro />
-				<div className='bgimg-1' style={{backgroundImage: `url(${bgImgOne})`}} />
+				<div className='bgimg-1' style={{backgroundImage: `url(${pageData.imageList[0]})`}} />
 				<section ref={currentSection[1]} />
 				<Features />
 				<IconSlider />
 				<section ref={currentSection[2]} />
 				<Locations />
-				<div className='bgimg-1' style={{backgroundImage: `url(${bgImgTwo})`}} />
+				<div className='bgimg-1' style={{backgroundImage: `url(${pageData.imageList[1]})`}} />
 				<section ref={currentSection[3]} />
 				<Weather />
-				<div className='bgimg-1' style={{backgroundImage: `url(${bgImgThree})`}} />
+				<div className='bgimg-1' style={{backgroundImage: `url(${pageData.imageList[2]})`}} />
 				<section ref={currentSection[4]} />
 				<Footer
 					togglePrivacy={togglePrivacy}

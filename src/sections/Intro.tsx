@@ -16,10 +16,10 @@ const Intro: React.FC = () => {
 						Fast, accurate, and intuitive weather app designed for iOS and Android
 						<span className='spotGreyMed'>*</span>
 					</h2>
-					<p className='spotGreyMed mb-0'>*Currently only available on the Android platform</p>
+					<p className='spotGreyMed mb-0'>*Available 22 November</p>
 				</Col>
 			</Row>
-			<img src={googleBadge} className='storeBadge pointerCursor' alt='Google Play Store' />
+			<img src={googleBadge} className='storeBadge defaultCursor greyScale' alt='Google Play Store' />
 			<img src={appleBadge} className='storeBadge defaultCursor greyScale mx-3' alt='App Store' />
 		</Container>
 	);
