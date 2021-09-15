@@ -2,6 +2,9 @@
 @import 'variables';
 @import 'mixins';
 
+// font import
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap');
+
 // bootstrap import
 @import "./node_modules/bootstrap/scss/functions";
 @import "./node_modules/bootstrap/scss/variables";

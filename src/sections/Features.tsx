@@ -34,7 +34,6 @@ const Features: React.FC = () => {
 				</Col>
 				<Col sm={12} lg={6} className='fontRg'>
 					<h2 className='h2Bd thunderStorm'>Features</h2>
-					<p>Free App with no ads.</p>
 					<p>Sign up to the database to save up to 5 locations, set one location as “home”, remove locations and remove or change “home” locations.</p>
 					<p>Authentication screens for secure signing in.</p>
 					<p>IOS and Android compatible (though only releasing on Android for now)</p>

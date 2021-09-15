@@ -5,25 +5,20 @@
 // reset
 * {
 	@include reset(0, 0, border-box, none, none);
+	font-family: 'Merriweather Sans', sans-serif;
 }
 
 // body
 html,
 body {
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 	height: 100%;
 	margin: 0;
 }
 
 body {
-	font-family: $mainFont;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
 	color: $simpleWeather;
-}
-
-// code
-code {
-	font-family: 'Courier New', monospace;
 }
 
 // hr

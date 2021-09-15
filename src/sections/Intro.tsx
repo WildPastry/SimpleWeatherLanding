@@ -13,7 +13,7 @@ const Intro: React.FC = () => {
 				<Col xs={12}>
 					<h1 className='h1Bd'>Does what the name suggests</h1>
 					<h2 className='h2Rg'>
-						Fast, accurate, and intuitive weather app designed for iOS and Android
+						Fast, accurate, and intuitive weather App
 						<span className='spotGreyMed'> *</span>
 					</h2>
 					<p className='spotGreyMed mb-0'>* SimpleWeather will be available 22 November</p>
