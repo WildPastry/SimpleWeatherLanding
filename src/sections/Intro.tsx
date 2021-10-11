@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 // import assets
 import googleBadge from '../assets/img/google-play-badge.png';
-import appleBadge from '../assets/img/app-store-badge.png';
+// import appleBadge from '../assets/img/app-store-badge.png';
 
 // Intro
 const Intro: React.FC = () => {
@@ -12,15 +12,20 @@ const Intro: React.FC = () => {
 			<Row className='my-3'>
 				<Col xs={12}>
 					<h1 className='h1Bd'>Does what the name suggests</h1>
-					<h2 className='h2Rg'>
-						Fast, accurate, and intuitive weather App
-						<span className='spotGreyMed'> *</span>
-					</h2>
-					<p className='spotGreyMed mb-0'>* SimpleWeather will be available 22 November</p>
+					<h2 className='h2Rg'>Fast, accurate, and intuitive weather App</h2>
 				</Col>
 			</Row>
-			<img src={googleBadge} className='storeBadge defaultCursor greyScale' alt='Google Play Store' />
-			<img src={appleBadge} className='storeBadge defaultCursor greyScale mx-3' alt='App Store' />
+			<a
+				href='https://play.google.com/store/apps/details?id=nz.co.mikeparker.sw'
+				target='_blank'
+				rel='noopener noreferrer'>
+				<img
+					src={googleBadge}
+					className='storeBadge'
+					alt='Google Play Store'
+				/>
+			</a>
+			{/* <img src={appleBadge} className='storeBadge defaultCursor greyScale mx-3' alt='App Store' /> */}
 		</Container>
 	);
 };
