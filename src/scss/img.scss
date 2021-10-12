@@ -39,20 +39,20 @@
 		min-height: 400px;
 	}
 	@include bp(sm) {
-		min-height: 200px;
+		min-height: 400px;
 	}
 	@include bp(xs) {
-		min-height: 100px;
+		min-height: 400px;
 	}
 }
 
 .bgimg-2 {
 	min-height: 400px;
 	@include bp(sm) {
-		min-height: 200px;
+		min-height: 400px;
 	}
 	@include bp(xs) {
-		min-height: 100px;
+		min-height: 400px;
 	}
 }
 
@@ -62,10 +62,10 @@
 		min-height: 400px;
 	}
 	@include bp(sm) {
-		min-height: 200px;
+		min-height: 400px;
 	}
 	@include bp(xs) {
-		min-height: 100px;
+		min-height: 400px;
 	}
 }
 
