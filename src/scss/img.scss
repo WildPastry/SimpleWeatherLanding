@@ -31,15 +31,6 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	@include bp(md) {
-		background-position: contain;
-	}
-	@include bp(sm) {
-		background-position: contain;
-	}
-	@include bp(xs) {
-		background-position: contain;
-	}
 }
 
 .bgimg-1 {
@@ -48,20 +39,20 @@
 		min-height: 400px;
 	}
 	@include bp(sm) {
-		min-height: 300px;
+		min-height: 0px;
 	}
 	@include bp(xs) {
-		min-height: 300px;
+		min-height: 0px;
 	}
 }
 
 .bgimg-2 {
 	min-height: 400px;
 	@include bp(sm) {
-		min-height: 300px;
+		min-height: 0px;
 	}
 	@include bp(xs) {
-		min-height: 300px;
+		min-height: 0px;
 	}
 }
 
@@ -71,10 +62,10 @@
 		min-height: 400px;
 	}
 	@include bp(sm) {
-		min-height: 300px;
+		min-height: 0px;
 	}
 	@include bp(xs) {
-		min-height: 300px;
+		min-height: 0px;
 	}
 }
 
