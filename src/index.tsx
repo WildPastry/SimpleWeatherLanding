@@ -1,16 +1,16 @@
 // import frameworks
-import React from 'react';
-import ReactDOM from 'react-dom';
-import reportWebVitals from './reportWebVitals';
-import { createStore } from 'redux';
-import {Provider} from 'react-redux';
-import rootReducers from './store';
+import React from "react";
+import ReactDOM from "react-dom";
+import reportWebVitals from "./reportWebVitals";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import rootReducers from "./store";
 
 // import section
-import App from './App';
+import App from "./App";
 
 // create data store
-const store = createStore(rootReducers)
+const store = createStore(rootReducers);
 
 // Index
 ReactDOM.render(
@@ -19,7 +19,7 @@ ReactDOM.render(
       <App />
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // data test
