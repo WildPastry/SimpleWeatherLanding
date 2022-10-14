@@ -1,41 +1,41 @@
 // Declarations
 declare enum WetherType {
-	'daily',
-	'weekly',
-	'current'
+  'daily',
+  'weekly',
+  'current'
 }
 
 // Interfaces
 interface WeatherData {
-	id: number;
-	label: string;
-	openData: WetherType;
-	darkSkyData: WetherType;
-	icon: string;
-	type: 'day' | 'night';
-	desc: string;
+  id: number;
+  label: string;
+  openData: WetherType;
+  darkSkyData: WetherType;
+  icon: string;
+  type: 'day' | 'night';
+  desc: string;
 }
 
 interface ScrollToSection {
-	scrollToSection(num: number): any;
+  scrollToSection(num: number): any;
 }
 
 interface TogglePrivacy {
-	togglePrivacy(): any;
+  togglePrivacy(): any;
 }
 
 interface ToggleTerms {
-	toggleTerms(): any;
+  toggleTerms(): any;
 }
 
 interface SectionProps {
-	scrollToSection(num: number): any;
-	togglePrivacy(): any;
-	toggleTerms(): any;
+  scrollToSection(num: number): any;
+  togglePrivacy(): any;
+  toggleTerms(): any;
 }
 
 // Modules
 declare module '*.svg' {
-	const content: string;
-	export default content;
+  const content: string;
+  export default content;
 }
