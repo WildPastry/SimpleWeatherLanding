@@ -1,12 +1,10 @@
-// Import frameworks
+/* eslint-disable max-len */
+import 'tippy.js/dist/tippy.css';
+import { AddCircle, ArrowDown, ArrowUp, CloseCircle, Home, Search } from 'react-ionicons';
 import { Col, Container, Row } from 'react-bootstrap';
-import { useSelector } from 'react-redux';
 import { RootState } from '../store';
 import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css';
-
-// Import icons
-import { AddCircle, ArrowDown, ArrowUp, CloseCircle, Home, Search } from 'react-ionicons';
+import { useSelector } from 'react-redux';
 
 // Features
 const Features: React.FC = () => {

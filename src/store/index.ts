@@ -1,4 +1,3 @@
-// Import reducers
 import {combineReducers} from 'redux';
 import imageReducer from './imageReducer';
 
