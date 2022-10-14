@@ -1,12 +1,12 @@
 // IconSlider
 const IconSlider: React.FC = () => {
-	return (
-		<section className='positionRelative'>
-			<div className='icon-slider-wrapper'>
-				<div className='icon-slider' />
-			</div>
-		</section>
-	);
+  return (
+    <section className='positionRelative'>
+      <div className='icon-slider-wrapper'>
+        <div className='icon-slider' />
+      </div>
+    </section>
+  );
 };
 
 // EXPORT IconSlider

@@ -1,26 +1,24 @@
-// import frameworks
-import React from "react";
-import ReactDOM from "react-dom";
-import reportWebVitals from "./reportWebVitals";
-import { createStore } from "redux";
-import { Provider } from "react-redux";
-import rootReducers from "./store";
+import App from './App';
+import { Provider } from 'react-redux';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { createStore } from 'redux';
+import reportWebVitals from './reportWebVitals';
+import rootReducers from './store';
 
-// import section
-import App from "./App";
-
-// create data store
+// Create data store
 const store = createStore(rootReducers);
 
 // Index
-ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
+const rootElement = document.getElementById('root')!;
+const root = createRoot(rootElement);
+root.render(
+  <Provider store={store}>
+    <StrictMode>
       <App />
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById("root")
+    </StrictMode>
+  </Provider>
 );
 
-// data test
+// Data test
 reportWebVitals();
