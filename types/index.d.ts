@@ -1,11 +1,11 @@
-// declarations
+// Declarations
 declare enum WetherType {
 	'daily',
 	'weekly',
 	'current'
 }
 
-// interfaces
+// Interfaces
 interface WeatherData {
 	id: number;
 	label: string;
@@ -34,7 +34,7 @@ interface SectionProps {
 	toggleTerms(): any;
 }
 
-// modules
+// Modules
 declare module '*.svg' {
 	const content: string;
 	export default content;

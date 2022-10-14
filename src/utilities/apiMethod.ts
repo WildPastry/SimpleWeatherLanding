@@ -1,4 +1,3 @@
-// Import assets
 import bgImgOne from '../assets/img/bgimg-1.jpg';
 import bgImgThree from '../assets/img/bgimg-3.jpg';
 import bgImgTwo from '../assets/img/bgimg-2.jpg';

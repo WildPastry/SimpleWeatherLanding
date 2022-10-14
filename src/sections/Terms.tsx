@@ -1,7 +1,7 @@
-// import frameworks
+// Import frameworks
 import { Col, Container, Row } from 'react-bootstrap';
 
-// import icon
+// Import icon
 import { Close } from 'react-ionicons';
 
 /** @type {ToggleTerms} */
@@ -9,23 +9,23 @@ import { Close } from 'react-ionicons';
 
 // Terms
 const Terms: React.FC<ToggleTerms> = (props) => {
-	return (
-		<section className='fullPageFixed bg-light overFlowScroll'>
-			<Close
-				onClick={() => props.toggleTerms()}
-				cssClasses='closeIcon'
-				color={'#1faadb'}
-				title={'CLOSE'}
-				height='50px'
-				width='50px'
-			/>
-			<Container fluid='lg' className='sectionContainerPadded'>
-				<Row>
-					<Col sm={12}>
-						<div className='d-flex align-items-center mb-3'>
-							<h2 className='h2Bd thunderStorm mb-0'>TERMS AND CONDITIONS</h2>
-						</div>
-						<p>
+  return (
+    <section className='fullPageFixed bg-light overFlowScroll'>
+      <Close
+        onClick={() => props.toggleTerms()}
+        cssClasses='closeIcon'
+        color={'#1faadb'}
+        title={'CLOSE'}
+        height='50px'
+        width='50px'
+      />
+      <Container fluid='lg' className='sectionContainerPadded'>
+        <Row>
+          <Col sm={12}>
+            <div className='d-flex align-items-center mb-3'>
+              <h2 className='h2Bd thunderStorm mb-0'>TERMS AND CONDITIONS</h2>
+            </div>
+            <p>
 							These Terms and Conditions constitute a legally binding agreement made
 							between you, whether personally or on behalf of an entity (“you”) and SIMPLE
 							WEATHER (“we,” “us” or “our”), concerning your access to and use of the
@@ -38,9 +38,9 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 							at any time and for any reason. We will alert you about any changes by
 							email, and you waive any right to receive specific notice of each such
 							change.
-						</p>
-						<h5>INTELLECTUAL PROPERTY RIGHTS</h5>
-						<p>
+            </p>
+            <h5>INTELLECTUAL PROPERTY RIGHTS</h5>
+            <p>
 							Unless otherwise indicated, the App is our proprietary property and all
 							source code, databases, functionality, software, designs, audio, video,
 							text, photographs, and graphics on the App (collectively, the “Content”) and
@@ -58,170 +58,170 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 							have properly gained access solely for your personal, non-commercial use. We
 							reserve all rights not expressly granted to you in and to the App, the
 							Content and the Marks.
-						</p>
-						<h5>USER REGISTRATION</h5>
-						<p>
+            </p>
+            <h5>USER REGISTRATION</h5>
+            <p>
 							You may register with the App. You agree to keep your password confidential
 							and will be responsible for all use of your account and password. We do not
 							have access to your password though this may be reset using the “Forgotten
 							password” link.
-						</p>
-						<h5>PROHIBITED ACTIVITIES</h5>
-						<p className='mb-1'>
+            </p>
+            <h5>PROHIBITED ACTIVITIES</h5>
+            <p className='mb-1'>
 							You may not access or use the App for any purpose other than that for which
 							we make the App available. The App may not be used in connection with any
 							commercial endeavours except those that are specifically endorsed or
 							approved by us. As a user of the App, you agree not to:
-						</p>
-						<ol>
-							<li>
+            </p>
+            <ol>
+              <li>
 								(1) systematically retrieve data or other content from the App to create
 								or compile, directly or indirectly, a collection, compilation, database,
 								or directory without written permission from us.
-							</li>
-							<li>
+              </li>
+              <li>
 								(2) make any unauthorized use of the App, including collecting usernames
 								and/or email addresses of users by electronic or other means for the
 								purpose of sending unsolicited email, or creating user accounts by
 								automated means or under false pretences.
-							</li>
-							<li>(3) use the App to advertise or offer to sell goods and services.</li>
-							<li>
+              </li>
+              <li>(3) use the App to advertise or offer to sell goods and services.</li>
+              <li>
 								(4) circumvent, disable, or otherwise interfere with security-related
 								features of the App, including features that prevent or restrict the use
 								or copying of any Content or enforce limitations on the use of the App
 								and/or the Content contained therein.
-							</li>
-							<li>(5) engage in unauthorized framing of or linking to the App.</li>
-							<li>
+              </li>
+              <li>(5) engage in unauthorized framing of or linking to the App.</li>
+              <li>
 								(6) trick, defraud, or mislead us and other users, especially in any
 								attempt to learn sensitive account information such as user passwords.
-							</li>
-							<li>(7) make improper use of our support services.</li>
-							<li>
+              </li>
+              <li>(7) make improper use of our support services.</li>
+              <li>
 								(8) engage in any automated use of the system, such as using scripts to
 								send comments or messages, or using any data mining, robots, or similar
 								data gathering and extraction tools.
-							</li>
-							<li>
+              </li>
+              <li>
 								(9) interfere with, disrupt, or create an undue burden on the App or the
 								networks or services connected to the App.
-							</li>
-							<li>
+              </li>
+              <li>
 								(10) attempt to impersonate another user or person or use the username of
 								another user.
-							</li>
-							<li>(11) sell or otherwise transfer your profile.</li>
-							<li>
+              </li>
+              <li>(11) sell or otherwise transfer your profile.</li>
+              <li>
 								(12) use any information obtained from the App in order to harass, abuse,
 								or harm another person.
-							</li>
-							<li>
+              </li>
+              <li>
 								(13) use the App as part of any effort to compete with us or otherwise use
 								the App and/or the Content for any revenue-generating endeavour or
 								commercial enterprise.
-							</li>
-							<li>
+              </li>
+              <li>
 								(14) decipher, decompile, disassemble, or reverse engineer any of the
 								software comprising or in any way making up a part of the App.
-							</li>
-							<li>
+              </li>
+              <li>
 								(15) attempt to bypass any measures of the App designed to prevent or
 								restrict access to the App, or any portion of the App.
-							</li>
-							<li>
+              </li>
+              <li>
 								(16) harass, annoy, intimidate, or threaten any of our employees or agents
 								engaged in providing any portion of the App to you.
-							</li>
-							<li>
+              </li>
+              <li>
 								(17) delete the copyright or other proprietary rights notice from any
 								Content.
-							</li>
-							<li>(18) copy or adapt the App’s software.</li>
-							<li>
+              </li>
+              <li>(18) copy or adapt the App’s software.</li>
+              <li>
 								(19) upload or transmit (or attempt to upload or to transmit) viruses,
 								Trojan horses, or other material, including excessive use of capital
 								letters and spamming (continuous posting of repetitive text), that
 								interferes with any party’s uninterrupted use and enjoyment of the App or
 								modifies, impairs, disrupts, alters, or interferes with the use, features,
 								functions, operation, or maintenance of the App.
-							</li>
-							<li>
+              </li>
+              <li>
 								20) upload or transmit (or attempt to upload or to transmit) any material
 								that acts as a passive or active information collection or transmission
 								mechanism, including without limitation, clear graphics interchange
 								formats (“gifs”), 1×1 pixels, web bugs, cookies, or other similar devices
 								(sometimes referred to as “spyware” or “passive collection mechanisms” or
 								“pcms”).
-							</li>
-							<li>
+              </li>
+              <li>
 								21) except as may be the result of standard search engine or Internet
 								browser usage, use, launch, develop, or distribute any automated system,
 								including without limitation, any spider, robot, cheat utility, scraper,
 								or offline reader that accesses the App, or using or launching any
 								unauthorized script or other software.
-							</li>
-							<li>
+              </li>
+              <li>
 								22) disparage, tarnish, or otherwise harm, in our opinion, us and/or the
 								App.
-							</li>
-							<li>
+              </li>
+              <li>
 								23) use the App in a manner inconsistent with any applicable laws or
 								regulations.
-							</li>
-						</ol>
+              </li>
+            </ol>
 
-						<h5>MOBILE APPLICATION LICENSE</h5>
-						<p className='mb-1'>
+            <h5>MOBILE APPLICATION LICENSE</h5>
+            <p className='mb-1'>
 							Use License If you access the App via a mobile application, then we grant
 							you a revocable, non-exclusive, non-transferable, limited right to install
 							and use the mobile application on wireless electronic devices owned or
 							controlled by you, and to access and use the mobile application on such
 							devices strictly in accordance with the terms and conditions of this mobile
 							application license contained in these Terms and Conditions You shall not:
-						</p>
-						<ol>
-							<li>
+            </p>
+            <ol>
+              <li>
 								(1) decompile, reverse engineer, disassemble, attempt to derive the source
 								code of, or decrypt the App.
-							</li>
-							<li>
+              </li>
+              <li>
 								(2) make any modification, adaptation, improvement, enhancement,
 								translation, or derivative work from the App.
-							</li>
-							<li>
+              </li>
+              <li>
 								(3) violate any applicable laws, rules, or regulations in connection with
 								your access or use of the App.
-							</li>
-							<li>
+              </li>
+              <li>
 								(4) remove, alter, or obscure any proprietary notice (including any notice
 								of copyright or trademark) posted by us or the licensors of the App.
-							</li>
-							<li>
+              </li>
+              <li>
 								(5) use the application for any revenue generating endeavour, commercial
 								enterprise, or other purpose for which it is not designed or intended.
-							</li>
-							<li>
+              </li>
+              <li>
 								(6) make the application available over a network or other environment
 								permitting access or use by multiple devices or users at the same time.
-							</li>
-						</ol>
+              </li>
+            </ol>
 
-						<h5>APPLE AND ANDROID DEVICES</h5>
-						<p className='mb-1'>
+            <h5>APPLE AND ANDROID DEVICES</h5>
+            <p className='mb-1'>
 							The following terms apply when you use a mobile application obtained from
 							either the Apple Store or Google Play (each an “App Distributor”) to access
 							the App:
-						</p>
-						<ol>
-							<li>
+            </p>
+            <ol>
+              <li>
 								(1) the license granted to you for our mobile application is limited to a
 								non-transferable license to use the application on a device that utilizes
 								the Apple iOS or Android operating systems, as applicable, and in
 								accordance with the usage rules set forth in the applicable App
 								Distributor’s terms and conditions.
-							</li>
-							<li>
+              </li>
+              <li>
 								(2) we are responsible for providing any maintenance and support services
 								with respect to the mobile application as specified in the terms and
 								conditions of this mobile application license contained in these Terms and
@@ -229,8 +229,8 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 								acknowledge that each App Distributor has no obligation whatsoever to
 								furnish any maintenance and support services with respect to the mobile
 								application.
-							</li>
-							<li>
+              </li>
+              <li>
 								(3) in the event of any failure of the mobile application to conform to
 								any applicable warranty, you may notify the applicable App Distributor,
 								and the App Distributor, in accordance with its terms and policies, may
@@ -238,21 +238,21 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 								the maximum extent permitted by applicable law, the App Distributor will
 								have no other warranty obligation whatsoever with respect to the mobile
 								application.
-							</li>
-							<li>
+              </li>
+              <li>
 								(4) you represent and warrant that (i) you are not located in a country
 								that is subject to a U.S. government embargo, or that has been designated
 								by the U.S. government as a “terrorist supporting” country and (ii) you
 								are not listed on any U.S. government list of prohibited or restricted
 								parties.
-							</li>
-							<li>
+              </li>
+              <li>
 								(5) you must comply with applicable third-party terms of agreement when
 								using the mobile application, e.g., if you have a VoIP application, then
 								you must not be in violation of their wireless data service agreement when
 								using the mobile application.
-							</li>
-							<li>
+              </li>
+              <li>
 								(6) you acknowledge and agree that the App Distributors are third-party
 								beneficiaries of the terms and conditions in this mobile application
 								license contained in these Terms and Conditions, and that each App
@@ -260,11 +260,11 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 								right) to enforce the terms and conditions in this mobile application
 								license contained in these Terms and Conditions against you as a
 								third-party beneficiary thereof.
-							</li>
-						</ol>
+              </li>
+            </ol>
 
-						<h5>SUBMISSIONS</h5>
-						<p>
+            <h5>SUBMISSIONS</h5>
+            <p>
 							You acknowledge and agree that any questions, comments, suggestions, ideas,
 							feedback, or other information regarding the App (“Submissions”) provided by
 							you to us are non-confidential and shall become our sole property. We shall
@@ -276,9 +276,9 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 							with you or that you have the right to submit such Submissions. You agree
 							there shall be no recourse against us for any alleged or actual infringement
 							or misappropriation of any proprietary right in your Submissions.
-						</p>
-						<h5>ADVERTISERS</h5>
-						<p>
+            </p>
+            <h5>ADVERTISERS</h5>
+            <p>
 							We allow advertisers to display their advertisements and other information
 							in certain areas of the App, such as sidebar advertisements or banner
 							advertisements. If you are an advertiser, you shall take full responsibility
@@ -289,34 +289,34 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 							intellectual property rights, publicity rights, and contractual rights. We
 							simply provide the space to place such advertisements, and we have no other
 							relationship with advertisers.
-						</p>
+            </p>
 
-						<h5>APP MANAGEMENT</h5>
-						<p className='mb-1'>We reserve the right, but not the obligation, to:</p>
-						<ol>
-							<li>(1) monitor the App for violations of these Terms and Conditions.</li>
-							<li>
+            <h5>APP MANAGEMENT</h5>
+            <p className='mb-1'>We reserve the right, but not the obligation, to:</p>
+            <ol>
+              <li>(1) monitor the App for violations of these Terms and Conditions.</li>
+              <li>
 								(2) take appropriate legal action against anyone who, in our sole
 								discretion, violates the law or these Terms and Conditions, including
 								without limitation, reporting such user to law enforcement authorities.
-							</li>
-							<li>
+              </li>
+              <li>
 								(3) in our sole discretion and without limitation, refuse, restrict access
 								to, limit the availability of, or disable (to the extent technologically
 								feasible) any of your Contributions or any portion thereof.
-							</li>
-							<li>
+              </li>
+              <li>
 								(4) in our sole discretion and without limitation, notice, or liability,
 								to remove from the App or otherwise disable all files and content that are
 								excessive in size or are in any way burdensome to our systems.
-							</li>
-							<li>
+              </li>
+              <li>
 								(5) otherwise manage the App in a manner designed to protect our rights
 								and property and to facilitate the proper functioning of the App.
-							</li>
-						</ol>
-						<h5>PRIVACY POLICY</h5>
-						<p>
+              </li>
+            </ol>
+            <h5>PRIVACY POLICY</h5>
+            <p>
 							We care about data privacy and security. Please review our Privacy Policy.
 							By using the App, you agree to be bound by our Privacy Policy, which is
 							incorporated into these Terms and Conditions. Please be advised the App is
@@ -326,9 +326,9 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 							applicable laws in the United States, then through your continued use of the
 							App, you are transferring your data to the United States, and you expressly
 							consent to have your data transferred to and processed in the United States.
-						</p>
-						<h5>COPYRIGHT INFRINGEMENTS</h5>
-						<p>
+            </p>
+            <h5>COPYRIGHT INFRINGEMENTS</h5>
+            <p>
 							We respect the intellectual property rights of others. If you believe that
 							any material available on or through the App infringes upon any copyright
 							you own or control, please immediately notify us using the contact
@@ -339,9 +339,9 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 							Notification. Thus, if you are not sure that material located on or linked
 							to by the App infringes your copyright, you should consider first contacting
 							an attorney.
-						</p>
-						<h5>TERM AND TERMINATION</h5>
-						<p>
+            </p>
+            <h5>TERM AND TERMINATION</h5>
+            <p>
 							These Terms and Conditions shall remain in full force and effect while you
 							use the App. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS AND
 							CONDITIONS, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT
@@ -358,9 +358,9 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 							addition to terminating or suspending your account, we reserve the right to
 							take appropriate legal action, including without limitation pursuing civil,
 							criminal, and injunctive redress.
-						</p>
-						<h5>MODIFICATIONS AND INTERRUPTIONS</h5>
-						<p>
+            </p>
+            <h5>MODIFICATIONS AND INTERRUPTIONS</h5>
+            <p>
 							We reserve the right to change, modify, or remove the contents of the App at
 							any time or for any reason at our sole discretion without notice. However,
 							we have no obligation to update any information on our Site. We also reserve
@@ -377,18 +377,18 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 							discontinuance of the App. Nothing in these Terms and Conditions will be
 							construed to obligate us to maintain and support the App or to supply any
 							corrections, updates, or releases in connection therewith.
-						</p>
-						<h5>CORRECTIONS</h5>
-						<p>
+            </p>
+            <h5>CORRECTIONS</h5>
+            <p>
 							There may be information on the App that contains typographical errors,
 							inaccuracies, or omissions that may relate to the App, including
 							descriptions, pricing, availability, and various other information. We
 							reserve the right to correct any errors, inaccuracies, or omissions and to
 							change or update the information on the App at any time, without prior
 							notice.
-						</p>
-						<h5>DISCLAIMER</h5>
-						<p>
+            </p>
+            <h5>DISCLAIMER</h5>
+            <p>
 							THE APP IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR
 							USE OF THE APP AND OUR SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST
 							EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN
@@ -415,17 +415,17 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 							PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR
 							SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST
 							JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.
-						</p>
-						<h5>LIMITATIONS OF LIABILITY</h5>
-						<p>
+            </p>
+            <h5>LIMITATIONS OF LIABILITY</h5>
+            <p>
 							IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU
 							OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY,
 							INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST
 							REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE APP,
 							EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-						</p>
-						<h5>USER DATA</h5>
-						<p>
+            </p>
+            <h5>USER DATA</h5>
+            <p>
 							We will maintain certain data that you transmit to the App for the purpose
 							of managing the App, as well as data relating to your use of the App.
 							Although we perform regular routine backups of data, you are solely
@@ -434,29 +434,29 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 							to you for any loss or corruption of any such data, and you hereby waive any
 							right of action against us arising from any such loss or corruption of such
 							data.
-						</p>
-						<h5>ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</h5>
-						<p>
+            </p>
+            <h5>ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</h5>
+            <p>
 							Visiting the App, sending us emails, and completing online forms constitute
 							electronic communications. You consent to receive electronic communications,
 							and you agree that all agreements, notices, disclosures, and other
 							communications we provide to you electronically, via email and on the App,
 							satisfy any legal requirement that such communication be in writing.
-						</p>
-						<h5>
+            </p>
+            <h5>
 							YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND
 							OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS
 							OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE APP.
-						</h5>
-						<p>
+            </h5>
+            <p>
 							You hereby waive any rights or requirements under any statutes, regulations,
 							rules, ordinances, or other laws in any jurisdiction which require an
 							original signature or delivery or retention of non-electronic records, or to
 							payments or the granting of credits by any means other than electronic
 							means.
-						</p>
-						<h5>MISCELLANEOUS</h5>
-						<p>
+            </p>
+            <h5>MISCELLANEOUS</h5>
+            <p>
 							These Terms and Conditions and any policies or operating rules posted by us
 							on the App constitute the entire agreement and understanding between you and
 							us. Our failure to exercise or enforce any right or provision of these Terms
@@ -476,12 +476,12 @@ const Terms: React.FC<ToggleTerms> = (props) => {
 							you may have based on the electronic form of these Terms and Conditions and
 							the lack of signing by the parties hereto to execute these Terms and
 							Conditions.
-						</p>
-					</Col>
-				</Row>
-			</Container>
-		</section>
-	);
+            </p>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
 };
 
 // EXPORT Terms

@@ -1,9 +1,9 @@
-// import reducers
+// Import reducers
 import {combineReducers} from 'redux';
 import imageReducer from './imageReducer';
 
-const rootReducers = combineReducers({    
-    imageData : imageReducer      
+const rootReducers = combineReducers({
+  imageData: imageReducer
 });
 
 export type RootState = ReturnType<typeof rootReducers>
