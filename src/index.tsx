@@ -1,22 +1,23 @@
 import App from './App';
 import { Provider } from 'react-redux';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { configureStore } from '@reduxjs/toolkit';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { createStore } from 'redux';
 import reportWebVitals from './reportWebVitals';
 import rootReducers from './store';
 
 // Create data store
-const store = configureStore(rootReducers);
+const store = createStore(rootReducers);
 
 // Index
-ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
+const rootElement = document.getElementById('root')!;
+const root = createRoot(rootElement);
+root.render(
+  <Provider store={store}>
+    <StrictMode>
       <App />
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+    </StrictMode>
+  </Provider>
 );
 
 // Data test

@@ -1,14 +1,15 @@
-// Import utilities
+import { AnyAction } from '@reduxjs/toolkit';
 import Communication from '../utilities/apiMethod';
+import { Dispatch } from 'react';
 
 const imageAction = {
-  loadImages(dispatch: any) {
+  loadImages(dispatch: Dispatch<AnyAction>) {
     dispatch({
       type: 'LOAD_IMAGES',
       payload: null
     });
     Communication.getMethod()
-      .then((images) => {
+      .then((images: string[]) => {
         setTimeout(() => {
           dispatch({
             type: 'GET_IMAGES',
@@ -21,8 +22,7 @@ const imageAction = {
           type: 'ERROR_IMAGES',
           payload: null
         });
-      })
-      .finally(() => {});
+      });
   }
 };
 

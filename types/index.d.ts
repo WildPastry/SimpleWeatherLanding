@@ -1,4 +1,4 @@
-// Declarations
+// Enums
 declare enum WetherType {
   'daily',
   'weekly',
@@ -6,6 +6,12 @@ declare enum WetherType {
 }
 
 // Interfaces
+interface AppState {
+  imageList: string[],
+  loading: boolean,
+  error: boolean
+}
+
 interface WeatherData {
   id: number;
   label: string;
@@ -36,6 +42,16 @@ interface SectionProps {
 
 // Modules
 declare module '*.svg' {
+  const content: string;
+  export default content;
+}
+
+declare module '*.png' {
+  const content: string;
+  export default content;
+}
+
+declare module '*.jpg' {
   const content: string;
   export default content;
 }

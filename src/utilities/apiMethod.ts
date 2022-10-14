@@ -13,7 +13,7 @@ const apiMethod = {
       screenOne,
       screenTwo
     ];
-    return response;
+    return Promise.resolve(response);
   }
 };
 

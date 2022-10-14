@@ -1,7 +1,4 @@
-// Import frameworks
 import { Container, Nav, Navbar } from 'react-bootstrap';
-
-// Import assets
 import logo from '../assets/icon/logo.svg';
 
 /** @type {ScrollToSection} */
@@ -18,26 +15,36 @@ const Header: React.FC<ScrollToSection> = (props) => {
           <span className='h2Bd spotBlue'>WEATHER</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-        <Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
+        <Navbar.Collapse
+          id='responsive-navbar-nav'
+          className='justify-content-end'>
           <Nav className='mr-auto fontRg clouds'>
             <div className='px-2 navLink'>
-              <span className='pointerCursor spanLink' onClick={() => props.scrollToSection(1)}>
-								Features
+              <span
+                className='pointerCursor spanLink'
+                onClick={() => props.scrollToSection(1)}>
+                Features
               </span>
             </div>
             <div className='px-2 navLink'>
-              <span className='pointerCursor spanLink' onClick={() => props.scrollToSection(2)}>
-								Locations
+              <span
+                className='pointerCursor spanLink'
+                onClick={() => props.scrollToSection(2)}>
+                Locations
               </span>
             </div>
             <div className='px-2 navLink'>
-              <span className='pointerCursor spanLink' onClick={() => props.scrollToSection(3)}>
-								Weather
+              <span
+                className='pointerCursor spanLink'
+                onClick={() => props.scrollToSection(3)}>
+                Weather
               </span>
             </div>
             <div className='px-2 navLink'>
-              <span className='pointerCursor spanLink' onClick={() => props.scrollToSection(4)}>
-								Contact
+              <span
+                className='pointerCursor spanLink'
+                onClick={() => props.scrollToSection(4)}>
+                Contact
               </span>
             </div>
           </Nav>

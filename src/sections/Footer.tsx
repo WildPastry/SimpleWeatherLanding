@@ -1,10 +1,5 @@
-// Import frameworks
 import { Col, Container, Row } from 'react-bootstrap';
-
-// Import icons
 import { Mail } from 'react-ionicons';
-
-// Import assets
 import logo from '../assets/icon/logo.svg';
 
 /** @type {SectionProps} */
@@ -31,48 +26,62 @@ const Footer: React.FC<SectionProps> = (props) => {
           <hr />
           <ul>
             <li>
-              <span className='pointerCursor spanLink' onClick={() => props.scrollToSection(1)}>
-								Features
+              <span
+                className='pointerCursor spanLink'
+                onClick={() => props.scrollToSection(1)}>
+                Features
               </span>
             </li>
             <li>
-              <span className='pointerCursor spanLink' onClick={() => props.scrollToSection(2)}>
-								Locations
+              <span
+                className='pointerCursor spanLink'
+                onClick={() => props.scrollToSection(2)}>
+                Locations
               </span>
             </li>
             <li>
-              <span className='pointerCursor spanLink' onClick={() => props.scrollToSection(3)}>
-								Weather
+              <span
+                className='pointerCursor spanLink'
+                onClick={() => props.scrollToSection(3)}>
+                Weather
               </span>
             </li>
             <li>
-              <span className='pointerCursor spanLink' onClick={() => props.togglePrivacy()}>
-								Privacy
+              <span
+                className='pointerCursor spanLink'
+                onClick={() => props.togglePrivacy()}>
+                Privacy
               </span>
             </li>
             <li>
-              <span className='pointerCursor spanLink' onClick={() => props.toggleTerms()}>
-								Terms
+              <span
+                className='pointerCursor spanLink'
+                onClick={() => props.toggleTerms()}>
+                Terms
               </span>
             </li>
           </ul>
           <hr />
           <div className='text-center'>
             <span className='contactContainer mb-2'>
-              <Mail color={'#6e859e'} cssClasses='me-1' height='25px' width='25px' />
-              <a
-                className='clouds'
-                href='mailto:mike@mikeparker.co.nz'>mike@mikeparker.co.nz
+              <Mail
+                color={'#6e859e'}
+                cssClasses='me-1'
+                height='25px'
+                width='25px'
+              />
+              <a className='clouds' href='mailto:mike@mikeparker.co.nz'>
+                mike@mikeparker.co.nz
               </a>
             </span>
             <p className='clouds'>
-							© {currentDate}
+              © {currentDate}
               <a
                 className='ms-1 spotBlue'
                 href='https://mikeparker.co.nz/'
                 target='_blank'
                 rel='noopener noreferrer'>
-								Mike Parker
+                Mike Parker
               </a>
             </p>
           </div>

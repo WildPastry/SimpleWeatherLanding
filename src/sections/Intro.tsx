@@ -1,7 +1,4 @@
-// Import frameworks
 import { Col, Container, Row } from 'react-bootstrap';
-
-// Import assets
 import googleBadge from '../assets/img/google-play-badge.png';
 // Import appleBadge from '../assets/img/app-store-badge.png';
 

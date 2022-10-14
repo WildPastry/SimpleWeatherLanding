@@ -1,7 +1,4 @@
-// Import frameworks
 import { Col, Container, Row } from 'react-bootstrap';
-
-// Import components
 import LocationIcon from '../components/LocationIcon';
 
 // Locations
@@ -11,24 +8,24 @@ const Locations: React.FC = () => {
       <Row>
         <Col sm={12} lg={7} className='fontRg locationContainer'>
           <h3>
-						Millions of search results using{' '}
+              Millions of search results using{' '}
             <a
               className='ms-1 spotBlue'
               href='https://cloud.google.com/maps-platform/places'
               target='_blank'
               rel='noopener noreferrer'>
-							Google Places API
+              Google Places API
             </a>
           </h3>
           <h3>
-						Millions of locations for weather data including over 200,000 cities worldwide
-						provided by
+            Millions of locations for weather data including over 200,000 cities worldwide
+            provided by
             <a
               className='ms-1 spotBlue'
               href='https://openweathermap.org/'
               target='_blank'
               rel='noopener noreferrer'>
-							OpenWeather
+              OpenWeather
             </a>
           </h3>
         </Col>
