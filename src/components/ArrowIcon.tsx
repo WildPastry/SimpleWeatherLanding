@@ -23,7 +23,7 @@ const ArrowIcon: React.FC<ScrollToSection> = (props) => {
   window.addEventListener('scroll', checkScrollTop);
   return (
     <ArrowUpOutline
-		  style={{display: showScroll ? 'block' : 'none'}}
+      style={{ display: showScroll ? 'block' : 'none' }}
       onClick={() => props.scrollToSection(0)}
       cssClasses='arrowIcon'
       color={'#1faadb'}

@@ -7,9 +7,9 @@ declare enum WetherType {
 
 // Interfaces
 interface AppState {
-  imageList: string[],
-  loading: boolean,
-  error: boolean
+  imageList: string[];
+  loading: boolean;
+  error: boolean;
 }
 
 interface WeatherData {

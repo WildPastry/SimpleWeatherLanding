@@ -8,7 +8,7 @@ const Locations: React.FC = () => {
       <Row>
         <Col sm={12} lg={7} className='fontRg locationContainer'>
           <h3>
-              Millions of search results using{' '}
+            Millions of search results using{' '}
             <a
               className='ms-1 spotBlue'
               href='https://cloud.google.com/maps-platform/places'
@@ -18,8 +18,8 @@ const Locations: React.FC = () => {
             </a>
           </h3>
           <h3>
-            Millions of locations for weather data including over 200,000 cities worldwide
-            provided by
+            Millions of locations for weather data including over 200,000 cities
+            worldwide provided by
             <a
               className='ms-1 spotBlue'
               href='https://openweathermap.org/'

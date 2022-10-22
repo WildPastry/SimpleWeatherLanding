@@ -16,11 +16,7 @@ const Intro: React.FC = () => {
         href='https://play.google.com/store/apps/details?id=nz.co.mikeparker.sw'
         target='_blank'
         rel='noopener noreferrer'>
-        <img
-          src={googleBadge}
-          className='storeBadge'
-          alt='Google Play Store'
-        />
+        <img src={googleBadge} className='storeBadge' alt='Google Play Store' />
       </a>
       {/* <img src={appleBadge} className='storeBadge defaultCursor greyScale mx-3' alt='App Store' /> */}
     </Container>
