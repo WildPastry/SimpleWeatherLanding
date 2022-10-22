@@ -6,13 +6,7 @@ import screenTwo from '../assets/img/screen-2.png';
 
 const apiMethod = {
   getMethod() {
-    const response = [
-      bgImgOne,
-      bgImgTwo,
-      bgImgThree,
-      screenOne,
-      screenTwo
-    ];
+    const response = [bgImgOne, bgImgTwo, bgImgThree, screenOne, screenTwo];
     return Promise.resolve(response);
   }
 };

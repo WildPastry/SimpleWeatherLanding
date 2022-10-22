@@ -14,7 +14,8 @@ const Privacy: React.FC<TogglePrivacy> = (props) => {
         color={'#1faadb'}
         title={'CLOSE'}
         height='50px'
-        width='50px'/>
+        width='50px'
+      />
       <Container fluid='lg' className='sectionContainerPadded'>
         <Row>
           <Col sm={12}>

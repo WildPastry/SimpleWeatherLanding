@@ -1,6 +1,13 @@
 /* eslint-disable max-len */
 import 'tippy.js/dist/tippy.css';
-import { AddCircle, ArrowDown, ArrowUp, CloseCircle, Home, Search } from 'react-ionicons';
+import {
+  AddCircle,
+  ArrowDown,
+  ArrowUp,
+  CloseCircle,
+  Home,
+  Search
+} from 'react-ionicons';
 import { Col, Container, Row } from 'react-bootstrap';
 import { RootState } from '../store';
 import Tippy from '@tippyjs/react';
@@ -32,10 +39,20 @@ const Features: React.FC = () => {
         </Col>
         <Col sm={12} lg={6} className='fontRg'>
           <h2 className='h2Bd thunderStorm'>Features</h2>
-          <p>Sign up to the database to save up to 5 locations, set one location as “home”, remove locations and remove or change “home” locations.</p>
+          <p>
+            Sign up to the database to save up to 5 locations, set one location
+            as “home”, remove locations and remove or change “home” locations.
+          </p>
           <p>Authentication screens for secure signing in.</p>
-          <p>IOS and Android compatible (though only releasing on Android for now)</p>
-          <p>Collapsible menu with options to sign-in, sign-out or sign-up (if you haven’t signed-in) and a help section explaining the controls/operation/icons of the App.</p>
+          <p>
+            IOS and Android compatible (though only releasing on Android for
+            now)
+          </p>
+          <p>
+            Collapsible menu with options to sign-in, sign-out or sign-up (if
+            you haven’t signed-in) and a help section explaining the
+            controls/operation/icons of the App.
+          </p>
           <div className='mt-4 appIcons'>
             <Tippy
               theme='simpleWeather'

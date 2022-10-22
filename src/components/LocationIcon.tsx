@@ -5,7 +5,12 @@ import { Location } from 'react-ionicons';
 const LocationIcon: React.FC = () => {
   return (
     <>
-      <Location color={'#37d493'} title={'Location Pin'} height='300px' width='300px' />
+      <Location
+        color={'#37d493'}
+        title={'Location Pin'}
+        height='300px'
+        width='300px'
+      />
     </>
   );
 };

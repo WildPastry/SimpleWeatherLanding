@@ -32,7 +32,8 @@ const App: React.FC = () => {
   ];
 
   // Scroll to sections
-  const scrollToRef = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToRef = (ref: any) =>
+    ref.current.scrollIntoView({ behavior: 'smooth' });
   const scrollToSection = (num: number) => scrollToRef(currentSection[num]);
 
   // Redux selector
@@ -67,19 +68,20 @@ const App: React.FC = () => {
 
   // Toggle privacy section
   const [showPrivacy, setShowPrivacy] = useState(false);
-  const togglePrivacy = () => (showPrivacy === false
-    ? (setShowPrivacy(true), toggleBody(true))
-    : (setShowPrivacy(false), toggleBody(false)));
+  const togglePrivacy = () =>
+    showPrivacy === false
+      ? (setShowPrivacy(true), toggleBody(true))
+      : (setShowPrivacy(false), toggleBody(false));
 
   // Toggle terms section
   const [showTerms, setShowTerms] = useState(false);
-  const toggleTerms = () => (showTerms === false
-    ? (setShowTerms(true), toggleBody(true))
-    : (setShowTerms(false), toggleBody(false)));
+  const toggleTerms = () =>
+    showTerms === false
+      ? (setShowTerms(true), toggleBody(true))
+      : (setShowTerms(false), toggleBody(false));
 
   // RenderPage
   const renderPage = (pageData: any) => {
-
     /*
      * Show error container if there is one
      * otherwise display the app

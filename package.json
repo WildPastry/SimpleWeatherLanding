@@ -1,6 +1,6 @@
 {
   "name": "simple-weather-landing",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
@@ -12,14 +12,16 @@
     "@types/node": "^18.11.0",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.40.0",
-    "@wildpastry/eslint-config": "^1.5.8",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@wildpastry/eslint-config": "^1.6.3",
     "axios": "^1.1.2",
     "bootstrap": "^5.2.2",
-    "eslint": "^8.25.0",
+    "eslint": "^8.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.10",
     "lottie-react": "^2.3.1",
     "node-sass": "^7.0.3",
+    "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
@@ -36,7 +38,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
-    "lint:fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\""
+    "lint:fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\"",
+    "format": "npx prettier --check \"**/*.{js,jsx,ts,tsx}\"",
+    "format:fix": "npx prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+    "clean": "npx prettier --write \"**/*.{js,jsx,ts,tsx}\" && npm run lint:fix"
   },
   "eslintConfig": {
     "extends": [
