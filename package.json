@@ -10,7 +10,7 @@
     "@tippyjs/react": "^4.2.6",
     "@types/jest": "^29.1.2",
     "@types/node": "^18.11.0",
-    "@types/react": "^18.0.21",
+    "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@wildpastry/eslint-config": "^1.6.4",
