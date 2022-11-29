@@ -1,21 +1,21 @@
 // master imports
-@import 'variables';
-@import 'mixins';
+@use'variables';
+@use'mixins';
+
+// bootstrap import
+@use"./node_modules/bootstrap/scss/functions";
+@use"./node_modules/bootstrap/scss/variables";
+@use"./node_modules/bootstrap/scss/mixins";
+@use"./node_modules/bootstrap/scss/bootstrap";
+
+// custom imports
+@use'base';
+@use'font';
+@use'img';
+@use'loader';
+@use'colours';
+@use'sections';
+@use'tooltips';
 
 // font import
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap');
-
-// bootstrap import
-@import "./node_modules/bootstrap/scss/functions";
-@import "./node_modules/bootstrap/scss/variables";
-@import "./node_modules/bootstrap/scss/mixins";
-@import "./node_modules/bootstrap/scss/bootstrap";
-
-// custom imports
-@import 'base';
-@import 'font';
-@import 'img';
-@import 'loader';
-@import 'colours';
-@import 'sections';
-@import 'tooltips';
