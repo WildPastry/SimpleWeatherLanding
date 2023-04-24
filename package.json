@@ -28,7 +28,7 @@
     "react-ionicons": "^4.2.0",
     "react-redux": "^8.0.5",
     "react-scripts": "^5.0.1",
-    "styled-components": "^5.3.9",
+    "styled-components": "^5.3.10",
     "typescript": "^5.0.4",
     "web-vitals": "^3.3.1"
   },
