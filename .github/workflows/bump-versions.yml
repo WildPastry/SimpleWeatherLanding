@@ -48,7 +48,7 @@ jobs:
         run: |
           npm i --force
           git add .
-          git commit -m "AUTOMATED_VERSION_CONTROL"
+          git commit -m "Automated version control"
           git push origin ${{ github.ref_name }}
           GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}"
             REPO_OWNER="${{ github.repository_owner }}"
