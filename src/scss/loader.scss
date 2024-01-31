@@ -1,9 +1,8 @@
 // master imports
 @use'variables';
-@use'mixins';
 
 .loader {
-	background: $dark;
+	background: variables.$dark;
 	bottom: 0;
 	left: 0;
 	overflow: hidden;

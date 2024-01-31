@@ -4,7 +4,7 @@
 
 // reset
 * {
-	@include reset(0, 0, border-box, none, none);
+	@include mixins.reset(0, 0, border-box, none, none);
 	font-family: 'Merriweather Sans', sans-serif;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 body {
-	color: $simpleWeather;
+	color: variables.$simpleWeather;
 }
 
 // hr
@@ -86,7 +86,7 @@ hr {
 // navbar
 .navbar {
 	text-align: right;
-	@include bp(xs) {
+	@include mixins.bp(xs) {
 		flex-direction: column;
 		text-align: center;
 	}

@@ -1,273 +1,272 @@
 // master imports
 @use'variables';
-@use'mixins';
 
 // BACKGROUND COLOURS
 
 // simpleWeather
 .bg-simpleWeather {
-	background: $simpleWeather;
+	background: variables.$simpleWeather;
 }
 
 // basic
 .bg-dark {
-	background: $dark;
+	background: variables.$dark;
 }
 .bg-light {
-	background: $light;
+	background: variables.$light;
 }
 
 // spot colours
 .bg-spotYellow {
-	background: $spotYellow;
+	background: variables.$spotYellow;
 }
 .bg-spotBlue {
-	background: $spotBlue;
+	background: variables.$spotBlue;
 }
 .bg-spotOrange {
-	background: $spotOrange;
+	background: variables.$spotOrange;
 }
 .bg-spotGreen {
-	background: $spotGreen;
+	background: variables.$spotGreen;
 }
 .bg-spotRed {
-	background: $spotRed;
+	background: variables.$spotRed;
 }
 
 // spot greys
 .bg-spotGrey {
-	background: $spotGrey;
+	background: variables.$spotGrey;
 }
 .bg-spotGreyLight {
-	background: $spotGreyLight;
+	background: variables.$spotGreyLight;
 }
 .bg-spotGreyMed {
-	background: $spotGreyMed;
+	background: variables.$spotGreyMed;
 }
 .bg-spotGreyDark {
-	background: $spotGreyDark;
+	background: variables.$spotGreyDark;
 }
 
 // all groups night
 .bg-night {
-	background: $night;
+	background: variables.$night;
 }
 .bg-nightDark {
-	background: $nightDark;
+	background: variables.$nightDark;
 }
 .bg-nightDarkest {
-	background: $nightDarkest;
+	background: variables.$nightDarkest;
 }
 
 // group 2xx: thunderstorm
 .bg-thunderStorm {
-	background: $thunderStorm;
+	background: variables.$thunderStorm;
 }
 .bg-thunderStormDark {
-	background: $thunderStormDark;
+	background: variables.$thunderStormDark;
 }
 .bg-thunderStormDarkest {
-	background: $thunderStormDarkest;
+	background: variables.$thunderStormDarkest;
 }
 
 // group 3xx: drizzle
 .bg-drizzle {
-	background: $drizzle;
+	background: variables.$drizzle;
 }
 .bg-drizzleDark {
-	background: $drizzleDark;
+	background: variables.$drizzleDark;
 }
 .bg-drizzleDarkest {
-	background: $drizzleDarkest;
+	background: variables.$drizzleDarkest;
 }
 
 // group 5xx: rain
 .bg-rain {
-	background: $rain;
+	background: variables.$rain;
 }
 .bg-rainDark {
-	background: $rainDark;
+	background: variables.$rainDark;
 }
 .bg-rainDarkest {
-	background: $rainDarkest;
+	background: variables.$rainDarkest;
 }
 
 // group 6xx: snow
 .bg-snow {
-	background: $snow;
+	background: variables.$snow;
 }
 .bg-snowDark {
-	background: $snowDark;
+	background: variables.$snowDark;
 }
 .bg-snowDarkest {
-	background: $snowDarkest;
+	background: variables.$snowDarkest;
 }
 
 // group 7xx: atmosphere
 .bg-atmosphere {
-	background: $atmosphere;
+	background: variables.$atmosphere;
 }
 .bg-atmosphereDark {
-	background: $atmosphereDark;
+	background: variables.$atmosphereDark;
 }
 .bg-atmosphereDarkest {
-	background: $atmosphereDarkest;
+	background: variables.$atmosphereDarkest;
 }
 
 // group 800: clear
 .bg-clearSky {
-	background: $clearSky;
+	background: variables.$clearSky;
 }
 .bg-clearSkyDark {
-	background: $clearSkyDark;
+	background: variables.$clearSkyDark;
 }
 .bg-clearSkyDarkest {
-	background: $clearSkyDarkest;
+	background: variables.$clearSkyDarkest;
 }
 
 // group 80x: clouds
 .bg-clouds {
-	background: $clouds;
+	background: variables.$clouds;
 }
 .bg-cloudsDark {
-	background: $cloudsDark;
+	background: variables.$cloudsDark;
 }
 .bg-cloudsDarkest {
-	background: $cloudsDarkest;
+	background: variables.$cloudsDarkest;
 }
 
 // FOREGROUND COLOURS
 
 // simpleWeather
 .simpleWeather {
-	color: $simpleWeather;
+	color: variables.$simpleWeather;
 }
 
 // basic
 .dark {
-	color: $dark;
+	color: variables.$dark;
 }
 .light {
-	color: $light;
+	color: variables.$light;
 }
 
 // spot colours
 .spotYellow {
-	color: $spotYellow;
+	color: variables.$spotYellow;
 }
 .spotBlue {
-	color: $spotBlue;
+	color: variables.$spotBlue;
 }
 .spotOrange {
-	color: $spotOrange;
+	color: variables.$spotOrange;
 }
 .spotGreen {
-	color: $spotGreen;
+	color: variables.$spotGreen;
 }
 .spotRed {
-	color: $spotRed;
+	color: variables.$spotRed;
 }
 
 // spot greys
 .spotGrey {
-	color: $spotGrey;
+	color: variables.$spotGrey;
 }
 .spotGreyLight {
-	color: $spotGreyLight;
+	color: variables.$spotGreyLight;
 }
 .spotGreyMed {
-	color: $spotGreyMed;
+	color: variables.$spotGreyMed;
 }
 .spotGreyDark {
-	color: $spotGreyDark;
+	color: variables.$spotGreyDark;
 }
 
 // all groups night
 .night {
-	color: $night;
+	color: variables.$night;
 }
 .nightDark {
-	color: $nightDark;
+	color: variables.$nightDark;
 }
 .nightDarkest {
-	color: $nightDarkest;
+	color: variables.$nightDarkest;
 }
 
 // group 2xx: thunderstorm
 .thunderStorm {
-	color: $thunderStorm;
+	color: variables.$thunderStorm;
 }
 .thunderStormDark {
-	color: $thunderStormDark;
+	color: variables.$thunderStormDark;
 }
 .thunderStormDarkest {
-	color: $thunderStormDarkest;
+	color: variables.$thunderStormDarkest;
 }
 
 // group 3xx: drizzle
 .drizzle {
-	color: $drizzle;
+	color: variables.$drizzle;
 }
 .drizzleDark {
-	color: $drizzleDark;
+	color: variables.$drizzleDark;
 }
 .drizzleDarkest {
-	color: $drizzleDarkest;
+	color: variables.$drizzleDarkest;
 }
 
 // group 5xx: rain
 .rain {
-	color: $rain;
+	color: variables.$rain;
 }
 .rainDark {
-	color: $rainDark;
+	color: variables.$rainDark;
 }
 .rainDarkest {
-	color: $rainDarkest;
+	color: variables.$rainDarkest;
 }
 
 // group 6xx: snow
 .snow {
-	color: $snow;
+	color: variables.$snow;
 }
 .snowDark {
-	color: $snowDark;
+	color: variables.$snowDark;
 }
 .snowDarkest {
-	color: $snowDarkest;
+	color: variables.$snowDarkest;
 }
 
 // group 7xx: atmosphere
 .atmosphere {
-	color: $atmosphere;
+	color: variables.$atmosphere;
 }
 .atmosphereDark {
-	color: $atmosphereDark;
+	color: variables.$atmosphereDark;
 }
 .atmosphereDarkest {
-	color: $atmosphereDarkest;
+	color: variables.$atmosphereDarkest;
 }
 
 // group 800: clear
 .clearSky {
-	color: $clearSky;
+	color: variables.$clearSky;
 }
 .clearSkyDark {
-	color: $clearSkyDark;
+	color: variables.$clearSkyDark;
 }
 .clearSkyDarkest {
-	color: $clearSkyDarkest;
+	color: variables.$clearSkyDarkest;
 }
 
 // group 80x: clouds
 .clouds {
-	color: $clouds;
+	color: variables.$clouds;
 }
 .cloudsDark {
-	color: $cloudsDark;
+	color: variables.$cloudsDark;
 }
 .cloudsDarkest {
-	color: $cloudsDarkest;
+	color: variables.$cloudsDarkest;
 }
 
 // GREYSCALE
