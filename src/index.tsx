@@ -3,7 +3,6 @@ import { Provider } from 'react-redux';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createStore } from 'redux';
-import reportWebVitals from './reportWebVitals';
 import rootReducers from './store';
 
 // Create data store
@@ -19,6 +18,3 @@ root.render(
     </StrictMode>
   </Provider>
 );
-
-// Data test
-reportWebVitals();

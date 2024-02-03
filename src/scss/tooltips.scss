@@ -4,19 +4,19 @@
 
 // tippy theme
 .tippy-box[data-theme~='simpleWeather'] {
-	background-color: $thunderStorm;
-	color: $light;
+	background-color: variables.$thunderStorm;
+	color: variables.$light;
 }
 
 .tippy-box[data-theme~='simpleWeather'][data-placement^='top'] > .tippy-arrow::before {
-	border-top-color: $thunderStorm;
+	border-top-color: variables.$thunderStorm;
 }
 .tippy-box[data-theme~='simpleWeather'][data-placement^='bottom'] > .tippy-arrow::before {
-	border-bottom-color: $thunderStorm;
+	border-bottom-color: variables.$thunderStorm;
 }
 .tippy-box[data-theme~='simpleWeather'][data-placement^='left'] > .tippy-arrow::before {
-	border-left-color: $thunderStorm;
+	border-left-color: variables.$thunderStorm;
 }
 .tippy-box[data-theme~='simpleWeather'][data-placement^='right'] > .tippy-arrow::before {
-	border-right-color: $thunderStorm;
+	border-right-color: variables.$thunderStorm;
 }

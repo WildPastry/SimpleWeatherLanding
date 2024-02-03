@@ -1,5 +1,4 @@
 // master imports
-@use'variables';
 @use'mixins';
 
 // section container
@@ -27,11 +26,11 @@
 	padding-bottom: 3rem;
 	padding-left: 5rem;
 	padding-right: 5rem;
-	@include bp(sm) {
+	@include mixins.bp(sm) {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	@include bp(xs) {
+	@include mixins.bp(xs) {
 		padding-left: 15px;
 		padding-right: 15px;
 	}

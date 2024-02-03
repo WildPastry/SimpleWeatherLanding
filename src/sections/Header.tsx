@@ -8,7 +8,7 @@ import logo from '../assets/icon/logo.svg';
 const Header: React.FC<ScrollToSection> = (props) => {
   return (
     <Container className='my-2' fluid='lg'>
-      <Navbar collapseOnSelect expand='md' bg='light' variant='light'>
+      <Navbar collapseOnSelect expand='md' bg='white' variant='light'>
         <Navbar.Brand className='d-flex align-items-center'>
           <img src={logo} className='appLogoNav' alt='SimpleWeather' />
           <span className='h2Lt me-1'>SIMPLE</span>
