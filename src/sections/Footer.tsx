@@ -8,7 +8,7 @@ import logo from '../assets/icon/logo.svg';
 /** @param {SectionProps} params.toggleTerms */
 
 // Footer
-const Footer: React.FC<SectionProps> = (props) => {
+const Footer: React.FC<SectionProps> = (props: SectionProps) => {
   // Get date
   const currentDate = new Date().getFullYear();
 
@@ -70,8 +70,8 @@ const Footer: React.FC<SectionProps> = (props) => {
                 height='25px'
                 width='25px'
               />
-              <a className='clouds' href='mailto:mike@mikeparker.co.nz'>
-                mike@mikeparker.co.nz
+              <a className='clouds' href='mailto:mparkernzdev@gmail.com'>
+                mparkernzdev@gmail.com
               </a>
             </span>
             <p className='clouds'>

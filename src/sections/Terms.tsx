@@ -6,7 +6,7 @@ import { Close } from 'react-ionicons';
 /** @param {ToggleTerms} params.toggleTerms */
 
 // Terms
-const Terms: React.FC<ToggleTerms> = (props) => {
+const Terms: React.FC<ToggleTerms> = (props: ToggleTerms) => {
   return (
     <section className='fullPageFixed bg-light overFlowScroll'>
       <Close
