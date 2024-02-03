@@ -8,7 +8,7 @@ import logo from '../assets/icon/logo.svg';
 /** @param {SectionProps} params.toggleTerms */
 
 // Footer
-const Footer: React.FC<SectionProps> = (props) => {
+const Footer: React.FC<SectionProps> = (props: SectionProps) => {
   // Get date
   const currentDate = new Date().getFullYear();
 

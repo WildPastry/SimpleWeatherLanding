@@ -5,7 +5,7 @@ import { Close } from 'react-ionicons';
 /** @param {TogglePrivacy} params.togglePrivacy */
 
 // Privacy
-const Privacy: React.FC<TogglePrivacy> = (props) => {
+const Privacy: React.FC<TogglePrivacy> = (props: TogglePrivacy) => {
   return (
     <section className='fullPageFixed bg-dark overFlowScroll'>
       <Close
@@ -59,8 +59,8 @@ const Privacy: React.FC<TogglePrivacy> = (props) => {
               we hold about you, and to ask for it to be corrected if you think
               it is wrong. If you’d like to ask for a copy of your information,
               or to have it corrected, please contact us at{' '}
-              <a className='spotBlue' href='mailto:mike@mikeparker.co.nz'>
-                mike@mikeparker.co.nz.
+              <a className='spotBlue' href='mailto:mparkernzdev@gmail.com'>
+                mparkernzdev@gmail.com.
               </a>
             </p>
           </Col>

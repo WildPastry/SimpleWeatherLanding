@@ -1,14 +1,11 @@
-// Import frameworks
-import { useState } from 'react';
-
-// Import icon
 import { ArrowUpOutline } from 'react-ionicons';
+import { useState } from 'react';
 
 /** @type {ScrollToSection} */
 /** @param {ScrollToSection} params.scrollToSection */
 
 // ArrowIcon
-const ArrowIcon: React.FC<ScrollToSection> = (props) => {
+const ArrowIcon: React.FC<ScrollToSection> = (props: ScrollToSection) => {
   // Icon display logic
   const [showScroll, setShowScroll] = useState(false);
 

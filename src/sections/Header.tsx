@@ -5,7 +5,7 @@ import logo from '../assets/icon/logo.svg';
 /** @param {ScrollToSection} params.scrollToSection */
 
 // Header
-const Header: React.FC<ScrollToSection> = (props) => {
+const Header: React.FC<ScrollToSection> = (props: ScrollToSection) => {
   return (
     <Container className='my-2' fluid='lg'>
       <Navbar collapseOnSelect expand='md' bg='white' variant='light'>
