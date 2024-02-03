@@ -1,13 +1,14 @@
 // master imports
+@use "sass:map";
 @use'variables';
 @use'mixins';
 
 // links
 a {
-	color: $spotBlue;
+	color: variables.$spotBlue;
 	text-decoration: none;
 	&:hover {
-		color: $cloudsDarkest;
+		color: variables.$cloudsDarkest;
 	}
 }
 
@@ -19,7 +20,7 @@ ul {
 
 ul li {
 	padding: 0.2rem 0;
-	color: $clouds;
+	color: variables.$clouds;
 }
 
 ol {
@@ -29,55 +30,55 @@ ol {
 
 ol li {
 	padding: 0.2rem 0;
-	color: $clouds;
+	color: variables.$clouds;
 }
 
 // font
 .fontLt {
-	@include fontSize;
-	font-weight: map-get($fontWeight, 'lt');
+	@include mixins.fontSize;
+	font-weight: map-get(variables.$fontWeight, 'lt');
 }
 
 .fontRg {
-	@include fontSize;
-	font-weight: map-get($fontWeight, 'rg');
+	@include mixins.fontSize;
+	font-weight: map-get(variables.$fontWeight, 'rg');
 }
 
 .fontBd {
-	@include fontSize;
-	font-weight: map-get($fontWeight, 'bd');
+	@include mixins.fontSize;
+	font-weight: map-get(variables.$fontWeight, 'bd');
 }
 
 // h1
 .h1Lt {
-	@include h1Size;
-	font-weight: map-get($fontWeight, 'lt');
+	@include mixins.h1Size;
+	font-weight: map-get(variables.$fontWeight, 'lt');
 }
 
 .h1Rg {
-	@include h1Size;
-	font-weight: map-get($fontWeight, 'rg');
+	@include mixins.h1Size;
+	font-weight: map-get(variables.$fontWeight, 'rg');
 }
 
 .h1Bd {
-	@include h1Size;
-	font-weight: map-get($fontWeight, 'bd');
+	@include mixins.h1Size;
+	font-weight: map-get(variables.$fontWeight, 'bd');
 }
 
 // h2
 .h2Lt {
-	@include h2Size;
-	font-weight: map-get($fontWeight, 'lt');
+	@include mixins.h2Size;
+	font-weight: map-get(variables.$fontWeight, 'lt');
 }
 
 .h2Rg {
-	@include h2Size;
-	font-weight: map-get($fontWeight, 'rg');
+	@include mixins.h2Size;
+	font-weight: map-get(variables.$fontWeight, 'rg');
 }
 
 .h2Bd {
-	@include h2Size;
-	font-weight: map-get($fontWeight, 'bd');
+	@include mixins.h2Size;
+	font-weight: map-get(variables.$fontWeight, 'bd');
 }
 
 h5 {
@@ -87,12 +88,12 @@ h5 {
 
 // nav links
 .navLink {
-	@include bp(xs) {
+	@include mixins.bp(xs) {
 		padding-left: 0;
 		padding-right: 0;
 		padding-bottom: 0.5rem;
 	}
-	@include bp(sm) {
+	@include mixins.bp(sm) {
 		padding-left: 0;
 		padding-right: 0;
 		padding-bottom: 0.5rem;
@@ -101,7 +102,7 @@ h5 {
 
 .spanLink {
 	&:hover {
-		color: $cloudsDarkest;
+		color: variables.$cloudsDarkest;
 	}
 }
 
@@ -109,5 +110,5 @@ h5 {
 .aboutText {
 	font-size: 5rem;
 	text-align: right;
-	font-weight: map-get($fontWeight, 'bd');
+	font-weight: map-get(variables.$fontWeight, 'bd');
 }

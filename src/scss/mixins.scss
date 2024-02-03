@@ -1,5 +1,6 @@
-// import map
+// master imports
 @use "sass:map";
+@use'variables';
 
 // general reset
 @mixin reset($pad: null, $mar: null, $box: null, $deco: null, $listo: null) {
@@ -19,81 +20,81 @@
 
 // font sizes
 @mixin fontSize {
-	font-size: map-get($fontSize, 'xs');
+	font-size: map-get(variables.$fontSize, 'xs');
 	@include bp(sm) {
-		font-size: map-get($fontSize, 'sm');
+		font-size: map-get(variables.$fontSize, 'sm');
 	}
 	@include bp(md) {
-		font-size: map-get($fontSize, 'md');
+		font-size: map-get(variables.$fontSize, 'md');
 	}
 	@include bp(lg) {
-		font-size: map-get($fontSize, 'lg');
+		font-size: map-get(variables.$fontSize, 'lg');
 	}
 	@include bp(xl) {
-		font-size: map-get($fontSize, 'xl');
+		font-size: map-get(variables.$fontSize, 'xl');
 	}
 	@include bp(xxl) {
-		font-size: map-get($fontSize, 'xxl');
+		font-size: map-get(variables.$fontSize, 'xxl');
 	}
 }
 
 // h1 sizes
 @mixin h1Size {
-	font-size: map-get($h1Size, 'xs');
+	font-size: map-get(variables.$h1Size, 'xs');
 	@include bp(sm) {
-		font-size: map-get($h1Size, 'sm');
+		font-size: map-get(variables.$h1Size, 'sm');
 	}
 	@include bp(md) {
-		font-size: map-get($h1Size, 'md');
+		font-size: map-get(variables.$h1Size, 'md');
 	}
 	@include bp(lg) {
-		font-size: map-get($h1Size, 'lg');
+		font-size: map-get(variables.$h1Size, 'lg');
 	}
 	@include bp(xl) {
-		font-size: map-get($h1Size, 'xl');
+		font-size: map-get(variables.$h1Size, 'xl');
 	}
 	@include bp(xxl) {
-		font-size: map-get($h1Size, 'xxl');
+		font-size: map-get(variables.$h1Size, 'xxl');
 	}
 }
 
 // h2 sizes
 @mixin h2Size {
-	font-size: map-get($h2Size, 'xs');
+	font-size: map-get(variables.$h2Size, 'xs');
 	@include bp(sm) {
-		font-size: map-get($h2Size, 'sm');
+		font-size: map-get(variables.$h2Size, 'sm');
 	}
 	@include bp(md) {
-		font-size: map-get($h2Size, 'md');
+		font-size: map-get(variables.$h2Size, 'md');
 	}
 	@include bp(lg) {
-		font-size: map-get($h2Size, 'lg');
+		font-size: map-get(variables.$h2Size, 'lg');
 	}
 	@include bp(xl) {
-		font-size: map-get($h2Size, 'xl');
+		font-size: map-get(variables.$h2Size, 'xl');
 	}
 	@include bp(xxl) {
-		font-size: map-get($h2Size, 'xxl');
+		font-size: map-get(variables.$h2Size, 'xxl');
 	}
 }
 
 // icon heights
 @mixin iconHeight {
-	height: map-get($iconHeight, 'xs');
+	height: map-get(variables.$iconHeight, 'xs');
 	@include bp(sm) {
-		height: map-get($iconHeight, 'sm');
+		height: map-get(variables.$iconHeight, 'sm');
 	}
 	@include bp(md) {
-		height: map-get($iconHeight, 'md');
+		height: map-get(variables.$iconHeight, 'md');
 	}
 	@include bp(lg) {
-		height: map-get($iconHeight, 'lg');
+		height: map-get(variables.$iconHeight, 'lg');
 	}
 	@include bp(xl) {
-		height: map-get($iconHeight, 'xl');
+		height: map-get(variables.$iconHeight, 'xl');
 	}
 	@include bp(xxl) {
-		height: map-get($iconHeight, 'xxl');
+		height: map-get(variables.$iconHeight, 'xxl');
 	}
 }
 
