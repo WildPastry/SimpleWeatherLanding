@@ -1,22 +1,21 @@
 /* eslint-disable max-lines-per-function */
 import { Col, Container, Row } from 'react-bootstrap';
 import { Close } from 'react-ionicons';
-
-/** @type {ToggleTerms} */
-/** @param {ToggleTerms} params.toggleTerms */
+import { Link } from 'react-router-dom';
 
 // Terms
-const Terms: React.FC<ToggleTerms> = (props: ToggleTerms) => {
+const Terms: React.FC = (): JSX.Element => {
   return (
     <section className='fullPageFixed bg-light overFlowScroll'>
-      <Close
-        onClick={() => props.toggleTerms()}
-        cssClasses='closeIcon'
-        color={'#1faadb'}
-        title={'CLOSE'}
-        height='50px'
-        width='50px'
-      />
+      <Link to={'/'}>
+        <Close
+          cssClasses='closeIcon'
+          color={'#1faadb'}
+          title={'CLOSE'}
+          height='50px'
+          width='50px'
+        />
+      </Link>
       <Container fluid='lg' className='sectionContainerPadded'>
         <Row>
           <Col sm={12}>
