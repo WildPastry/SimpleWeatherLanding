@@ -7,7 +7,7 @@ import thunderStorm from '../assets/animations/weather/thunderStorm.json';
 import { useLottie } from 'lottie-react';
 
 // WeatherIcon
-const WeatherIcon: React.FC = () => {
+const WeatherIcon: React.FC = (): JSX.Element => {
   const weatherIcons = [
     dayClear,
     brokenClouds,

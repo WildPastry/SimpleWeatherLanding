@@ -2,7 +2,7 @@ import loader from '../assets/animations/loader.json';
 import { useLottie } from 'lottie-react';
 
 // AppLoading
-const AppLoading = () => {
+const AppLoading = (): JSX.Element => {
   // Icon styles
   const style = {
     height: 200

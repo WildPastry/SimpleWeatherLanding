@@ -1,11 +1,10 @@
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { Mail } from 'react-ionicons';
 import logo from '../assets/icon/logo.svg';
 
 /** @type {SectionProps} */
 /** @param {SectionProps} params.scrollToSection */
-/** @param {SectionProps} params.togglePrivacy */
-/** @param {SectionProps} params.toggleTerms */
 
 // Footer
 const Footer: React.FC<SectionProps> = (props: SectionProps) => {
@@ -47,18 +46,14 @@ const Footer: React.FC<SectionProps> = (props: SectionProps) => {
               </span>
             </li>
             <li>
-              <span
-                className='pointerCursor spanLink'
-                onClick={() => props.togglePrivacy()}>
+              <Link to={'/privacy'} className='pointerCursor spanLink'>
                 Privacy
-              </span>
+              </Link>
             </li>
             <li>
-              <span
-                className='pointerCursor spanLink'
-                onClick={() => props.toggleTerms()}>
+              <Link to={'/terms'} className='pointerCursor spanLink'>
                 Terms
-              </span>
+              </Link>
             </li>
           </ul>
           <hr />

@@ -1,7 +1,7 @@
 import { Location } from 'react-ionicons';
 
 // LocationIcon
-const LocationIcon: React.FC = () => {
+const LocationIcon: React.FC = (): JSX.Element => {
   return (
     <>
       <Location
