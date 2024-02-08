@@ -1,8 +1,5 @@
-// Import frameworks
-import { useLottie } from 'lottie-react';
-
-// Import assets
 import loader from '../assets/animations/loader.json';
+import { useLottie } from 'lottie-react';
 
 // AppLoading
 const AppLoading = () => {

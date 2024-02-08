@@ -1,4 +1,3 @@
-// Import icon
 import { Location } from 'react-ionicons';
 
 // LocationIcon

@@ -32,7 +32,8 @@ const Locations: React.FC = () => {
         <Col
           sm={12}
           lg={5}
-          className='positionRelative d-flex justify-content-center align-items-center'>
+          className='positionRelative d-flex 
+          justify-content-center align-items-center'>
           <LocationIcon />
         </Col>
       </Row>

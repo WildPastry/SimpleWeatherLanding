@@ -10,7 +10,8 @@ const Weather: React.FC = () => {
           <Col
             sm={12}
             lg={6}
-            className='positionRelative d-flex justify-content-center align-items-center'>
+            className='positionRelative d-flex 
+            justify-content-center align-items-center'>
             <WeatherIcon />
           </Col>
           <Col sm={12} lg={6} className='fontRg light'>
