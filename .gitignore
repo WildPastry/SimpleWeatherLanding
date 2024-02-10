@@ -25,3 +25,7 @@ yarn-error.log*
 /data
 /dev
 /config
+
+# env files
+.env
+.env*.*
