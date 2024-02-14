@@ -1,21 +1,20 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import { Close } from 'react-ionicons';
-
-/** @type {TogglePrivacy} */
-/** @param {TogglePrivacy} params.togglePrivacy */
+import { Link } from 'react-router-dom';
 
 // Privacy
-const Privacy: React.FC<TogglePrivacy> = (props: TogglePrivacy) => {
+const Privacy: React.FC = (): JSX.Element => {
   return (
     <section className='fullPageFixed bg-dark overFlowScroll'>
-      <Close
-        onClick={() => props.togglePrivacy()}
-        cssClasses='closeIcon'
-        color={'#1faadb'}
-        title={'CLOSE'}
-        height='50px'
-        width='50px'
-      />
+      <Link to={'/'}>
+        <Close
+          cssClasses='closeIcon'
+          color={'#1faadb'}
+          title={'CLOSE'}
+          height='50px'
+          width='50px'
+        />
+      </Link>
       <Container fluid='lg' className='sectionContainerPadded'>
         <Row>
           <Col sm={12}>

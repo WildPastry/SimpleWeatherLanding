@@ -5,7 +5,9 @@ import { useState } from 'react';
 /** @param {ScrollToSection} params.scrollToSection */
 
 // ArrowIcon
-const ArrowIcon: React.FC<ScrollToSection> = (props: ScrollToSection) => {
+const ArrowIcon: React.FC<ScrollToSection> = (
+  props: ScrollToSection
+): JSX.Element => {
   // Icon display logic
   const [showScroll, setShowScroll] = useState(false);
 

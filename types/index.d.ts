@@ -26,18 +26,8 @@ interface ScrollToSection {
   scrollToSection(num: number): any;
 }
 
-interface TogglePrivacy {
-  togglePrivacy(): any;
-}
-
-interface ToggleTerms {
-  toggleTerms(): any;
-}
-
 interface SectionProps {
   scrollToSection(num: number): any;
-  togglePrivacy(): any;
-  toggleTerms(): any;
 }
 
 // Modules
