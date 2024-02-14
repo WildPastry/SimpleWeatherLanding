@@ -1,5 +1,5 @@
 // IconSlider
-const IconSlider: React.FC = () => {
+const IconSlider: React.FC = (): JSX.Element => {
   return (
     <section className='positionRelative'>
       <div className='icon-slider-wrapper'>

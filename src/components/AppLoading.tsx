@@ -1,11 +1,8 @@
-// Import frameworks
+import loader from '../assets/animations/loader.json';
 import { useLottie } from 'lottie-react';
 
-// Import assets
-import loader from '../assets/animations/loader.json';
-
 // AppLoading
-const AppLoading = () => {
+const AppLoading = (): JSX.Element => {
   // Icon styles
   const style = {
     height: 200
