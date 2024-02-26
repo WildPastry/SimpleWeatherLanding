@@ -65,8 +65,10 @@ const Footer: React.FC<SectionProps> = (props: SectionProps) => {
                 height='25px'
                 width='25px'
               />
-              <a className='clouds' href='mailto:mparkernzdev@gmail.com'>
-                mparkernzdev@gmail.com
+              <a
+                className='clouds'
+                href='mailto:simpleweather@mikeparker.co.nz'>
+                simpleweather@mikeparker.co.nz
               </a>
             </span>
             <p className='clouds'>
