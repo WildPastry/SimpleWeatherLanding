@@ -53,7 +53,7 @@
     "@testing-library/user-event": "^14.5.2",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.30",
-    "@types/react": "^18.2.69",
+    "@types/react": "^18.2.73",
     "@types/react-dom": "^18.2.22",
     "@types/react-lottie": "^1.2.10",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
