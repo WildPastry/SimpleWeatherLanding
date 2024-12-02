@@ -56,7 +56,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@types/react-lottie": "^1.2.10",
-    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
     "@wildpastry/eslint-config": "^1.6.5",
     "eslint": "^9.15.0",
     "eslint-plugin-prettier": "^5.2.1",
