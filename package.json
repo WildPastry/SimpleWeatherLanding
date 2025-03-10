@@ -31,7 +31,7 @@
     ]
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.6.0",
+    "@reduxjs/toolkit": "^2.6.1",
     "@tippyjs/react": "^4.2.6",
     "@vitejs/plugin-react": "^4.3.4",
     "axios": "^1.8.1",
