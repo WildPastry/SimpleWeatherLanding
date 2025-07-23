@@ -34,7 +34,7 @@
     "@reduxjs/toolkit": "^2.8.2",
     "@tippyjs/react": "^4.2.6",
     "@vitejs/plugin-react": "^4.6.0",
-    "axios": "^1.10.0",
+    "axios": "^1.11.0",
     "bootstrap": "^5.3.7",
     "lottie-react": "^2.4.1",
     "react": "^19.1.0",
