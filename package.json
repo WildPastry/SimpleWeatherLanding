@@ -59,7 +59,7 @@
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@wildpastry/eslint-config": "^1.7.9",
     "eslint": "^9.32.0",
-    "eslint-plugin-prettier": "^5.5.3",
+    "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
