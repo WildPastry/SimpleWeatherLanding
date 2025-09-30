@@ -33,7 +33,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
     "@tippyjs/react": "^4.2.6",
-    "@vitejs/plugin-react": "^5.0.3",
+    "@vitejs/plugin-react": "^5.0.4",
     "axios": "^1.12.2",
     "bootstrap": "^5.3.8",
     "lottie-react": "^2.4.1",
@@ -42,9 +42,9 @@
     "react-dom": "^19.1.1",
     "react-ionicons": "^4.2.1",
     "react-redux": "^9.2.0",
-    "react-router-dom": "^7.9.1",
+    "react-router-dom": "^7.9.3",
     "styled-components": "^6.1.19",
-    "vite": "^7.1.6",
+    "vite": "^7.1.7",
     "vite-tsconfig-paths": "^5.1.4"
   },
   "devDependencies": {
@@ -52,17 +52,17 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "@types/jest": "^30.0.0",
-    "@types/node": "^24.5.2",
-    "@types/react": "^19.1.13",
+    "@types/node": "^24.6.0",
+    "@types/react": "^19.1.15",
     "@types/react-dom": "^19.1.9",
     "@types/react-lottie": "^1.2.10",
-    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
     "@wildpastry/eslint-config": "^1.7.9",
     "eslint": "^9.36.0",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
     "prettier": "^3.6.2",
-    "sass": "^1.93.0",
+    "sass": "^1.93.2",
     "typescript": "^5.9.2"
   }
 }
