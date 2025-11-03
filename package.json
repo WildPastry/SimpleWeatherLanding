@@ -58,7 +58,7 @@
     "@types/react-lottie": "^1.2.10",
     "@typescript-eslint/eslint-plugin": "^8.46.2",
     "@wildpastry/eslint-config": "^1.7.9",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.0",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
     "prettier": "^3.6.2",
