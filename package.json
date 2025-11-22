@@ -44,7 +44,7 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.9.6",
     "styled-components": "^6.1.19",
-    "vite": "^7.2.2",
+    "vite": "^7.2.4",
     "vite-tsconfig-paths": "^5.1.4"
   },
   "devDependencies": {
@@ -53,16 +53,16 @@
     "@testing-library/user-event": "^14.6.1",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.10.1",
-    "@types/react": "^19.2.5",
+    "@types/react": "^19.2.6",
     "@types/react-dom": "^19.2.3",
     "@types/react-lottie": "^1.2.10",
-    "@typescript-eslint/eslint-plugin": "^8.46.4",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
     "@wildpastry/eslint-config": "^1.7.9",
     "eslint": "^9.39.1",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
     "prettier": "^3.6.2",
-    "sass": "^1.94.0",
+    "sass": "^1.94.2",
     "typescript": "^5.9.3"
   }
 }
