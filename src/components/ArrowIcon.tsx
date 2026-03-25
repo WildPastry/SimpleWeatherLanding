@@ -1,5 +1,5 @@
 import { ArrowUpOutline } from 'react-ionicons';
-import { useState } from 'react';
+import { JSX, useState } from 'react';
 
 /** @type {ScrollToSection} */
 /** @param {ScrollToSection} params.scrollToSection */

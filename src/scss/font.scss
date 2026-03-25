@@ -1,114 +1,114 @@
 // master imports
-@use "sass:map";
-@use'variables';
-@use'mixins';
+@use 'sass:map';
+@use 'variables';
+@use 'mixins';
 
 // links
 a {
-	color: variables.$spotBlue;
-	text-decoration: none;
-	&:hover {
-		color: variables.$cloudsDarkest;
-	}
+  color: variables.$spotBlue;
+  text-decoration: none;
+  &:hover {
+    color: variables.$cloudsDarkest;
+  }
 }
 
 // lists
 ul {
-	text-align: center;
-	padding-left: 0;
+  text-align: center;
+  padding-left: 0;
 }
 
 ul li {
-	padding: 0.2rem 0;
-	color: variables.$clouds;
+  padding: 0.2rem 0;
+  color: variables.$clouds;
 }
 
 ol {
-	text-align: left;
-	padding-left: 0;
+  text-align: left;
+  padding-left: 0;
 }
 
 ol li {
-	padding: 0.2rem 0;
-	color: variables.$clouds;
+  padding: 0.2rem 0;
+  color: variables.$clouds;
 }
 
 // font
 .fontLt {
-	@include mixins.fontSize;
-	font-weight: map-get(variables.$fontWeight, 'lt');
+  @include mixins.fontSize;
+  font-weight: 300;
 }
 
 .fontRg {
-	@include mixins.fontSize;
-	font-weight: map-get(variables.$fontWeight, 'rg');
+  @include mixins.fontSize;
+  font-weight: 400;
 }
 
 .fontBd {
-	@include mixins.fontSize;
-	font-weight: map-get(variables.$fontWeight, 'bd');
+  @include mixins.fontSize;
+  font-weight: 700;
 }
 
 // h1
 .h1Lt {
-	@include mixins.h1Size;
-	font-weight: map-get(variables.$fontWeight, 'lt');
+  @include mixins.h1Size;
+  font-weight: 300;
 }
 
 .h1Rg {
-	@include mixins.h1Size;
-	font-weight: map-get(variables.$fontWeight, 'rg');
+  @include mixins.h1Size;
+  font-weight: 400;
 }
 
 .h1Bd {
-	@include mixins.h1Size;
-	font-weight: map-get(variables.$fontWeight, 'bd');
+  @include mixins.h1Size;
+  font-weight: 700;
 }
 
 // h2
 .h2Lt {
-	@include mixins.h2Size;
-	font-weight: map-get(variables.$fontWeight, 'lt');
+  @include mixins.h2Size;
+  font-weight: 300;
 }
 
 .h2Rg {
-	@include mixins.h2Size;
-	font-weight: map-get(variables.$fontWeight, 'rg');
+  @include mixins.h2Size;
+  font-weight: 400;
 }
 
 .h2Bd {
-	@include mixins.h2Size;
-	font-weight: map-get(variables.$fontWeight, 'bd');
+  @include mixins.h2Size;
+  font-weight: 700;
 }
 
 h5 {
-	margin-top: 2em;
-	margin-bottom: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 
 // nav links
 .navLink {
-	@include mixins.bp(xs) {
-		padding-left: 0;
-		padding-right: 0;
-		padding-bottom: 0.5rem;
-	}
-	@include mixins.bp(sm) {
-		padding-left: 0;
-		padding-right: 0;
-		padding-bottom: 0.5rem;
-	}
+  @include mixins.bp(xs) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+  }
+  @include mixins.bp(sm) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+  }
 }
 
 .spanLink {
-	&:hover {
-		color: variables.$cloudsDarkest;
-	}
+  &:hover {
+    color: variables.$cloudsDarkest;
+  }
 }
 
 // about text
 .aboutText {
-	font-size: 5rem;
-	text-align: right;
-	font-weight: map-get(variables.$fontWeight, 'bd');
+  font-size: 5rem;
+  text-align: right;
+  font-weight: 700;
 }

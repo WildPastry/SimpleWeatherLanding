@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import { Location } from 'react-ionicons';
 
 // LocationIcon

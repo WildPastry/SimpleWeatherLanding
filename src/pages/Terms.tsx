@@ -1,4 +1,5 @@
 /* eslint-disable max-lines-per-function */
+import { JSX } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Close } from 'react-ionicons';
 import { Link } from 'react-router-dom';
