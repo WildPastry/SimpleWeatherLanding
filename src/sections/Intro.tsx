@@ -1,5 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap';
-import googleBadge from '../assets/img/google-play-badge.png';
+// import googleBadge from '../assets/img/google-play-badge.png';
 
 // Intro
 const Intro: React.FC = () => {
@@ -11,12 +11,12 @@ const Intro: React.FC = () => {
           <h2 className='h2Rg'>Simple, fast, and intuitive weather.</h2>
         </Col>
       </Row>
-      <a
+      {/* <a
         href='https://play.google.com/store/apps/details?id=nz.co.mikeparker.sw'
         target='_blank'
         rel='noopener noreferrer'>
         <img src={googleBadge} className='storeBadge' alt='Google Play Store' />
-      </a>
+      </a> */}
     </Container>
   );
 };

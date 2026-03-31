@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 // IconSlider
 const IconSlider: React.FC = (): JSX.Element => {
   return (

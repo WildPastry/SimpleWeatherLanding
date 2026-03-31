@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import loader from '../assets/animations/loader.json';
 import { useLottie } from 'lottie-react';
 

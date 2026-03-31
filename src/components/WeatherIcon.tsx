@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import brokenClouds from '../assets/animations/weather/brokenClouds.json';
 import dayClear from '../assets/animations/weather/dayClear.json';
 import lightDrizzle from '../assets/animations/weather/lightDrizzle.json';

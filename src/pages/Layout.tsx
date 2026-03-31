@@ -1,4 +1,4 @@
-import { Dispatch, useEffect, useRef } from 'react';
+import { Dispatch, JSX, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import AppLoading from '../components/AppLoading';
 import ArrowIcon from '../components/ArrowIcon';
